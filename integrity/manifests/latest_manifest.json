@@ -426,6 +426,12 @@
       "sha3_512": "aacd5f0946778c0d7191bc1b52a4e8f5d13560758eb3b4f6bd3ce9e2d0ffbbfb32ba2056b9862ab24cd8440b9a5260bff5693c7e47b3c6b96da98eee37cea6e6",
       "size_bytes": 3302
     },
+    "core/aots6_api.py": {
+      "modified": "2026-05-17T04:46:01.668000+00:00",
+      "sha256": "6ab7210b59a8a0090524be3506092b957066034528cd99098dfb4644ada940b3",
+      "sha3_512": "a72611a99900ff719e78e5112612b4d20d3ef76681f89ead8e7a687d4fc8876f273760273f01ab81160a01b08e24329c591682978b72c198d57da408740d7238",
+      "size_bytes": 1442
+    },
     "core/aots6_authorship_cert.json": {
       "modified": "2026-05-13T13:28:42.675006+00:00",
       "sha256": "1d9b982b38978cb74fe26aaee3f2f7797e6719ad607187d1d2fdceae3f2dd8ce",
@@ -437,6 +443,12 @@
       "sha256": "9bd8a7f4383e88b22c2270388a1a772d91409e381e6484665433ea75059cbd76",
       "sha3_512": "7bf795f68719df09ce0d854eb46a6d9a44548737513d56511059143bd167182e135eed561b201e2fdf49d1289c68039b348da78022daf40408f4c1ceb33a89e1",
       "size_bytes": 3961
+    },
+    "core/aots6_bridge.py": {
+      "modified": "2026-05-17T04:46:01.640001+00:00",
+      "sha256": "96e4d560b1224f1a6e3976d76582cd3d15fc33460d8f6af7fbde2f7e966c6f06",
+      "sha3_512": "266a8039c96dedcabb1fbcc0a5fa59c2ff8df97aca2a4dde26f504b9dc04c310d3580de93acca0e9fecb945157634ba9eaeb176e86f0a4de26af0c72c243505f",
+      "size_bytes": 1457
     },
     "core/aots6_daemon.py": {
       "modified": "2026-05-17T04:11:22.720001+00:00",
@@ -481,10 +493,10 @@
       "size_bytes": 207
     },
     "core/sync.log": {
-      "modified": "2026-05-17T04:41:14.284001+00:00",
-      "sha256": "3556ddac200b0eeeeefbad949b943b370e2b2741bffa5c209c5a7300e8349947",
-      "sha3_512": "8b33688c70a6246b761c974a4470102b5c3e279769cb3dadb34e64047d9bb9a60951666aefc9d9732f7fa05c327d4ae6645715183bb86155c3c74c392e47deca",
-      "size_bytes": 3806
+      "modified": "2026-05-17T04:41:17.812001+00:00",
+      "sha256": "cb2afecd7f49c9dbfa919dfcf9f1ee50dcf44da7142dd3899480a41f929bbabd",
+      "sha3_512": "585a1bd322b79ec2533b0a89993a0398d55f4608157e0777a1296ba2ba982896ae65a98513be967995f17ff75c56f27f267c4da0be951cd0da2d0f0885cdd3a2",
+      "size_bytes": 4608
     },
     "core/vercel.json": {
       "modified": "2026-05-13T13:28:42.723006+00:00",
@@ -697,15 +709,15 @@
       "size_bytes": 1935
     },
     "integrity/manifests/latest_manifest.json": {
-      "modified": "2026-05-17T04:38:47.988001+00:00",
-      "sha256": "b7b92d89a0993f9d3470959356c446a8df98b5a339d6fe98d55bb53c632aa62f",
-      "sha3_512": "c18cbd656c59a93b9562452e5d8b82def5c437edf82a7590cd2654dfb68680c2ce8bfaa063e3108304d25975ec227c6a112a00fc3197f63801b6083804341250",
-      "size_bytes": 81137
+      "modified": "2026-05-17T04:41:15.628000+00:00",
+      "sha256": "d8fda9248a726464a237e154e5f31830e6211051e7963198a5b6079588b246d7",
+      "sha3_512": "e6114831b582c770cf2a5761ee864b551f72160e9f4f9e53cfda16ec44a3c4964c5865884233c9ea87d6d40dab84e2582bf3c8156c4eda196ad714b94cbfe419",
+      "size_bytes": 82233
     },
     "integrity/manifests/latest_manifest.sig": {
-      "modified": "2026-05-17T04:38:48.480000+00:00",
-      "sha256": "f52910e86bf4522491b5d24563b5b15e7d5ebed49a55fdcd19a924cc0f123d94",
-      "sha3_512": "d61fa1c936ac22d0780732553f3a2c0da39de89c74ec0adbb85632009b9a244659b333f6e734aabd1c03b20e35840d03fdf583146f73795b720e0ffaed194d86",
+      "modified": "2026-05-17T04:41:16.084001+00:00",
+      "sha256": "b7a703f5e7d71524440c31582bec5bf67bb379e39b2fc11abd70d9f99a73739c",
+      "sha3_512": "a1650b185cfe8fcda8867b0dd74879babb592ee5d3bc04e6511b92c453be493cd0a914aa78ea76f56d57d9657ae24c7bcac368ca2bc850b08dd1496a7f5117b2",
       "size_bytes": 64
     },
     "integrity/policy.json": {
@@ -935,6 +947,36 @@
       "sha256": "63ba37bf7599d045423647166309ea40d179078750c30dc108570e452b980a2c",
       "sha3_512": "d1deec6c87b963c446aa0cc088be282cfde79d89b67be788181217f1a0da29a410cc9a092a9c5fe1d457eb36682eeaaa8cceff6df82ff99e4af8997c4b9303c8",
       "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000030_b066d834fdcc.json": {
+      "modified": "2026-05-17T04:41:18.916001+00:00",
+      "sha256": "869f4a2fa3fdcb08896b312115fc4cd7f68099a8d951a20f37e6f9fa323479a1",
+      "sha3_512": "a5dd0912635fe75ea7f6ddb8af4a0ef1e6c98d9f5b5e5f0228d7a2bae0616b5490ac6ab3f4cc8cb80ff6c9d07dfbfd00469cd22071eb23914f829106230e581a",
+      "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000031_3809e4508325.json": {
+      "modified": "2026-05-17T04:42:18.920001+00:00",
+      "sha256": "93bcbec963af48de04eb9ccec6d3964f9dff08205dfb01dcf6f0839d1118513d",
+      "sha3_512": "ef5c491f76dd2cc0556fb9a3a6be7bd0110396ee9e7cb5e210ed7750e869d44f87906212b6bfed166c27051c23323451b39a2fc016ed2d365a7a96f7179ea518",
+      "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000032_053742643cae.json": {
+      "modified": "2026-05-17T04:43:18.920001+00:00",
+      "sha256": "890d4638e7f34b8084eaae44fe0f4f053121696e87638f221718da79d36d8c88",
+      "sha3_512": "d4f386a7577aa7e544540520c435e4988beff5b6d843aaac6199af932bae916d917cf0c65d175ee481ed812a914c44543d805e6112658bdf2150cdd0f63176d3",
+      "size_bytes": 283
+    },
+    "manifests/AOTS6_STATE_000033_66591c44b668.json": {
+      "modified": "2026-05-17T04:44:18.924001+00:00",
+      "sha256": "9dd7eab8f3b169f1c985c7b30b11c259e984e908c7e99725e3c02bb87c261ad0",
+      "sha3_512": "67fe0ab7c619ecb5380f8145219654f5e8735295b89e4717b3d20c52e25dfdd839e53b9ba03e02a11cd57fd623f15a23531fb77ee6bf9a55c3b6a44efdea5c3e",
+      "size_bytes": 283
+    },
+    "manifests/AOTS6_STATE_000034_fd93fdb418bf.json": {
+      "modified": "2026-05-17T04:45:18.932001+00:00",
+      "sha256": "cada03e16fb081a715ad5c82960075debb53d680fd9c8ead919d39d8809172da",
+      "sha3_512": "7101a88451e62bdb26c26191b90ca7ddddd2d080f73533b8845552d2f32af35867161737f2287863cb5a4608808e3c042dd6ab0f5016e2af5cbfce20cade21e8",
+      "size_bytes": 283
     },
     "nodes/.aots6_anchor": {
       "modified": "2026-05-17T04:02:45.140000+00:00",
@@ -1376,8 +1418,8 @@
     }
   },
   "metadata": {
-    "file_count": 229,
+    "file_count": 236,
     "kernel": "AOTS6-PQ-TERMUX",
-    "timestamp": "2026-05-17T04:41:14.911862+00:00"
+    "timestamp": "2026-05-17T04:46:03.289349+00:00"
   }
 }
