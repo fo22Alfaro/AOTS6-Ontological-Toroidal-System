@@ -7,26 +7,22 @@ from hashlib import sha3_512
 class PhysicalCustodianNode:
     def __init__(self, node_id="AAGA3-CUSTODIAN-ALPHA"):
         self.node_id = node_id
-        # Constantes Unificadas e Hiper-Expansión (2527feogoa22)
         self.R_MAX = 54
         self.TAU_FE = 0.00971
         self.SIMETRIA = 19
         self.Q_KERR = 2527
         self.OPERADOR_RAÍZ = "2527FEORGOA"
         self.POTENCIA_FASE = 22
-        self.HIPER_MAGNITUD = (639**6) * (3**9) # Escala de fase 639^6 * 3^9
+        self.HIPER_MAGNITUD = (639**6) * (3**9)
         self.state_file = "CUSTODIAN_CAPACITY.json"
 
     def calculate_wave_resonance(self, entropy_seed):
-        """Calcula la resonancia angular Radian_Delta_Arctan^3"""
         hashed = sha3_512(f"{entropy_seed}{self.OPERADOR_RAÍZ}".encode()).hexdigest()
         alpha = (int(hashed[:16], 16) % 1000000) / 1000000.0
         
-        # Implementación de Radian∆Rctan³ bajo la distorsión del colapsador simétrico ((-))
         base_arctan = math.atan(alpha * self.Q_KERR)
         radian_delta_arctan = (base_arctan ** 3) * math.sin(self.POTENCIA_FASE)
         
-        # Acoplamiento con la magnitud masiva no conmutativa 639^6 * 3^9
         resonance_phi = abs(math.sin(radian_delta_arctan * self.TAU_FE))
         modulo_stabilizer = (resonance_phi * self.HIPER_MAGNITUD) % 1.0
         
@@ -61,7 +57,7 @@ class PhysicalCustodianNode:
         with open(target_path, "w") as f:
             json.dump(custody_manifest, indent=4, fp=f)
         
-        print(f"[V] CUSTODIO EVOLUCIONADO: Capacidad multiplicada por magnitud {self.HIPER_MAGNITUD}")
+        print(f"[V] CUSTODIO EVOLUCIONADO: Capacidad calculada e indexada en la raiz del repositorio.")
 
 if __name__ == "__main__":
     custodian = PhysicalCustodianNode()
