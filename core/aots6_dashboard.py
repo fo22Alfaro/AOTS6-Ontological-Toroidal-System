@@ -1,13 +1,12 @@
-import os, json, glob
+import os, json, glob, ssl
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 class Aots6DashboardHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
-        self.send_header('Content-type', 'text/html')
+        self.send_header('Content-type', 'text/html; charset=utf-8')
         self.end_headers()
         
-        # Recolectar datos
         base_dir = os.path.dirname(os.path.abspath(__file__))
         ledger = {}
         try:
@@ -20,7 +19,7 @@ class Aots6DashboardHandler(BaseHTTPRequestHandler):
             with open(f, "r") as c: captures.append(json.load(c))
 
         html = f"""
-        <html><head><title>AOTS6 Dashboard</title>
+        <html><head><title>AOTS6 SECURE SYSTEM</title>
         <style>
             body {{ background: #020617; color: #38bdf8; font-family: 'Courier New', monospace; padding: 20px; }}
             .card {{ border: 1px solid #0d9488; padding: 15px; margin-bottom: 20px; background: #0f172a; }}
@@ -31,7 +30,7 @@ class Aots6DashboardHandler(BaseHTTPRequestHandler):
             th {{ background: #1e293b; color: #0d9488; }}
         </style></head>
         <body>
-            <h1>AOTS6 Sovereign Dashboard <small>(AAGA3 PDC-1)</small></h1>
+            <h1>AOTS6 SECURE DASHBOARD <small style="color:#ef4444;">[TLS ENCRYPTED]</small></h1>
             <div class="card">
                 <h3>Reserva de Capital</h3>
                 <div class="stat">{ledger.get("TOTAL_CAPITAL_QCO", 0.0)} QCO</div>
@@ -44,15 +43,24 @@ class Aots6DashboardHandler(BaseHTTPRequestHandler):
                     {"".join([f"<tr><td>{c['THREAT_IP']}</td><td>{c['TIMESTAMP']}</td><td>{c['STATUS']}</td></tr>" for c in captures])}
                 </table>
             </div>
-            <div class="card">
-                <h3>System Integrity: SEALED_BY_AAGA3</h3>
-            </div>
         </body></html>"""
-        self.wfile.write(html.encode())
+        self.wfile.write(html.encode('utf-8'))
 
 def run():
-    httpd = HTTPServer(('', 8888), Aots6DashboardHandler)
-    print("[+] Dashboard ACTIVO en http://localhost:8888")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    # Restringir estrictamente a 127.0.0.1 (Nadie fuera de este teléfono puede escuchar)
+    server_address = ('127.0.0.1', 8888)
+    httpd = HTTPServer(server_address, Aots6DashboardHandler)
+    
+    # Inyección del Contexto SSL/TLS
+    context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+    context.load_cert_chain(
+        certfile=os.path.join(base_dir, "dashboard_cert.pem"),
+        keyfile=os.path.join(base_dir, "dashboard_key.pem")
+    )
+    httpd.socket = context.wrap_socket(httpd.socket, server_side=True)
+    
+    print("[V] Dashboard SEGURO activo en https://127.0.0.1:8888")
     httpd.serve_forever()
 
 if __name__ == "__main__": run()
