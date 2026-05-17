@@ -264,6 +264,12 @@
       "sha3_512": "0b0673c405c6b77d795146fc217bf62df00bb8a9b2515f1b6fc3ce7d344db912d37970959d06d97ec252bf60ed08255cc4b5e0d15467fb909d950114d5e1dcb8",
       "size_bytes": 665
     },
+    "QCO_LEDGER.json": {
+      "modified": "2026-05-17T04:29:22.276000+00:00",
+      "sha256": "e7de07dd47fa812c7b0de7339f601d935ee94358e0a796b90b1b2cdbc1d6451f",
+      "sha3_512": "453edb2a1ca16b872e1066e52a4218a4fd7fcf97094641f8527875a5929f991537667e280ea631765ea9df2c84413ccd102c7576051b7b3ce4ea28ff0c4053c7",
+      "size_bytes": 238
+    },
     "README-4.md": {
       "modified": "2026-05-14T19:28:25.418252+00:00",
       "sha256": "b6ce40c23d5698391706d864a146c638bc78c7504e92aaf4eaada2f8d1e9023b",
@@ -426,6 +432,12 @@
       "sha3_512": "d71b0abd544353fe3a0b88cf3d8784bf762f141dfc21f2f7f8e74cb67ae2d42b4d6a3487be870525f15e74c21dca71d7b6c123f85f718dbd3039f524ea132868",
       "size_bytes": 3010
     },
+    "core/aots6_ledger.py": {
+      "modified": "2026-05-17T04:29:01.888000+00:00",
+      "sha256": "b8e2a5a105f395691484856e4f52a86f6c00471f27b6dd8ee5be2019b9dbe7d5",
+      "sha3_512": "58c4d39dc21493036a9d6aef9a984fb8868c9e704e91e3b0011609e130e40259613dbe7bab18a2a74e7a7d12d6955bdc332b1a66570f1664d534c637684afeb1",
+      "size_bytes": 2278
+    },
     "core/aots6_server.js": {
       "modified": "2026-05-13T13:28:42.703006+00:00",
       "sha256": "680f76a56bb6d4d1f2710399bcb33b859dde923bb6874867613f116cda67f10a",
@@ -451,10 +463,10 @@
       "size_bytes": 207
     },
     "core/sync.log": {
-      "modified": "2026-05-17T04:25:58.288001+00:00",
-      "sha256": "1879723b7b02588750c15f223609e0ccee0339017373234860acff38e366c1c1",
-      "sha3_512": "e2cf282eed4fae0f472af2554bc8328ed42a0c3af891abca45ea9c2ea8098e7ffe675de3e5137b2a1f1508a1930a74606e90cdd2fddb7ee252a8e8058da21d7f",
-      "size_bytes": 1253
+      "modified": "2026-05-17T04:26:05.588001+00:00",
+      "sha256": "eda5f9c018be3db7f10ca3fabecdbfecc9c866db5ebe738964c4f4c4f49957e6",
+      "sha3_512": "3828e51ea006463a3c619db28bc30929d9908eb70bc40d54dcbefb0405f0fc2f86413a0107d0aa2f40e73119a1918973eabb863a2939f25de6cf12360f52962f",
+      "size_bytes": 2055
     },
     "core/vercel.json": {
       "modified": "2026-05-13T13:28:42.723006+00:00",
@@ -667,15 +679,15 @@
       "size_bytes": 1935
     },
     "integrity/manifests/latest_manifest.json": {
-      "modified": "2026-05-17T04:20:54.580000+00:00",
-      "sha256": "ac921159dabb6a94aa97bce62afbd154df622304e7d1ef928221cc8554fd25b3",
-      "sha3_512": "e4dc2899e92a4c748774c76999e7f2e42560fd9ecb4d752fc53ac08b49946b0d12061e1f602f0c4efd1c9fa7243ca795ec06b1649fd96b928683093686cd4f24",
-      "size_bytes": 72990
+      "modified": "2026-05-17T04:26:01.176001+00:00",
+      "sha256": "8f3eec04e624b18f286e53724e9e3f39cf6c5fd898f051b33c7389fffca6943a",
+      "sha3_512": "1432094d5d3d4855251b7472c462eec28a14e88d4889f349bbcb787731781e253358adb9e86971f5873c855b09bde98ed5a192f6477914a29ef5c562f2f763b7",
+      "size_bytes": 74866
     },
     "integrity/manifests/latest_manifest.sig": {
-      "modified": "2026-05-17T04:20:55.452000+00:00",
-      "sha256": "4de202a5622fa96497ef8fe5dd21ad248145d252e02a8bc77431321854141534",
-      "sha3_512": "6ff7bb6c8d045ca97c7b15681484c58cfd7b38272a7a939940ba00fc0606b709eae523817cf13f590aa387174c06f92fe31fc377f411c544502e1bdb9726b01b",
+      "modified": "2026-05-17T04:26:01.840000+00:00",
+      "sha256": "c4e58229de167038a9ef278bb3b84eb7a4d8ff5abe209cd978c8546a060e529f",
+      "sha3_512": "fe4800db76dde319aac9c65158acfde9c7493e17b777967f6eb9945a1921619f3cd8ded909e94c46ad734e10fd81141798acf917b4c5ad3c2dbb0e70ce8f2e2a",
       "size_bytes": 64
     },
     "integrity/policy.json": {
@@ -815,6 +827,30 @@
       "sha256": "8d77158924ba2518cc6ca9636dbc9bc9d6181aa686b5bef105fa31d3f2478185",
       "sha3_512": "cecde16759b75f6c27bfa018a06a6e299d4f3112d4bf679bc450db04bf7446315b79c3caaaf996143f0b553a0d7b41a11c68ccbe2b91f4996286096be23a2735",
       "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000015_9a296d82d9d1.json": {
+      "modified": "2026-05-17T04:26:18.856000+00:00",
+      "sha256": "421b0008986b9bc6eb564239727ef468d0e7ba5a46a6905660216afc61cc08f2",
+      "sha3_512": "7c34d52d3569563884db5f8cde1ce0834ba1760457a966d11075f959cce42e32400a299b8a532c81eed1a07c5a782f8892eb785939f6451541c8b3b8388995ed",
+      "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000016_f093a8bd787a.json": {
+      "modified": "2026-05-17T04:27:18.860000+00:00",
+      "sha256": "7ced18b318dd3899fbf6518d8e81cd9921d2db315253d709fd68defddc7a47ec",
+      "sha3_512": "3dc6f313438384c9f3889245df49649e5938d9830091e12fd7d32bb12205710807988ffed516407213f8c95466d5cd6b267c78412df0ac25393adab4c76b32fc",
+      "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000017_0dd50c8b71f8.json": {
+      "modified": "2026-05-17T04:28:18.860000+00:00",
+      "sha256": "154f174c44114b73dd1c5675e5e42d455804191492a84f96a32ddc1441fbac31",
+      "sha3_512": "47087a01b161b92e14f6248b1151f532429167385613cc4352fccf4672cb014eeeb60ea355efa2873c27fd594459080bfec1e0d13eda85d6ff50b0d5bbeb8051",
+      "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000018_2ef1fc1b9138.json": {
+      "modified": "2026-05-17T04:29:18.864001+00:00",
+      "sha256": "960612220a95d396beb5a655f752d6152080aa7588737142183566760935e315",
+      "sha3_512": "88d388aa363f7a8f6a3756351a15fcc74cfe737567a759db4956ff730b7b9a4a3eb2f0c2362f6dfccf506003d75e050d0a1a42d638ce19024f845db96a2e9f87",
+      "size_bytes": 283
     },
     "nodes/.aots6_anchor": {
       "modified": "2026-05-17T04:02:45.140000+00:00",
@@ -1256,8 +1292,8 @@
     }
   },
   "metadata": {
-    "file_count": 209,
+    "file_count": 215,
     "kernel": "AOTS6-PQ-TERMUX",
-    "timestamp": "2026-05-17T04:26:00.209720+00:00"
+    "timestamp": "2026-05-17T04:30:00.794283+00:00"
   }
 }
