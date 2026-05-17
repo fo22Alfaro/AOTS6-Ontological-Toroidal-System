@@ -462,6 +462,12 @@
       "sha3_512": "954e8e2ecc05618a41a04d023604083108607982204b5ca9a0d28fa494740bb6ed0c88cba8da02659f9df1f37856996454ae11a3ba6f79867b0955ab39995522",
       "size_bytes": 1090
     },
+    "core/blackhole.log": {
+      "modified": "2026-05-17T04:39:16.652000+00:00",
+      "sha256": "0ea7cf1d885ad4976e0150df9dce6ffc37f00cf7db07e24b2b2e886ad0493c46",
+      "sha3_512": "cf6a090f49a94d7b44ad6e862183ecde85489bd9449c53bbed0dce5d74ba5a391419dff8ba40c0b46fac897f8934524b8472224072842d793f57c609e94298aa",
+      "size_bytes": 22
+    },
     "core/daemon.log": {
       "modified": "2026-05-17T04:12:18.388000+00:00",
       "sha256": "0ea7cf1d885ad4976e0150df9dce6ffc37f00cf7db07e24b2b2e886ad0493c46",
@@ -475,10 +481,10 @@
       "size_bytes": 207
     },
     "core/sync.log": {
-      "modified": "2026-05-17T04:36:14.084001+00:00",
-      "sha256": "c5caaafde987d43f8fe65af473a56e4d6c05a7f6f3eaff6d28fbffbfb54bc1c8",
-      "sha3_512": "9ad43236f3c24f99309785c8ce62c4208f232d1ba39adff3d29b946273aee24e51a22c0f38050f7ff4ef540b9b2fd60158d83a7fb9c8c7c745c0821d7e00d133",
-      "size_bytes": 3757
+      "modified": "2026-05-17T04:41:14.284001+00:00",
+      "sha256": "3556ddac200b0eeeeefbad949b943b370e2b2741bffa5c209c5a7300e8349947",
+      "sha3_512": "8b33688c70a6246b761c974a4470102b5c3e279769cb3dadb34e64047d9bb9a60951666aefc9d9732f7fa05c327d4ae6645715183bb86155c3c74c392e47deca",
+      "size_bytes": 3806
     },
     "core/vercel.json": {
       "modified": "2026-05-13T13:28:42.723006+00:00",
@@ -691,15 +697,15 @@
       "size_bytes": 1935
     },
     "integrity/manifests/latest_manifest.json": {
-      "modified": "2026-05-17T04:36:10.756001+00:00",
-      "sha256": "08d444ae5dad1ff19ca97288b6f80590e0c697bdd1e775f8f73ac1c50a6e3afe",
-      "sha3_512": "2212244a7c9dd786e7d27015c5bce5cc4e3a357498316add4af256031db49e77d584d75d70d22be28cd259025aee71a26bc3b4abd85108ea65ce9704eb1e4870",
-      "size_bytes": 79310
+      "modified": "2026-05-17T04:38:47.988001+00:00",
+      "sha256": "b7b92d89a0993f9d3470959356c446a8df98b5a339d6fe98d55bb53c632aa62f",
+      "sha3_512": "c18cbd656c59a93b9562452e5d8b82def5c437edf82a7590cd2654dfb68680c2ce8bfaa063e3108304d25975ec227c6a112a00fc3197f63801b6083804341250",
+      "size_bytes": 81137
     },
     "integrity/manifests/latest_manifest.sig": {
-      "modified": "2026-05-17T04:36:11.172000+00:00",
-      "sha256": "691102c34f2c04918237fa3562198488f32ff9caaf69b32465a8a3cc1aef5908",
-      "sha3_512": "d1a83aa524f6b741ef64389d30d1934f8345a954ee3909aae449d87ee14bd9b6f6c3e77b0951fdaed394676d41dee3afb995aa54737208d1cd1321242a9e7c6d",
+      "modified": "2026-05-17T04:38:48.480000+00:00",
+      "sha256": "f52910e86bf4522491b5d24563b5b15e7d5ebed49a55fdcd19a924cc0f123d94",
+      "sha3_512": "d61fa1c936ac22d0780732553f3a2c0da39de89c74ec0adbb85632009b9a244659b333f6e734aabd1c03b20e35840d03fdf583146f73795b720e0ffaed194d86",
       "size_bytes": 64
     },
     "integrity/policy.json": {
@@ -916,6 +922,18 @@
       "modified": "2026-05-17T04:38:18.904001+00:00",
       "sha256": "72ddf16289f53b4a2a0fef88a304103a61b350ca306a0602745e1fc54f1aa1da",
       "sha3_512": "a4a8ebfd3aacf124984487299d3a218093e13596ad2634f7d452910271cb0bc731711d995e0c7f7cb016d281c5a08d73237f89ae30bcdbd007c0ad2e2925dfb7",
+      "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000028_ab11bf8abfcd.json": {
+      "modified": "2026-05-17T04:39:18.908000+00:00",
+      "sha256": "0098409c2d236bd72c4134f3cd4f99ba97e58eee3f69a1600ef9b2382ff1ad9b",
+      "sha3_512": "ced3106e33ef02c22d808e6409f55b0b116497cb0569a23d48ef35e501cbd183ac39c2a5bf33f1d38df8b52c07a2aa708b70dae5fe6c7a80123caf956ef202de",
+      "size_bytes": 284
+    },
+    "manifests/AOTS6_STATE_000029_96b71b91263d.json": {
+      "modified": "2026-05-17T04:40:18.916001+00:00",
+      "sha256": "63ba37bf7599d045423647166309ea40d179078750c30dc108570e452b980a2c",
+      "sha3_512": "d1deec6c87b963c446aa0cc088be282cfde79d89b67be788181217f1a0da29a410cc9a092a9c5fe1d457eb36682eeaaa8cceff6df82ff99e4af8997c4b9303c8",
       "size_bytes": 284
     },
     "nodes/.aots6_anchor": {
@@ -1358,8 +1376,8 @@
     }
   },
   "metadata": {
-    "file_count": 226,
+    "file_count": 229,
     "kernel": "AOTS6-PQ-TERMUX",
-    "timestamp": "2026-05-17T04:38:47.470331+00:00"
+    "timestamp": "2026-05-17T04:41:14.911862+00:00"
   }
 }
