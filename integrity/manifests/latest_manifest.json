@@ -493,10 +493,10 @@
       "size_bytes": 207
     },
     "core/sync.log": {
-      "modified": "2026-05-17T04:41:17.812001+00:00",
-      "sha256": "cb2afecd7f49c9dbfa919dfcf9f1ee50dcf44da7142dd3899480a41f929bbabd",
-      "sha3_512": "585a1bd322b79ec2533b0a89993a0398d55f4608157e0777a1296ba2ba982896ae65a98513be967995f17ff75c56f27f267c4da0be951cd0da2d0f0885cdd3a2",
-      "size_bytes": 4608
+      "modified": "2026-05-17T04:46:18.016001+00:00",
+      "sha256": "093717a381539193b559c9cae39f6459c4ca12388cf49c8473e292472bb0faf1",
+      "sha3_512": "d10872c6aa881aaf5bc1874228ca5bfd2015de21157c423c490d586318e55a61dfb0541c52c8a4b103944f220fea6ab84ca832f30a1b83e43734753f7353105f",
+      "size_bytes": 4657
     },
     "core/vercel.json": {
       "modified": "2026-05-13T13:28:42.723006+00:00",
@@ -709,15 +709,15 @@
       "size_bytes": 1935
     },
     "integrity/manifests/latest_manifest.json": {
-      "modified": "2026-05-17T04:41:15.628000+00:00",
-      "sha256": "d8fda9248a726464a237e154e5f31830e6211051e7963198a5b6079588b246d7",
-      "sha3_512": "e6114831b582c770cf2a5761ee864b551f72160e9f4f9e53cfda16ec44a3c4964c5865884233c9ea87d6d40dab84e2582bf3c8156c4eda196ad714b94cbfe419",
-      "size_bytes": 82233
+      "modified": "2026-05-17T04:46:04.072001+00:00",
+      "sha256": "86ade434e095ff0660e654f36facfd1158fd3dfdc8755d30fbda80203f371ddc",
+      "sha3_512": "030713b2cf16f3b58a0c8dce1533723256b8dbc8401dfe523f0786ffaa84dbc75ba1e237b41ded0eae88f5c2caefd2dc6b4fe093179a6cb61dc918a37ce2c2f3",
+      "size_bytes": 84805
     },
     "integrity/manifests/latest_manifest.sig": {
-      "modified": "2026-05-17T04:41:16.084001+00:00",
-      "sha256": "b7a703f5e7d71524440c31582bec5bf67bb379e39b2fc11abd70d9f99a73739c",
-      "sha3_512": "a1650b185cfe8fcda8867b0dd74879babb592ee5d3bc04e6511b92c453be493cd0a914aa78ea76f56d57d9657ae24c7bcac368ca2bc850b08dd1496a7f5117b2",
+      "modified": "2026-05-17T04:46:04.580001+00:00",
+      "sha256": "b31c68466f8a1d95b33234fd08760aa87f03ab51278c6c30211be0cd8e266657",
+      "sha3_512": "b6570015e156e7c350f83d983141409af8e5fe922d536ff175b67c0ca166a777328416b8be2cc82780b7098e2a877e87dae39d2bc0761715fa9132a67a7ce865",
       "size_bytes": 64
     },
     "integrity/policy.json": {
@@ -1420,6 +1420,6 @@
   "metadata": {
     "file_count": 236,
     "kernel": "AOTS6-PQ-TERMUX",
-    "timestamp": "2026-05-17T04:46:03.289349+00:00"
+    "timestamp": "2026-05-17T04:46:18.540327+00:00"
   }
 }
