@@ -1,0 +1,2355 @@
+{
+    "timestamp": "2026-05-20 09:39:52",
+    "ruta_repositorio": "/data/data/com.termux/files/home/aots6_repo",
+    "archivos_detectados": [
+        {
+            "archivo": "requirements.txt",
+            "tamano_bytes": 35,
+            "sha256": "daa08833da2a40e355bfe9be3ca21945fa984cd8bec567ae94bf0ea29c2ceab6",
+            "ultima_modificacion": "2026-03-17 23:08:35"
+        },
+        {
+            "archivo": ".gitignore",
+            "tamano_bytes": 773,
+            "sha256": "d131bca61c02e959d2a173bdd1a2f4ec6f698682f5c168760ff51f569da6589d",
+            "ultima_modificacion": "2026-05-14 15:26:05"
+        },
+        {
+            "archivo": "NOTICE",
+            "tamano_bytes": 134,
+            "sha256": "da36b2de2dc13dfb4c404f103a782207b982be58404bc0fd2fcdc09ed928f8b4",
+            "ultima_modificacion": "2026-03-17 23:08:35"
+        },
+        {
+            "archivo": "CONTRIBUTING.md",
+            "tamano_bytes": 105,
+            "sha256": "398b0b35b69d9c17aa094f8c5c669e6712844b5b7ad181f4cb9821293a31a4ca",
+            "ultima_modificacion": "2026-03-17 23:08:35"
+        },
+        {
+            "archivo": "CITATION.cff",
+            "tamano_bytes": 232,
+            "sha256": "52c3ec44e1210c8c3940499a9eb21c5547e24f1904db8ff8cfb743d666c1c8f2",
+            "ultima_modificacion": "2026-03-17 23:08:35"
+        },
+        {
+            "archivo": "genesis_temp.tar",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-14 15:45:16"
+        },
+        {
+            "archivo": "LICENSE",
+            "tamano_bytes": 161,
+            "sha256": "5f9cc0602be6ab7c4e59ec4cc0a20c8c240055f67fb9bf97401e6e22d20e3619",
+            "ultima_modificacion": "2026-03-17 23:08:35"
+        },
+        {
+            "archivo": "README.md",
+            "tamano_bytes": 5145198,
+            "sha256": "c104d681c0646ab2fbbb62b2b942a28778db19867b64e57ffd24273db39ca59f",
+            "ultima_modificacion": "2026-05-16 23:20:21"
+        },
+        {
+            "archivo": "AOTS6_Paper.md",
+            "tamano_bytes": 9711,
+            "sha256": "687788b8426f8087818f276098919308358a34cb07bb7da90c82d5bff3eef9c3",
+            "ultima_modificacion": "2026-03-17 23:54:46"
+        },
+        {
+            "archivo": "README-7.md",
+            "tamano_bytes": 85718,
+            "sha256": "106f6eb6f1dbd5dda025bba01d3e4c0aaa11cce3ff6cf3b8c1feabd8647e6588",
+            "ultima_modificacion": "2026-05-16 21:23:31"
+        },
+        {
+            "archivo": "AOTS6_SOVEREIGN_GENESIS_20260514.enc",
+            "tamano_bytes": 5150752,
+            "sha256": "7131a95a3fdb263075f7b5d49a5ff19c87775d930df25b3f9b79af4357075d59",
+            "ultima_modificacion": "2026-05-14 15:50:04"
+        },
+        {
+            "archivo": "chain.log",
+            "tamano_bytes": 72,
+            "sha256": "9a62261fbd98d794f38dd19b380ac90134588efe91938318a845f9514ad65bf4",
+            "ultima_modificacion": "2026-05-16 21:27:39"
+        },
+        {
+            "archivo": "ARCHITECTURE.md",
+            "tamano_bytes": 2618,
+            "sha256": "f3bcf93e4db2817c7eceaf926f2e2d4358aa5fbc46d1a41c32dc9e9c74bb54db",
+            "ultima_modificacion": "2026-03-18 10:50:26"
+        },
+        {
+            "archivo": "SCOPE.md",
+            "tamano_bytes": 2895,
+            "sha256": "c8af50611798bea09f1c0f30b1e093f6470a4138933ec3588cd7017bc9aa9e42",
+            "ultima_modificacion": "2026-03-18 10:50:26"
+        },
+        {
+            "archivo": "latest_anchor.txt",
+            "tamano_bytes": 129,
+            "sha256": "466108cdb4c9440164ae8fdc030f4551b7157b9ef319457b2fb396f7c6d6edfc",
+            "ultima_modificacion": "2026-05-14 15:52:41"
+        },
+        {
+            "archivo": "AOTS6_SOVEREIGN_ANCHOR.sig",
+            "tamano_bytes": 64,
+            "sha256": "caa42d946bc8ddd7997971d8c8c1180a4d1b996caff838845021c8c956ba4d95",
+            "ultima_modificacion": "2026-05-14 15:52:41"
+        },
+        {
+            "archivo": "AOTS6_NET_AUTH.sig",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-14 17:12:54"
+        },
+        {
+            "archivo": "AOTS6_INTEGRITY.hash",
+            "tamano_bytes": 129,
+            "sha256": "466108cdb4c9440164ae8fdc030f4551b7157b9ef319457b2fb396f7c6d6edfc",
+            "ultima_modificacion": "2026-05-14 17:30:20"
+        },
+        {
+            "archivo": "AOTS6_AUTHORITY.sig",
+            "tamano_bytes": 64,
+            "sha256": "5f24b71ef2356e98dc55547e3abe4e3e684673e68f58eeb7e1c39c27ace190b0",
+            "ultima_modificacion": "2026-05-14 17:27:24"
+        },
+        {
+            "archivo": "VOLUMEN1_AOTS6.md",
+            "tamano_bytes": 18887,
+            "sha256": "993df66a46cf8f3840c0c5c52ca7fadff02d568b3ed7ed6643af316d3c74a8e9",
+            "ultima_modificacion": "2026-03-18 12:09:31"
+        },
+        {
+            "archivo": "ESTABLISHMENT.md",
+            "tamano_bytes": 9527,
+            "sha256": "79f153d43116313bc9f28a57e47ca1f48bada0d409a87d09add48d538b30f448",
+            "ultima_modificacion": "2026-03-18 12:09:31"
+        },
+        {
+            "archivo": "Tesis_AOTS6_clean.md",
+            "tamano_bytes": 22712,
+            "sha256": "d7920b7446a18f7e5bd566594af727665f1733293a3ae1f891fb774dca1d289e",
+            "ultima_modificacion": "2026-03-18 12:09:31"
+        },
+        {
+            "archivo": "AOTS6_Torus.svg",
+            "tamano_bytes": 20918,
+            "sha256": "f69108089e8d5a4d65502a4287884b9c32aa478de9245d0a898795ee51263aed",
+            "ultima_modificacion": "2026-03-18 12:09:31"
+        },
+        {
+            "archivo": "AOTS6_Geodesics.svg",
+            "tamano_bytes": 17524,
+            "sha256": "504f960999a14ecb55d8c1934f7d218321a128b4ea94978e2142fbb3cce2a5b2",
+            "ultima_modificacion": "2026-03-18 12:09:31"
+        },
+        {
+            "archivo": "AOTS6_T6_cloud.json",
+            "tamano_bytes": 49584,
+            "sha256": "b6b45b308310753574a7051b99f54e5e9cd28c97e50b6940a90f4b116c40e84c",
+            "ultima_modificacion": "2026-03-18 12:09:31"
+        },
+        {
+            "archivo": "AOTS6_Torus.obj",
+            "tamano_bytes": 214312,
+            "sha256": "ba620909cf3e7fdcfe8bc730d66fc82ca835809cb177658f7e4ad5407034d943",
+            "ultima_modificacion": "2026-03-18 12:09:31"
+        },
+        {
+            "archivo": "AOTS6_MANIFEST.txt",
+            "tamano_bytes": 347,
+            "sha256": "51169525b3266c7c4c04802bc4ae3170b0910e0e8e5bbfbfd8adda463f4afd21",
+            "ultima_modificacion": "2026-05-14 17:30:20"
+        },
+        {
+            "archivo": "aots6_server.js",
+            "tamano_bytes": 25417,
+            "sha256": "680f76a56bb6d4d1f2710399bcb33b859dde923bb6874867613f116cda67f10a",
+            "ultima_modificacion": "2026-03-19 20:20:00"
+        },
+        {
+            "archivo": "vercel.json",
+            "tamano_bytes": 204,
+            "sha256": "18bf030a1fca1a7d97bf34c5a9f5edca7099238ba1aa1618f383166b28e8d54b",
+            "ultima_modificacion": "2026-03-19 21:21:07"
+        },
+        {
+            "archivo": "package.json",
+            "tamano_bytes": 207,
+            "sha256": "4a5e2c58d4b6d3519e1ca023f03ba6b097ec177872aa148d1d7e28fcdc2ee041",
+            "ultima_modificacion": "2026-03-19 21:21:07"
+        },
+        {
+            "archivo": "ESTABLISHMENT_MASTER.md",
+            "tamano_bytes": 55239,
+            "sha256": "662c72c1ccc7c04819b08f2c201924d982cda484e400f566837be83397236e4c",
+            "ultima_modificacion": "2026-04-09 18:36:12"
+        },
+        {
+            "archivo": "QCO_LEDGER.json",
+            "tamano_bytes": 238,
+            "sha256": "e7de07dd47fa812c7b0de7339f601d935ee94358e0a796b90b1b2cdbc1d6451f",
+            "ultima_modificacion": "2026-05-16 22:29:22"
+        },
+        {
+            "archivo": "aots6_authorship_cert.json",
+            "tamano_bytes": 1692,
+            "sha256": "1d9b982b38978cb74fe26aaee3f2f7797e6719ad607187d1d2fdceae3f2dd8ce",
+            "ultima_modificacion": "2026-03-21 11:40:43"
+        },
+        {
+            "archivo": "WHITEPAPER.md",
+            "tamano_bytes": 1058,
+            "sha256": "e6fcee9d1232c1f813b8e6c341463cfff3a68070e917d60c13b26472f76b15cd",
+            "ultima_modificacion": "2026-05-16 22:53:44"
+        },
+        {
+            "archivo": "build_readme.py",
+            "tamano_bytes": 2667,
+            "sha256": "593a62f61c676a9895df81b5f9b21130bf1d83e8ff94deb990d821dc4bb21ee8",
+            "ultima_modificacion": "2026-05-16 23:20:04"
+        },
+        {
+            "archivo": "CUSTODIAN_CAPACITY.json",
+            "tamano_bytes": 690,
+            "sha256": "f902be83bf055a4ee004070b2c504c85951f732a3b8dfe748e440c5751a0a752",
+            "ultima_modificacion": "2026-05-17 00:52:48"
+        },
+        {
+            "archivo": "aots6_bitcoin_nonce_regulator.py",
+            "tamano_bytes": 2892,
+            "sha256": "491103c7e1b7b6fcd5bbb4f14730d643d919c2538e8597ed4476eab2eceefd95",
+            "ultima_modificacion": "2026-05-18 19:49:19"
+        },
+        {
+            "archivo": "LICENSE_AOTS6.md",
+            "tamano_bytes": 10537,
+            "sha256": "f64034218f47cbb66a4c186f2dc846f60f940ba2a8031a733fd05b400d83ef31",
+            "ultima_modificacion": "2026-04-09 18:36:12"
+        },
+        {
+            "archivo": "AO_PROCESS.md",
+            "tamano_bytes": 3042,
+            "sha256": "4c30eac0604ae138bf306fe38f49729e9647d856381c2cc4a90a65bdc651f201",
+            "ultima_modificacion": "2026-05-04 14:43:08"
+        },
+        {
+            "archivo": "AOTS6_AO_PROCESS.lua",
+            "tamano_bytes": 2080,
+            "sha256": "6ba03a81d8074a562d24ab8d17ba49562b3e103ad926760ae10903c59b9146fe",
+            "ultima_modificacion": "2026-05-04 14:43:08"
+        },
+        {
+            "archivo": "DECLARACION-IP-AOTS6.md",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-04 14:43:07"
+        },
+        {
+            "archivo": "AOTS6_Paper_Alfredo_Jhovany_Alfaro_Garcia.md",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "tatus",
+            "tamano_bytes": 2272,
+            "sha256": "2b1e77d7b79b82b3ca9135909249ddc61501f112fdd4f4b6bff131d30582e317",
+            "ultima_modificacion": "2026-05-04 14:46:41"
+        },
+        {
+            "archivo": "PAPER_SHA256.txt",
+            "tamano_bytes": 278,
+            "sha256": "5c003177ad9172c6d56d0b82e491e67568dbe8dbc187cd419bda3057459dc6b3",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "PAPER_SHA256.txt.ots",
+            "tamano_bytes": 665,
+            "sha256": "de4cdb08cffeea5e29ced5eaef491d39048fad3db7ef4d1d35d6eced08372564",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "README_BADGE.md",
+            "tamano_bytes": 153,
+            "sha256": "128b47e1f439b1758582422b04b6d149cde9b22293edcb570e5d0b3aa3716f00",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "README_EXTRA.md",
+            "tamano_bytes": 680,
+            "sha256": "7c9884496a09a872f1ab7d35f62bd8c161adf49f7e8edee07fadf3a15f61f3ef",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "core.sh",
+            "tamano_bytes": 659,
+            "sha256": "678bd8932331906acae8a78ef1169e48a7ac78539b271b57c567e3c068540f7a",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "engine.sh",
+            "tamano_bytes": 540,
+            "sha256": "9831f4ad468823e91b072c3fe9c43000f1e579ff25b7cf5fc5869029fd7c73bb",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "Certificado_Google_Gemini_Soberania.pdf",
+            "tamano_bytes": 21446,
+            "sha256": "e70ba325291a0dc05d29b80661a33b6ecbe355d4c513dd5ea378359be33cadf3",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "aots6_preprint.tex",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-04 14:52:56"
+        },
+        {
+            "archivo": "LICENSE.txt",
+            "tamano_bytes": 1170,
+            "sha256": "27961431cb1c48a3116dfd459b9aa971d8b2c50f14bf43a1fe17bd7f61da9381",
+            "ultima_modificacion": "2026-05-04 15:34:01"
+        },
+        {
+            "archivo": "AOTS6_SOVEREIGNTY_CORE.json",
+            "tamano_bytes": 982,
+            "sha256": "e955559ea883ed317d8e3c8ee2126337d21bb8db0fb17a01a3a2476c8c967c45",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "Liberty_AOTS6.sol",
+            "tamano_bytes": 1353,
+            "sha256": "7a3382f704cad8d87b87f14489901aca80ffa962339f2af385fcd04d6400f482",
+            "ultima_modificacion": "2026-05-18 19:50:40"
+        },
+        {
+            "archivo": "Análisis Forense de la Nomenclatura AOTS⁶ y AOTS6: Propiedad Intelectual, Convergencia Ontológica y Colisión Topológica en la Ciencia Computacional",
+            "tamano_bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "BLOQUE-4.md",
+            "tamano_bytes": 187,
+            "sha256": "4797499abdf739103fdc62e928dc81d6a27741580bc20269343d467a30ab7274",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "BLOQUE-5.json",
+            "tamano_bytes": 454,
+            "sha256": "ee67303de01e93fd49839735026383189d8987a9bb4a526051940dc56c6b27a3",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "BLOQUE-5.md",
+            "tamano_bytes": 174,
+            "sha256": "de42eaec199127bd334198273ec5eb9cc1cbc93bce6f83ee6856ca93d0771444",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "Fraude Propiedad Intelectual Siglas AOTS.pdf",
+            "tamano_bytes": 259745,
+            "sha256": "2640568c427bb51e4482533b5728460e0f670db622efa57ed93ac99ff68dbfc4",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "AOTS6_MANIFIESTO_REGULADOR_GLOBAL.txt",
+            "tamano_bytes": 1324,
+            "sha256": "8e642d0383e2658e3feb5ad827db9bc93f9f2cee39090cdb3eed3b01cd9e49d4",
+            "ultima_modificacion": "2026-05-18 19:50:03"
+        },
+        {
+            "archivo": "aots6_visualizer.html",
+            "tamano_bytes": 23150,
+            "sha256": "05497b3dde8d58c3fbdce4fb87ec6ec3c0d279362234c15013acf6b23bd5fa92",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "eliminados - AOTS6-BLOQUE-4\"",
+            "tamano_bytes": 674,
+            "sha256": "886d41cdf45d34f17e920d00bf54cc98c19a94c70fc8e16916a7eda9800a1aaa",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "h origin main",
+            "tamano_bytes": 794,
+            "sha256": "791a46dc0c873bcf397b886e9c2886ed23f81006dceacd273be8cb6584beff55",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "philpeople",
+            "tamano_bytes": 253,
+            "sha256": "3651cffe8db8a75841fdbc2ed41bfca1be360f13b060bff74d9114ddd7e27e37",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "check_sovereignty.sh",
+            "tamano_bytes": 324,
+            "sha256": "429ef2a74d8f58723e7c46e631c835956be3fe2363ebcaa0360ab180f262b152",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "MANIFIESTO_INTEGRIDAD_FINAL.sha256",
+            "tamano_bytes": 1212,
+            "sha256": "67f8f4c479fbbe32bd655738a85cbd753b40d37b32cc6248470fd59f37f36734",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "MANIFIESTO_INTEGRIDAD_FINAL.sha256.asc",
+            "tamano_bytes": 2131,
+            "sha256": "5970fce38272c85f26e1d6fabfe58b1e09ccf57c018a17ba0dc755698b284d4b",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "AOTS6_ULTRA_FORTIFIED.txt",
+            "tamano_bytes": 87,
+            "sha256": "065513a658240ace00b72b44c0cb86aca738a79378aa76e25e42d3d7c0a5874c",
+            "ultima_modificacion": "2026-05-18 19:58:14"
+        },
+        {
+            "archivo": "BLOQUE-5-TCP.json",
+            "tamano_bytes": 896,
+            "sha256": "1a995b7eb11768ef5017279e80a3e08241f77c188bf6c2f3ccc9ce3f51558ed7",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "VICTORIA.sha256",
+            "tamano_bytes": 79,
+            "sha256": "0acd7a032129c45c60b64a507e719186ebff2cfbe30522ba88cb3e59072fc123",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "VICTORIA.txt",
+            "tamano_bytes": 94,
+            "sha256": "ad1803c5a5a2a9b1b6a1dd7500a66acd62ab55702064d1092c3af24ecfefd1f5",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "aots6.sh",
+            "tamano_bytes": 1728,
+            "sha256": "663dbf9df211f9f8290c86a35cb3b7a76655498f98f72442f8bafc6ea1198d05",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "aots6_fbi_submission_manifest.md",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-20 09:26:14"
+        },
+        {
+            "archivo": "aots6_blockchain.txt",
+            "tamano_bytes": 267,
+            "sha256": "d026125d055a0a51bc42c9d7b8c1614a2307db27f6162b621483f5cebcd277f5",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "aots6_master_sync.sh",
+            "tamano_bytes": 10947,
+            "sha256": "17a6f9dc4a3768181f598816ae48ad0c36e0480f35e0e770331afd7699733154",
+            "ultima_modificacion": "2026-05-20 09:37:07"
+        },
+        {
+            "archivo": "heartbeat.log",
+            "tamano_bytes": 2480,
+            "sha256": "61a67b7040208e551caa8cfdde0b0c6ac32d07d38ecbd3529c37cdec9dd2fd31",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "AOTS6_Manifesto_Public_GPT.pdf",
+            "tamano_bytes": 3427,
+            "sha256": "ff0ae67dec13204d11217683be729251dd2eb58341898badbbbfc734be4cf5ca",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "DECRETO DE SOBERANÍA CIENTÍFICA Y ESTABLECIMIENTO ....pdf",
+            "tamano_bytes": 130437,
+            "sha256": "b754e94318292f190469e242ed875f6124c4da9dd2bbe3226bd1617f8e6a0c73",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "MANIFESTO DE SOBERANÍA CIENTÍFICA Y PROTOCOLO DE P....pdf",
+            "tamano_bytes": 129062,
+            "sha256": "b1e4bfa20ca53124b58ec2bee8b7fbf31106855da852e7d3f28956721153c2aa",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "README-4.md",
+            "tamano_bytes": 116791,
+            "sha256": "b6ce40c23d5698391706d864a146c638bc78c7504e92aaf4eaada2f8d1e9023b",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "AOTS6_SOVEREIGNTY_DECLARATION.md",
+            "tamano_bytes": 583,
+            "sha256": "0cadaa28df99e35f6ffbf819cc6a209f888b19fb03667824c522a849e61f166c",
+            "ultima_modificacion": "2026-05-14 14:38:04"
+        },
+        {
+            "archivo": "aots6_guardian.log",
+            "tamano_bytes": 3977,
+            "sha256": "fd13c5d2ac6d0aec066abe8b38f8d10682825bf17a1c4a8d58682914e283b7ab",
+            "ultima_modificacion": "2026-05-14 14:54:22"
+        },
+        {
+            "archivo": "aots6_integrity_map.py",
+            "tamano_bytes": 6121,
+            "sha256": "de276bdc131b2576a33ee4211055045bda74161d797ca8843629255119db68ea",
+            "ultima_modificacion": "2026-05-20 09:39:51"
+        },
+        {
+            "archivo": "public_network/p2p_blind_node.py",
+            "tamano_bytes": 1334,
+            "sha256": "efc3aae04859cf9e8fa5db158e807aa424a9556d722750af0a17d2a2b2c4336f",
+            "ultima_modificacion": "2026-05-14 15:02:25"
+        },
+        {
+            "archivo": "public_network/toroidal_state.json",
+            "tamano_bytes": 277,
+            "sha256": "1246ed7e0c5dd829c372c7fc8cd7f2158b579f2119bfb49edcae0bdba7ecfe1f",
+            "ultima_modificacion": "2026-05-14 15:19:11"
+        },
+        {
+            "archivo": "public_network/toroidal_state.sig",
+            "tamano_bytes": 64,
+            "sha256": "f5b44c0a4cde8e4e161da1604dca73a1a37d865261d163f906a100da9c74f0dc",
+            "ultima_modificacion": "2026-05-14 15:19:11"
+        },
+        {
+            "archivo": "public_network/decoy_0.json",
+            "tamano_bytes": 145,
+            "sha256": "f1357f202e0471ae1be7032efca0ae1ba1eed26e6432c5bdd85f7d55b98a276a",
+            "ultima_modificacion": "2026-05-14 15:14:00"
+        },
+        {
+            "archivo": "public_network/aots6_kernel_legacy.py",
+            "tamano_bytes": 1367,
+            "sha256": "ec978ddbc7dbba4109d1cd243f751872aa8b8bef798f2a3e85655bd5e339353d",
+            "ultima_modificacion": "2026-05-14 16:05:02"
+        },
+        {
+            "archivo": "public_network/AOTS6_METADATA.jsonld",
+            "tamano_bytes": 635,
+            "sha256": "b3ba3d00c3819402802bd61417eec059deacb8a7b49954e058d5e1ab0c9e5080",
+            "ultima_modificacion": "2026-05-14 16:18:50"
+        },
+        {
+            "archivo": ".github/workflows/integrity.yml",
+            "tamano_bytes": 606,
+            "sha256": "693889dd193189d57ff092057acd1a03b7525fc1f057cec2a0fedb21924afe64",
+            "ultima_modificacion": "2026-05-14 14:18:19"
+        },
+        {
+            "archivo": "entropy/quantum_seed.bin",
+            "tamano_bytes": 64,
+            "sha256": "0644e8833b83d12dcc3fc88fb511b2e21b028f8b0c3b97b6029f67ea15628f10",
+            "ultima_modificacion": "2026-05-16 22:03:56"
+        },
+        {
+            "archivo": "manifests/.aots6_anchor",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-16 22:02:45"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000001_869b011921dd.json",
+            "tamano_bytes": 283,
+            "sha256": "6c2ebcf6042a465eced47d2ff1712e7ce9525176e3e2ecff38e3060816a29c17",
+            "ultima_modificacion": "2026-05-16 22:12:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000002_0f29833a19cf.json",
+            "tamano_bytes": 283,
+            "sha256": "5ed7c47b9256d6c765f6f0efce30a4ab1a961a8895ba9825a0c58acee3b0693e",
+            "ultima_modificacion": "2026-05-16 22:13:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000003_c6f7b41cf563.json",
+            "tamano_bytes": 283,
+            "sha256": "8a1b554a868ab2aa62ff7f51acdd1989aba8e4fabc33cacd493b8062f9b6f9fa",
+            "ultima_modificacion": "2026-05-16 22:14:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000004_f4f6fd382048.json",
+            "tamano_bytes": 283,
+            "sha256": "5b94595d48930949bf82303334a5d71ed09930543c5d0f4f9fec584d47775b07",
+            "ultima_modificacion": "2026-05-16 22:15:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000005_ce706c46a526.json",
+            "tamano_bytes": 283,
+            "sha256": "d79f5cb2169aae1c3c8ef45e477596fd903aa24f1b6e4e5ef77e024f700b2ada",
+            "ultima_modificacion": "2026-05-16 22:16:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000006_86727b49a8b5.json",
+            "tamano_bytes": 282,
+            "sha256": "1f3fb7ce14b5e1a9c8e7e4ab5b29e6f8c96a7bddb9004f827f2e4ff347d9128e",
+            "ultima_modificacion": "2026-05-16 22:17:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000007_b1c82cec48de.json",
+            "tamano_bytes": 283,
+            "sha256": "b5f5e2c68167bcc18abc1d261a15e7f723e3752e7c2b7b4074b5a7197331864e",
+            "ultima_modificacion": "2026-05-16 22:18:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000008_02024804c3a7.json",
+            "tamano_bytes": 283,
+            "sha256": "59f8ad80c49d10d6e981f9a615994e0b9244e1939bb9e5b11d41f78b8a872160",
+            "ultima_modificacion": "2026-05-16 22:19:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000009_604118d44144.json",
+            "tamano_bytes": 283,
+            "sha256": "6af7f423d0ce66613904329ab95ab9c711ca5099e17d27190faa24eafb285e44",
+            "ultima_modificacion": "2026-05-16 22:20:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000010_ac09684fcae3.json",
+            "tamano_bytes": 283,
+            "sha256": "f3a9d4f02064d91c509307b2391f72a21503a1f0a8d43f197f55a45d527bec8d",
+            "ultima_modificacion": "2026-05-16 22:21:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000011_0cb69d87f8d7.json",
+            "tamano_bytes": 284,
+            "sha256": "d8da1a82fa129795022bc8d7a2f06d3236768c1d7b0f4173b3e1709af2242ceb",
+            "ultima_modificacion": "2026-05-16 22:22:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000012_a151db001e25.json",
+            "tamano_bytes": 282,
+            "sha256": "632d73dec5d2dd7774cd45d0ebeefa2c176c8a4bc32333e3734e0e01146d90a4",
+            "ultima_modificacion": "2026-05-16 22:23:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000013_7ba1fa104f9e.json",
+            "tamano_bytes": 284,
+            "sha256": "a3ab0d6618683df94e774c7986b4a64a1c6b8392f2f9c9abfea2cde6f4a64564",
+            "ultima_modificacion": "2026-05-16 22:24:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000014_3366dbf20b16.json",
+            "tamano_bytes": 284,
+            "sha256": "8d77158924ba2518cc6ca9636dbc9bc9d6181aa686b5bef105fa31d3f2478185",
+            "ultima_modificacion": "2026-05-16 22:25:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000015_9a296d82d9d1.json",
+            "tamano_bytes": 284,
+            "sha256": "421b0008986b9bc6eb564239727ef468d0e7ba5a46a6905660216afc61cc08f2",
+            "ultima_modificacion": "2026-05-16 22:26:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000016_f093a8bd787a.json",
+            "tamano_bytes": 284,
+            "sha256": "7ced18b318dd3899fbf6518d8e81cd9921d2db315253d709fd68defddc7a47ec",
+            "ultima_modificacion": "2026-05-16 22:27:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000017_0dd50c8b71f8.json",
+            "tamano_bytes": 284,
+            "sha256": "154f174c44114b73dd1c5675e5e42d455804191492a84f96a32ddc1441fbac31",
+            "ultima_modificacion": "2026-05-16 22:28:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000018_2ef1fc1b9138.json",
+            "tamano_bytes": 283,
+            "sha256": "960612220a95d396beb5a655f752d6152080aa7588737142183566760935e315",
+            "ultima_modificacion": "2026-05-16 22:29:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000019_35e8c8a698c9.json",
+            "tamano_bytes": 284,
+            "sha256": "cc50b0b1ad83aaad27292260f86c212b749630108c799bf1e34098a4f3beae0b",
+            "ultima_modificacion": "2026-05-16 22:30:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000020_7c45603ead91.json",
+            "tamano_bytes": 284,
+            "sha256": "67eb1ab35d10308175df63123d8b29fe87da54287eb12b18b08887399742fb1b",
+            "ultima_modificacion": "2026-05-16 22:31:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000021_9e66f289ef3d.json",
+            "tamano_bytes": 284,
+            "sha256": "f94d594719d2d1afb110460a2651604275d1e89d78104fefaa365b5cf33d30cc",
+            "ultima_modificacion": "2026-05-16 22:32:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000022_d0628aaaf840.json",
+            "tamano_bytes": 283,
+            "sha256": "16b103cf557cb9213e33233dc7942d8f1453ebfdf2c3c7c7150af23a7c9dd7a0",
+            "ultima_modificacion": "2026-05-16 22:33:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000023_da79340f9fa9.json",
+            "tamano_bytes": 284,
+            "sha256": "7f2fb5d699af6592c0025e0e1d0150e25777bdcdeddb77cf3909f660f5edd059",
+            "ultima_modificacion": "2026-05-16 22:34:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000024_39403f31b7f3.json",
+            "tamano_bytes": 283,
+            "sha256": "b0b07fcb70568d3f2ec4d9cbf7b98f6b06a524457050efaa1ab8d5b3a33d02b4",
+            "ultima_modificacion": "2026-05-16 22:35:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000025_7ba8a126c073.json",
+            "tamano_bytes": 284,
+            "sha256": "47d059b694f9a820c24eebdf5765e29210828f6e7cf95a6c719daec0b99f0028",
+            "ultima_modificacion": "2026-05-16 22:36:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000026_22fb840564e7.json",
+            "tamano_bytes": 284,
+            "sha256": "144e3efd35a1ff12e2e71350ea48f9ef9c5a992388e9d212e42a12e837467118",
+            "ultima_modificacion": "2026-05-16 22:37:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000027_4a401ba9a069.json",
+            "tamano_bytes": 284,
+            "sha256": "72ddf16289f53b4a2a0fef88a304103a61b350ca306a0602745e1fc54f1aa1da",
+            "ultima_modificacion": "2026-05-16 22:38:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000028_ab11bf8abfcd.json",
+            "tamano_bytes": 284,
+            "sha256": "0098409c2d236bd72c4134f3cd4f99ba97e58eee3f69a1600ef9b2382ff1ad9b",
+            "ultima_modificacion": "2026-05-16 22:39:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000029_96b71b91263d.json",
+            "tamano_bytes": 284,
+            "sha256": "63ba37bf7599d045423647166309ea40d179078750c30dc108570e452b980a2c",
+            "ultima_modificacion": "2026-05-16 22:40:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000030_b066d834fdcc.json",
+            "tamano_bytes": 284,
+            "sha256": "869f4a2fa3fdcb08896b312115fc4cd7f68099a8d951a20f37e6f9fa323479a1",
+            "ultima_modificacion": "2026-05-16 22:41:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000031_3809e4508325.json",
+            "tamano_bytes": 284,
+            "sha256": "93bcbec963af48de04eb9ccec6d3964f9dff08205dfb01dcf6f0839d1118513d",
+            "ultima_modificacion": "2026-05-16 22:42:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000032_053742643cae.json",
+            "tamano_bytes": 283,
+            "sha256": "890d4638e7f34b8084eaae44fe0f4f053121696e87638f221718da79d36d8c88",
+            "ultima_modificacion": "2026-05-16 22:43:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000033_66591c44b668.json",
+            "tamano_bytes": 283,
+            "sha256": "9dd7eab8f3b169f1c985c7b30b11c259e984e908c7e99725e3c02bb87c261ad0",
+            "ultima_modificacion": "2026-05-16 22:44:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000034_fd93fdb418bf.json",
+            "tamano_bytes": 283,
+            "sha256": "cada03e16fb081a715ad5c82960075debb53d680fd9c8ead919d39d8809172da",
+            "ultima_modificacion": "2026-05-16 22:45:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000035_0642e8a39543.json",
+            "tamano_bytes": 284,
+            "sha256": "8fa9c4b83e2362927729d4bae9b22d29ad83cf38c811d7100ff8a9c736b4e05f",
+            "ultima_modificacion": "2026-05-16 22:46:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000036_2f83ee3799ea.json",
+            "tamano_bytes": 283,
+            "sha256": "2abf932d03f568f99e8da46e071c2d1d98c7e42ef0950e19f8d0f33ff1e71e3d",
+            "ultima_modificacion": "2026-05-16 22:47:18"
+        },
+        {
+            "archivo": "manifests/BRIDGE_STATE.json",
+            "tamano_bytes": 222,
+            "sha256": "2dddfd12204e24c0c90984c15c1587c4a3b31a3580742c49f7d247a287145439",
+            "ultima_modificacion": "2026-05-16 22:47:45"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000037_dd20c8d1ace5.json",
+            "tamano_bytes": 284,
+            "sha256": "1ca20ddf945d4d8a88e03e60080b448bb31901c14480cf17a56768c79d1dc493",
+            "ultima_modificacion": "2026-05-16 22:48:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000038_c26772c447da.json",
+            "tamano_bytes": 284,
+            "sha256": "f28fdad6fa925c0bf4f34aa3d74ab38831590cce50e4997e90e06687c71b7639",
+            "ultima_modificacion": "2026-05-16 22:49:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000039_09585cd39e85.json",
+            "tamano_bytes": 284,
+            "sha256": "8fccc1e213b1041d03e9a4596ad5efe203889e534eddee395fbc1a73f24e5e6f",
+            "ultima_modificacion": "2026-05-16 22:50:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000040_eb76bc516fea.json",
+            "tamano_bytes": 283,
+            "sha256": "58527d2e67ab2b00c6ede572ea195277ab659d15825d2a71a569c7a582a7a327",
+            "ultima_modificacion": "2026-05-16 22:51:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000041_ba2d1f73583c.json",
+            "tamano_bytes": 284,
+            "sha256": "05851dfeed58122f40bee554082f2c23799a4d5908e87a758bc6f244c559280b",
+            "ultima_modificacion": "2026-05-16 22:52:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000042_fe8313824cb1.json",
+            "tamano_bytes": 284,
+            "sha256": "0193a2c30d9cdf83c642e86278159ec04497137859545c40a6b5199387c97e13",
+            "ultima_modificacion": "2026-05-16 22:53:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000043_bbb4904451a3.json",
+            "tamano_bytes": 284,
+            "sha256": "1ad90890d251c83351151ef710972c043793e426d55cace8cbf7eec70fc1c8ad",
+            "ultima_modificacion": "2026-05-16 22:54:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000044_821d299e0e12.json",
+            "tamano_bytes": 283,
+            "sha256": "8a49a0efe91024f2d19d88f735fa822741b1400e9257dbc0b8ab287bc04d6b4d",
+            "ultima_modificacion": "2026-05-16 22:55:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000045_8fc2fcbbb821.json",
+            "tamano_bytes": 284,
+            "sha256": "dc651cde57f33b3af85883a7d74a577dd99242c74d5f06eedcea438347dbf83e",
+            "ultima_modificacion": "2026-05-16 22:56:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000046_1a63506dc13d.json",
+            "tamano_bytes": 284,
+            "sha256": "3f9fa33375f699971e699338e862dfe78e1e22b6d1683495a94a46a8a0849c5b",
+            "ultima_modificacion": "2026-05-16 22:57:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000047_707339a76f4d.json",
+            "tamano_bytes": 284,
+            "sha256": "f36859ebf995f53520b581e001ea52593f8d9b249b74b8a37b068b018619acb4",
+            "ultima_modificacion": "2026-05-16 22:58:18"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000048_5bf37440e5a0.json",
+            "tamano_bytes": 284,
+            "sha256": "3ed4fa1f75f0a2f70a9bcf3d8e4de9bf09810cc07db2d32585965f86b65cb3fe",
+            "ultima_modificacion": "2026-05-16 22:59:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000049_e078e488678d.json",
+            "tamano_bytes": 284,
+            "sha256": "6bc0de6c349661a10bab8b6f4f6d5a1051dd8a5f55ea894688c1560d399504ef",
+            "ultima_modificacion": "2026-05-16 23:00:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000050_c6c2e3054e33.json",
+            "tamano_bytes": 284,
+            "sha256": "b80d5eae596652952f3b87b9a2fb46e8149f09f5ffb36517259a6f8f7c3ce81c",
+            "ultima_modificacion": "2026-05-16 23:01:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000051_cbe588088952.json",
+            "tamano_bytes": 284,
+            "sha256": "b5e2eee4bc36a15803bd0c619f025fa2ef8a0ab4fb68371b0ff03ae575a6e955",
+            "ultima_modificacion": "2026-05-16 23:02:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000052_1c625abcbbef.json",
+            "tamano_bytes": 284,
+            "sha256": "edf51f88fd9e02a2fd60f55dee95c90a3254ab8eeb77ba00be2e52999bb4bc7d",
+            "ultima_modificacion": "2026-05-16 23:03:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000053_98bcccddfde4.json",
+            "tamano_bytes": 283,
+            "sha256": "3cad1ca6e1df58a02c206defd719b586cad77f4bfceb9a587c60d5952bf5fb8c",
+            "ultima_modificacion": "2026-05-16 23:04:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000054_4671a8b8b971.json",
+            "tamano_bytes": 284,
+            "sha256": "4a9b09bd4baf9fd2c01251012292872deef8470dac49985ad6181be1618d9972",
+            "ultima_modificacion": "2026-05-16 23:05:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000055_ea011731334e.json",
+            "tamano_bytes": 284,
+            "sha256": "1bee9e214c2f4f1ece8b1d12958d073e47fd73aa863d2104fc2d540185c9af9a",
+            "ultima_modificacion": "2026-05-16 23:06:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000056_08d11c8476f8.json",
+            "tamano_bytes": 284,
+            "sha256": "9b07fdf031113f67eea97026a621e0d7264707348679cf129cd5e93968efa112",
+            "ultima_modificacion": "2026-05-16 23:07:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000057_724cab13a602.json",
+            "tamano_bytes": 282,
+            "sha256": "e0119f082d2f9a2cb826c3743f2b2e0d0c9cda848b49db696364b4ea1f2823ec",
+            "ultima_modificacion": "2026-05-16 23:08:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000058_8dacc2afc209.json",
+            "tamano_bytes": 284,
+            "sha256": "f6b895723911fe3757caca2d4683b3c1f5117a4eb5d3354599c2f96b1fa744dd",
+            "ultima_modificacion": "2026-05-16 23:09:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000059_762b1b6c2b6d.json",
+            "tamano_bytes": 284,
+            "sha256": "f3fecfa8dd2a9be4fbd448ed9e6d965c2c5d9c4a15a43f920126441c06d1e3fb",
+            "ultima_modificacion": "2026-05-16 23:10:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000060_479e1233cae2.json",
+            "tamano_bytes": 284,
+            "sha256": "9a8d74003191876b9be760adc4cd9041423fe2d497760f911b9401096e222207",
+            "ultima_modificacion": "2026-05-16 23:11:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000061_8aec3ebe51fe.json",
+            "tamano_bytes": 284,
+            "sha256": "a640da1f57d7d5324621b410f77a8b3df12d5fc9cbdd20159356eb8f56125d93",
+            "ultima_modificacion": "2026-05-16 23:12:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000062_8f5bbe3a8cd6.json",
+            "tamano_bytes": 284,
+            "sha256": "4c176ee4a716bc36e72aed9767e2abe1c0af71f0d4b0da79109a9a9171f31d94",
+            "ultima_modificacion": "2026-05-16 23:13:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000063_f4ecb334f543.json",
+            "tamano_bytes": 284,
+            "sha256": "a15fad11ab6e96459e76ecc49540b65901fe8c1552a7d741b1514943215e8c1c",
+            "ultima_modificacion": "2026-05-16 23:14:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000064_7ce1effa8f1c.json",
+            "tamano_bytes": 283,
+            "sha256": "1ebd7b45a4e15808eb00ff5eeef0e0b3d60bf1c369ee759fea903892677da515",
+            "ultima_modificacion": "2026-05-16 23:15:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000065_2e41c724f4f4.json",
+            "tamano_bytes": 284,
+            "sha256": "5565b8748871e44e0b187e18a4cf84ff436be7a840b8cfbc13d7157ec957ad8c",
+            "ultima_modificacion": "2026-05-16 23:16:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000066_18dd05e05017.json",
+            "tamano_bytes": 283,
+            "sha256": "d9638549342adbd367a19300be588b8b5f41070de7d8a40b86527823b0b0c6df",
+            "ultima_modificacion": "2026-05-16 23:17:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000067_1365daa86b72.json",
+            "tamano_bytes": 284,
+            "sha256": "e00c400762d02b137ed21703810052f099d740fc380a254c37155e0301ac1efd",
+            "ultima_modificacion": "2026-05-16 23:18:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000068_149c739f691f.json",
+            "tamano_bytes": 284,
+            "sha256": "f34c54ef4fe9d7c08f9d913b286a53074d05cff3e55159f61b0f93350fc8bb0e",
+            "ultima_modificacion": "2026-05-16 23:19:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000069_bb4135f1d7e8.json",
+            "tamano_bytes": 284,
+            "sha256": "9084c61435a834c981326221389dbdb48d917b71e3d1a59ee584f9cf099ea243",
+            "ultima_modificacion": "2026-05-16 23:20:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000070_215ac96f8d03.json",
+            "tamano_bytes": 284,
+            "sha256": "2a46f29b8dbe55a0e46ca51d5dd2f3ad7baa8b7ee77e91753ca8ceda6081ef15",
+            "ultima_modificacion": "2026-05-16 23:21:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000073_b6083e5db8b9.json",
+            "tamano_bytes": 283,
+            "sha256": "aa42744bc94d694e005d5573b8446a4612c0aee6f69c8775170380f328ddef5c",
+            "ultima_modificacion": "2026-05-16 23:24:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000075_c1f34e967217.json",
+            "tamano_bytes": 284,
+            "sha256": "fde83d5ddd6f5e4e934c8d70fb1ca0dc11ddbc5d229c8faf0ef9d53301bea6e4",
+            "ultima_modificacion": "2026-05-16 23:26:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000076_d5776366a735.json",
+            "tamano_bytes": 283,
+            "sha256": "c55d0987587e29adefa804a13870a35f85934001bc01f92b7a65fa6ae4d32bfc",
+            "ultima_modificacion": "2026-05-16 23:27:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000078_a40b071cc559.json",
+            "tamano_bytes": 283,
+            "sha256": "8a9e3965c3c56b99fbe612dd0fc0bfde819ab0f1ae96c071f0a942d2af730486",
+            "ultima_modificacion": "2026-05-16 23:29:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000079_c9ab02b1b1c1.json",
+            "tamano_bytes": 284,
+            "sha256": "56fc4f8aa2e06e31460a137503b11d859a57a301381154cbdff833c363dd3758",
+            "ultima_modificacion": "2026-05-16 23:30:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000080_007a764d6229.json",
+            "tamano_bytes": 284,
+            "sha256": "905fd1750a9831a2e377f1d0c41fe5153909c718701c5d675b6a09dac370792e",
+            "ultima_modificacion": "2026-05-16 23:31:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000082_ed5d6d7fd5a0.json",
+            "tamano_bytes": 283,
+            "sha256": "b99b6e21c19f36fc3d0f616b1adc073e29dce9ef2a555cec1d9894db01e8a4fe",
+            "ultima_modificacion": "2026-05-16 23:33:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000084_2c1e48056776.json",
+            "tamano_bytes": 284,
+            "sha256": "24f9c6632145c39cd74a3b4773817cd708e0ecd8cfb02f15c123ad81bc18db00",
+            "ultima_modificacion": "2026-05-16 23:35:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000085_3bd07cfb4086.json",
+            "tamano_bytes": 284,
+            "sha256": "63ef58a48a3628186a3896a585da6464445a8ea29dd92930a509a01a0a2d64ac",
+            "ultima_modificacion": "2026-05-16 23:36:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000087_8e67db914d09.json",
+            "tamano_bytes": 284,
+            "sha256": "c9897089e0fee0b094e983101f470378319b2ea7153a1a61b7e90ac4f0cf4b76",
+            "ultima_modificacion": "2026-05-16 23:38:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000089_be069bad2270.json",
+            "tamano_bytes": 284,
+            "sha256": "2966571763dd681c29cc515def802756fe33f58db8fffe407c87330f362a0c12",
+            "ultima_modificacion": "2026-05-16 23:40:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000092_94fc3286d55d.json",
+            "tamano_bytes": 284,
+            "sha256": "50c142a436636c69e3d0304a847e89dd348fd5746636dc0a600e3cc9e5c8f79d",
+            "ultima_modificacion": "2026-05-16 23:43:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000094_ca700e34294c.json",
+            "tamano_bytes": 283,
+            "sha256": "61c77c33fb908c48650165fb8539efa5b3bf1e10b8af50fda867222cfe7e7e9e",
+            "ultima_modificacion": "2026-05-16 23:45:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000097_0fe8255e546b.json",
+            "tamano_bytes": 284,
+            "sha256": "c0d9681f37b06da7886c73a378a9a14df95fe9f01b76bebe25001d48e732bc3c",
+            "ultima_modificacion": "2026-05-16 23:48:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000102_8993f65d08e7.json",
+            "tamano_bytes": 285,
+            "sha256": "8721f869c85ad69ef738b3fd0950ff6ee35fd87fd4531e5aeb522c487854e848",
+            "ultima_modificacion": "2026-05-16 23:53:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000104_74da4a84f270.json",
+            "tamano_bytes": 284,
+            "sha256": "2e0183f0c21d22540b18c5ff7fb3e7463786f97a55a3f4163746dfbb874d44a5",
+            "ultima_modificacion": "2026-05-16 23:55:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000107_631b6223a49f.json",
+            "tamano_bytes": 284,
+            "sha256": "8de29fe8d9ef3290f1012d7a3a01337ea3239d2161bd0df7543e98554f27d219",
+            "ultima_modificacion": "2026-05-16 23:58:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000108_4e5ecf124be1.json",
+            "tamano_bytes": 285,
+            "sha256": "6681a9e1911ffd8a4ff1ea9ccd17cad964b4b6658b3997f9ea0581bce8cd477e",
+            "ultima_modificacion": "2026-05-16 23:59:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000109_caff6db962bc.json",
+            "tamano_bytes": 285,
+            "sha256": "adae46852c6558b546dac05bde203f52c8199588a240a752c45b0d9c4fbfca6a",
+            "ultima_modificacion": "2026-05-17 00:00:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000110_692de9f4037d.json",
+            "tamano_bytes": 285,
+            "sha256": "0fd026f0066396f333fa9926571a211d52b2a251c25bd05e44be111386a52128",
+            "ultima_modificacion": "2026-05-17 00:01:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000112_ca2efeeb06f7.json",
+            "tamano_bytes": 285,
+            "sha256": "758f4e6cf5173382ceabdb098bc08e68e174f813092e65931837c7db80ae3c3c",
+            "ultima_modificacion": "2026-05-17 00:03:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000117_030f2c1804e3.json",
+            "tamano_bytes": 285,
+            "sha256": "bad019867a38d7f192c749041f54ce772ef2171d6c34d2a4368b085a853fb30b",
+            "ultima_modificacion": "2026-05-17 00:08:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000120_9e4d2df3c565.json",
+            "tamano_bytes": 285,
+            "sha256": "f045438d4dd115f75dd308a80452492e214db1c9abdebd20b7af115bd9b79856",
+            "ultima_modificacion": "2026-05-17 00:11:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000125_74340ba6eb54.json",
+            "tamano_bytes": 285,
+            "sha256": "0073edf44ec775ed03eaf70172e168536bd65be22091173d52879e199dc7b52f",
+            "ultima_modificacion": "2026-05-17 00:16:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000127_1c0a18adbaa9.json",
+            "tamano_bytes": 284,
+            "sha256": "63e60a6060846e49407dcd3cf51ebe04dd409c81b4bbab70c7173e28848753db",
+            "ultima_modificacion": "2026-05-17 00:18:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000129_820bec5a5093.json",
+            "tamano_bytes": 285,
+            "sha256": "d35fea9f5f3082444fdcbb98e84e66300671abb99cd7d86c4a1fd1ef491def8d",
+            "ultima_modificacion": "2026-05-17 00:20:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000133_5f9176732844.json",
+            "tamano_bytes": 284,
+            "sha256": "c96a44efd30185823952229d5ffdb68c38d487300d41f1cb1bf87d6526a86ac3",
+            "ultima_modificacion": "2026-05-17 00:24:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000137_b01e59069ebf.json",
+            "tamano_bytes": 285,
+            "sha256": "db4eabac877feb97e09095a6b04bc8dcd0177e039491e513e581e193cc39d3ee",
+            "ultima_modificacion": "2026-05-17 00:28:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000138_c8117263a02b.json",
+            "tamano_bytes": 285,
+            "sha256": "3a5fb04b2d3386c800455c596194614f8a0e35cabf99f3d4b77433d172025436",
+            "ultima_modificacion": "2026-05-17 00:29:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000140_76e00cd90492.json",
+            "tamano_bytes": 285,
+            "sha256": "363f36f5e0a7c9cf367348ff7f22660c529487e4c58983f3a2988f4c2885694b",
+            "ultima_modificacion": "2026-05-17 00:31:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000142_d343c305df21.json",
+            "tamano_bytes": 285,
+            "sha256": "9a4a78a805adb695ac0ce5504a2bd46c801caa00c632b18d48897cf17c7a7777",
+            "ultima_modificacion": "2026-05-17 00:33:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000143_172d08659506.json",
+            "tamano_bytes": 285,
+            "sha256": "a68e2a1b4d98da12bd442ee66e65bfec10a6720c991e26b74769af274182e714",
+            "ultima_modificacion": "2026-05-17 00:34:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000144_cbe44ea9230f.json",
+            "tamano_bytes": 285,
+            "sha256": "264c789fa499757bbae25625d3291e5d96acf8901d37defb06b0af651224caaf",
+            "ultima_modificacion": "2026-05-17 00:35:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000145_fcc86f4ab1a3.json",
+            "tamano_bytes": 285,
+            "sha256": "49ca4ef7af486b620e6058974504d5814926367f9812e70860e212855587f3df",
+            "ultima_modificacion": "2026-05-17 00:36:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000147_140128200730.json",
+            "tamano_bytes": 284,
+            "sha256": "70becc865e51c1bf4af5d9abbab4a0ec8800a2c20efe90bf3c9ecdbc21cd15cf",
+            "ultima_modificacion": "2026-05-17 00:38:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000149_809f8e0522d6.json",
+            "tamano_bytes": 285,
+            "sha256": "8f8221cca7f341ca1653f8f0d11eb1f0c17d2aebc51b71da9c72ee62f7e21e4e",
+            "ultima_modificacion": "2026-05-17 00:40:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000153_185964ea3523.json",
+            "tamano_bytes": 285,
+            "sha256": "4d6c4827186c0ed5e9aaa45c9286a06a30fefd26c30968f62eede98982699cf0",
+            "ultima_modificacion": "2026-05-17 00:44:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000155_fad4787b06a6.json",
+            "tamano_bytes": 285,
+            "sha256": "408b3df97b15ed94a60b74d3b8614f2145f602fcfdbc8bf5e335babc8a22eff5",
+            "ultima_modificacion": "2026-05-17 00:46:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000157_b85107b573fd.json",
+            "tamano_bytes": 285,
+            "sha256": "c83e97092512cd455bc9ef3b17f9eb98d1b651bc9968b5587afc4467b845ff25",
+            "ultima_modificacion": "2026-05-17 00:48:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000158_ddb6147b1e6a.json",
+            "tamano_bytes": 284,
+            "sha256": "f10dc8a5d1f9506787510317754fc34c98cbf5502f68d2057d33b1b89eb5b604",
+            "ultima_modificacion": "2026-05-17 00:49:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000159_396516f5ed29.json",
+            "tamano_bytes": 285,
+            "sha256": "5c867d4bffba62d121be89dccd9fdd3da0528455d401078492cdd3036efcfa38",
+            "ultima_modificacion": "2026-05-17 00:50:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000160_82ae36a6c73c.json",
+            "tamano_bytes": 285,
+            "sha256": "ca66fb59bc924177dc7dcb9aed5762c83b96a9c858ce556c4df34b59f1fed3b6",
+            "ultima_modificacion": "2026-05-17 00:51:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000161_2f1fa1311dfd.json",
+            "tamano_bytes": 285,
+            "sha256": "9c6a6198e2d19c443a20079b11c2e90160d82bde9680163f8f0b5696b1cb949a",
+            "ultima_modificacion": "2026-05-17 00:52:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000163_5a690b5a8513.json",
+            "tamano_bytes": 285,
+            "sha256": "1543a6079841436cde995089300eb95ba765a0a110abdc5683f5c85fb65595db",
+            "ultima_modificacion": "2026-05-17 00:54:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000071_0c048003ccdf.json",
+            "tamano_bytes": 284,
+            "sha256": "30ea5bd5712a326a7db5446cd95df29dbc750ef8da787c1875499ba40ffe70c9",
+            "ultima_modificacion": "2026-05-16 23:22:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000072_2575bd525041.json",
+            "tamano_bytes": 284,
+            "sha256": "2b24763a73d30f34fdec6144acf8e7e2d1af47441ef36fccccd14a32c1febe79",
+            "ultima_modificacion": "2026-05-16 23:23:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000074_7fbc1e356d50.json",
+            "tamano_bytes": 284,
+            "sha256": "5e2ffcf9621caff682e350999915629e3d1dbe02893f577b99bf4ed99848131d",
+            "ultima_modificacion": "2026-05-16 23:25:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000077_88424b0ed853.json",
+            "tamano_bytes": 284,
+            "sha256": "6fe28c11a9c4f0aadd4e7fd5db0c71911439c07b651879f81102ee4e7980cf14",
+            "ultima_modificacion": "2026-05-16 23:28:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000081_438998a96a04.json",
+            "tamano_bytes": 284,
+            "sha256": "9cca5286c16c996d55a9be40f25fc0cd91f14127b243c225feff0a8edc46e02c",
+            "ultima_modificacion": "2026-05-16 23:32:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000083_5a3778f0a7ad.json",
+            "tamano_bytes": 284,
+            "sha256": "f50b8a2054bbd4794982633f4cc25e660e71b9fec295071d3d626e447e3273ef",
+            "ultima_modificacion": "2026-05-16 23:34:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000086_504c3d8a6689.json",
+            "tamano_bytes": 284,
+            "sha256": "6afc283393c4388520b43b0970f01dec4d24710850e200858dfecd067671a8ba",
+            "ultima_modificacion": "2026-05-16 23:37:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000088_f1a4ac6b7c81.json",
+            "tamano_bytes": 284,
+            "sha256": "a7dae0afb7cd7af560a9676ac75b72742fcd4966099981e1cd82256a84a3b08f",
+            "ultima_modificacion": "2026-05-16 23:39:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000090_9d7989e6dfd6.json",
+            "tamano_bytes": 283,
+            "sha256": "d7ca1d5337e5d271a382beb6b662c962d2500e817a3930724961d86f466bc9ff",
+            "ultima_modificacion": "2026-05-16 23:41:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000091_51a50364c60e.json",
+            "tamano_bytes": 284,
+            "sha256": "2584d2e0a7e39b70338b8481649598a2d4f5a2947a7175c3e5b963aedbaa7c12",
+            "ultima_modificacion": "2026-05-16 23:42:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000093_f91d5d26704e.json",
+            "tamano_bytes": 283,
+            "sha256": "e73d3b90686aaf3f9d5a57e5b9b712dc93c8311ebf4af7be801c8a2b5ef46d6b",
+            "ultima_modificacion": "2026-05-16 23:44:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000095_6b4a0df88f08.json",
+            "tamano_bytes": 284,
+            "sha256": "8182c1f22797c146b36ff4c7a82c2618e7a7739b37bac9521a62b3045a71789b",
+            "ultima_modificacion": "2026-05-16 23:46:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000096_59a99b6ea4ba.json",
+            "tamano_bytes": 284,
+            "sha256": "b684e48edd295f39c236b181f28f80590eed3b78d15ae05d09ebb90e1ab16933",
+            "ultima_modificacion": "2026-05-16 23:47:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000098_c941efc43272.json",
+            "tamano_bytes": 284,
+            "sha256": "ba4fe572c4dfb150224c7d72a1ed85e2c2387f789811d9796632f290869d5c1c",
+            "ultima_modificacion": "2026-05-16 23:49:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000099_fba8c0b52047.json",
+            "tamano_bytes": 284,
+            "sha256": "7d7a105bc518427adacf6455085fe346d25c6d613ac0a9444305a477e7cb72bc",
+            "ultima_modificacion": "2026-05-16 23:50:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000100_97496f394241.json",
+            "tamano_bytes": 284,
+            "sha256": "fbd0851fc78e2e26b51fb6b1087cb39b92d68d2cf894277bbe807476e65aafad",
+            "ultima_modificacion": "2026-05-16 23:51:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000101_e2c9128feb2a.json",
+            "tamano_bytes": 285,
+            "sha256": "25d25ebcbfbc252d56f9d0d9fb66831cc000d49e841c9a929a43c75021a2b38e",
+            "ultima_modificacion": "2026-05-16 23:52:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000103_e6231fb33908.json",
+            "tamano_bytes": 285,
+            "sha256": "11176be28ed037ff682105e95b8a602c6d8365f4e879c587695b7acc46f436d9",
+            "ultima_modificacion": "2026-05-16 23:54:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000105_4f3b13cb9210.json",
+            "tamano_bytes": 285,
+            "sha256": "984f83f5901b889a396aa216fb335e4aa8a1790965bfa9888e2d5b729bfff193",
+            "ultima_modificacion": "2026-05-16 23:56:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000106_d8639ebbfd91.json",
+            "tamano_bytes": 285,
+            "sha256": "897b5fe6d3bb5b957743b52f90d40ef94c6d1bbb71757675f5fc1e7efb9e8b51",
+            "ultima_modificacion": "2026-05-16 23:57:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000111_a5d93513acb1.json",
+            "tamano_bytes": 285,
+            "sha256": "2542c2536afd1a8fa9a5aa0436f7454fa9b0195848dffb3908e4c9b7d5794a84",
+            "ultima_modificacion": "2026-05-17 00:02:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000113_8be11db7756b.json",
+            "tamano_bytes": 285,
+            "sha256": "eaf10a01d2cb3631912691ec15275b27072c70334d88c36dc5132d10d10a3687",
+            "ultima_modificacion": "2026-05-17 00:04:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000114_efc066126bc9.json",
+            "tamano_bytes": 285,
+            "sha256": "5b58173a11fb4ffc27b8edc8123137a7e6847a275c9a2cf36de30d3e5ff04f01",
+            "ultima_modificacion": "2026-05-17 00:05:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000115_8c0d60a38b7e.json",
+            "tamano_bytes": 284,
+            "sha256": "5ab790232fe7912536382a21fcfb96cfdca28cbeab50c62d41fe7627ca7c6ee8",
+            "ultima_modificacion": "2026-05-17 00:06:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000116_4054a79bf368.json",
+            "tamano_bytes": 284,
+            "sha256": "96a36c9c8cb44e1dddda1785b9c17eb726db4a5aeaf538cd2fe99876412195cd",
+            "ultima_modificacion": "2026-05-17 00:07:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000118_7c1811d3c831.json",
+            "tamano_bytes": 285,
+            "sha256": "df8c558174bfa98dac71e285307bc2a10ede085c1dfbd0624a32dacf54f03cfb",
+            "ultima_modificacion": "2026-05-17 00:09:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000119_75d92554f90f.json",
+            "tamano_bytes": 283,
+            "sha256": "063a89c8356c1dcdfdbd9f756f2c1170a568f6cc54cc084159d53191c9955845",
+            "ultima_modificacion": "2026-05-17 00:10:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000121_cc19a933aef9.json",
+            "tamano_bytes": 285,
+            "sha256": "d508b2ac2aac83db1f16fe40bab80ff4551bef1aa88068ea1966ca9d20a2e3e8",
+            "ultima_modificacion": "2026-05-17 00:12:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000122_c1dc7375ff58.json",
+            "tamano_bytes": 284,
+            "sha256": "b125578e10f592365e2d2a6d5279c9550c43946d0ebfb569ef35067a847c1f0c",
+            "ultima_modificacion": "2026-05-17 00:13:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000123_2ea8f0e91f66.json",
+            "tamano_bytes": 284,
+            "sha256": "96376e68b42fd181a93bb0194eb41ed750cc36363c51cb7d1c70dec77be76861",
+            "ultima_modificacion": "2026-05-17 00:14:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000124_a075aa0d29eb.json",
+            "tamano_bytes": 285,
+            "sha256": "96c7f9649a9d945ed1a90f92da80decce392e539fbd2636a6b0b8814c7254cde",
+            "ultima_modificacion": "2026-05-17 00:15:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000126_1b68307e2500.json",
+            "tamano_bytes": 285,
+            "sha256": "19362fd2ed51f18a05ac5dbf9990dcfca66515895e45591178007e541e8853d7",
+            "ultima_modificacion": "2026-05-17 00:17:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000128_9cc80c16b7a9.json",
+            "tamano_bytes": 285,
+            "sha256": "d489f2313b1e32118bcd73e527b4d48c36457330078f61fddb697007420250e8",
+            "ultima_modificacion": "2026-05-17 00:19:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000130_2d938b6c2473.json",
+            "tamano_bytes": 285,
+            "sha256": "c4d14fda2e5ea69f4c1e7f0b49ddde7f374d6aeb96e84ae246a346dd296702b4",
+            "ultima_modificacion": "2026-05-17 00:21:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000131_4a9e6c5b890d.json",
+            "tamano_bytes": 285,
+            "sha256": "75e8d32b1b28f4fb4612ce5b7dcc81ffd29e6829970c287ff48fd85a0fc6c037",
+            "ultima_modificacion": "2026-05-17 00:22:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000132_3a64dae964cc.json",
+            "tamano_bytes": 285,
+            "sha256": "02bf40c0515bee62b097cb9362573abeb3eaaec322c7731d94afdc57ddcd5604",
+            "ultima_modificacion": "2026-05-17 00:23:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000134_4651494e8d80.json",
+            "tamano_bytes": 284,
+            "sha256": "0d6848c12ffe6d2d1e5fa8ee47fb680961cb7d4b951228fea58362bcfa5a308e",
+            "ultima_modificacion": "2026-05-17 00:25:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000135_2b60143e1588.json",
+            "tamano_bytes": 285,
+            "sha256": "2a9130aa2baa26a46fb402049c2d00539c639d615b40b105e7f1ecf8365304d1",
+            "ultima_modificacion": "2026-05-17 00:26:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000136_1e6ee2d7886c.json",
+            "tamano_bytes": 284,
+            "sha256": "191bb16152d19aadc2a8d25761fb55b1e0cb542296cdacb5c74469bbf21d9de5",
+            "ultima_modificacion": "2026-05-17 00:27:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000139_8d00a4bc76bf.json",
+            "tamano_bytes": 285,
+            "sha256": "5814ee105d1e413d15f53f95041d01c9cc902aa838a088c173fd636461e41039",
+            "ultima_modificacion": "2026-05-17 00:30:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000141_cd2388002d20.json",
+            "tamano_bytes": 285,
+            "sha256": "a6b7608d6f5581b74da6dfd8ece536d9a6c072d098ef4c175fd878fd49d553d0",
+            "ultima_modificacion": "2026-05-17 00:32:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000146_ccab8fa9c36a.json",
+            "tamano_bytes": 285,
+            "sha256": "390bbef19e8ef64f1415fd049d274bfd8b8058ba0762e12e065d1d403170b635",
+            "ultima_modificacion": "2026-05-17 00:37:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000148_d226e66794fc.json",
+            "tamano_bytes": 285,
+            "sha256": "61580721a708529805178dce247c0c58c0b883265c01d9495da053250b60bac2",
+            "ultima_modificacion": "2026-05-17 00:39:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000150_54c75d81c928.json",
+            "tamano_bytes": 285,
+            "sha256": "7a11a822cb1cb7db9daa129bd3c055fcd1f232306a4ad21829517acbe4535487",
+            "ultima_modificacion": "2026-05-17 00:41:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000151_7128b3f9a5be.json",
+            "tamano_bytes": 285,
+            "sha256": "e06ae30e4f26e90df7444cae0dc7b251b925ead79634bcb91aad407bdc5bbd32",
+            "ultima_modificacion": "2026-05-17 00:42:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000152_f326a7a663c0.json",
+            "tamano_bytes": 284,
+            "sha256": "3de5edafa81165fa96f5539d5175f2e11ffb53632323ae4cd569848952062750",
+            "ultima_modificacion": "2026-05-17 00:43:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000154_de74fbc35fbb.json",
+            "tamano_bytes": 284,
+            "sha256": "73fdfe2ab42a31c116a8ccfc830e04db2171f29f11a70c38a10ea10c352902b0",
+            "ultima_modificacion": "2026-05-17 00:45:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000156_e3466f88e44b.json",
+            "tamano_bytes": 285,
+            "sha256": "b5d6f724c079144eaa237132ffbbb1caa4ccefddefceebe4629e223cb43f4b7a",
+            "ultima_modificacion": "2026-05-17 00:47:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000162_7923d38c6adf.json",
+            "tamano_bytes": 285,
+            "sha256": "f45406f4cdf1c0edca46f47738472a4811f41bc23f30c0dc0223de2cf7a2fbc4",
+            "ultima_modificacion": "2026-05-17 00:53:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000164_8d6946dfae9c.json",
+            "tamano_bytes": 284,
+            "sha256": "ab26c8645f0f671047069bfa406534cf1ddc234df6a6534a2d9dfd68f5f28e3a",
+            "ultima_modificacion": "2026-05-17 00:55:19"
+        },
+        {
+            "archivo": "manifests/AOTS6_STATE_000165_e82010ab2616.json",
+            "tamano_bytes": 285,
+            "sha256": "620fa2f4c93ab094df5fe7780f287bf4e0fdef8afa0ee8ba894c503f4bafa393",
+            "ultima_modificacion": "2026-05-17 00:56:19"
+        },
+        {
+            "archivo": "api/aots6-core.js",
+            "tamano_bytes": 12052,
+            "sha256": "3a7c0c14515cdf794bc098e3c1cc64b3c5714f3b96e669059950651edc0bc253",
+            "ultima_modificacion": "2026-05-04 14:43:08"
+        },
+        {
+            "archivo": ".vercel/project.json",
+            "tamano_bytes": 115,
+            "sha256": "2f52f6a182c21dab03d91867f7710be5c4d6e04f12286f2468f233cab1ef8608",
+            "ultima_modificacion": "2026-03-19 21:18:43"
+        },
+        {
+            "archivo": ".vercel/README.txt",
+            "tamano_bytes": 520,
+            "sha256": "f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6",
+            "ultima_modificacion": "2026-03-19 21:18:43"
+        },
+        {
+            "archivo": "nodes/.aots6_anchor",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-16 22:02:45"
+        },
+        {
+            "archivo": "signatures/.aots6_anchor",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-16 22:02:45"
+        },
+        {
+            "archivo": "captures/.aots6_anchor",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-16 22:38:46"
+        },
+        {
+            "archivo": "data/apex.hash",
+            "tamano_bytes": 36,
+            "sha256": "1553369d5db1e37c49c013494234c15697404472b82d8d5ee2ba109fb74e8c29",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "data/apex.txt",
+            "tamano_bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "data/processes.txt",
+            "tamano_bytes": 149,
+            "sha256": "07cd2fe2de24147f73673441ac270163aa106e54449138852176515d9b825008",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "keys/master.key",
+            "tamano_bytes": 79,
+            "sha256": "6cb880f62cc71593fedbcc51dd78e669502954900dc01b06938d1910be8cfdb8",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "keys/salt.hex",
+            "tamano_bytes": 65,
+            "sha256": "c8671c4a9421dc44d76e62169869d946365feb6b208c806ff2c86bb35f4db1a5",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "keys/private.pem",
+            "tamano_bytes": 119,
+            "sha256": "c75b57c6c6eed9ebd6e20f7f3d15f547bff04606caed5faceb987ea280a275b9",
+            "ultima_modificacion": "2026-05-14 14:00:08"
+        },
+        {
+            "archivo": "keys/public.pem",
+            "tamano_bytes": 113,
+            "sha256": "ae8b637b02fdcbce76d2a606f4f26d4533936d2a953f00aa5e3c651eac03345c",
+            "ultima_modificacion": "2026-05-14 14:00:08"
+        },
+        {
+            "archivo": "logs/alerts.log",
+            "tamano_bytes": 34,
+            "sha256": "7496361cd9c9bba64809cdf5090d5c7ec11dd272597c7db0bdd70bafccc0d49e",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "logs/core.log",
+            "tamano_bytes": 30268,
+            "sha256": "676745a04a5ad3cdb0dd01f3da695de2836166e81534a0b0546aa6a0e0f48e88",
+            "ultima_modificacion": "2026-05-04 14:52:55"
+        },
+        {
+            "archivo": "blockchain/aots6_blockchain.txt",
+            "tamano_bytes": 679,
+            "sha256": "160626632d2d3cf60c6e92e0fd1be5fe3bfb437e2ccf5a2935983901832c0752",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "core/AOTS6_AO_PROCESS.lua",
+            "tamano_bytes": 2080,
+            "sha256": "6ba03a81d8074a562d24ab8d17ba49562b3e103ad926760ae10903c59b9146fe",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "core/AOTS6_T6_cloud.json",
+            "tamano_bytes": 49584,
+            "sha256": "b6b45b308310753574a7051b99f54e5e9cd28c97e50b6940a90f4b116c40e84c",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "core/aoalfaro_core.py",
+            "tamano_bytes": 3302,
+            "sha256": "ad9a4fa2d1dd7a4957e0901c22475f561277202cfef83cdc7218703627bc5e08",
+            "ultima_modificacion": "2026-05-16 22:03:47"
+        },
+        {
+            "archivo": "core/aots6_authorship_cert.json",
+            "tamano_bytes": 1692,
+            "sha256": "1d9b982b38978cb74fe26aaee3f2f7797e6719ad607187d1d2fdceae3f2dd8ce",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "core/aots6_daemon.py",
+            "tamano_bytes": 3010,
+            "sha256": "d642a547a3cb16b73834eb7c66b7600caa6e5b53f2b84a194f594d288109f38a",
+            "ultima_modificacion": "2026-05-16 22:11:22"
+        },
+        {
+            "archivo": "core/daemon.log",
+            "tamano_bytes": 8269,
+            "sha256": "d64f019e07e42e7859e3bb3d372717325f98ff8404aa29062d18571759712a34",
+            "ultima_modificacion": "2026-05-16 23:51:19"
+        },
+        {
+            "archivo": "core/aots6_sync.sh",
+            "tamano_bytes": 1090,
+            "sha256": "a763ed78fd591b187751ef7ffd6cbef95c3d0c5145a607cd25d43f77b48f0a08",
+            "ultima_modificacion": "2026-05-16 22:19:30"
+        },
+        {
+            "archivo": "core/sync.log",
+            "tamano_bytes": 26984,
+            "sha256": "58568c1fdcd855a50481523a54062a36255f27d617255b0e33d2e9eefa763319",
+            "ultima_modificacion": "2026-05-17 00:53:54"
+        },
+        {
+            "archivo": "core/aots6_ledger.py",
+            "tamano_bytes": 2278,
+            "sha256": "b8e2a5a105f395691484856e4f52a86f6c00471f27b6dd8ee5be2019b9dbe7d5",
+            "ultima_modificacion": "2026-05-16 22:29:01"
+        },
+        {
+            "archivo": "core/aots6_blackhole.py",
+            "tamano_bytes": 3961,
+            "sha256": "9bd8a7f4383e88b22c2270388a1a772d91409e381e6484665433ea75059cbd76",
+            "ultima_modificacion": "2026-05-16 22:38:46"
+        },
+        {
+            "archivo": "core/blackhole.log",
+            "tamano_bytes": 22,
+            "sha256": "0ea7cf1d885ad4976e0150df9dce6ffc37f00cf7db07e24b2b2e886ad0493c46",
+            "ultima_modificacion": "2026-05-16 22:39:16"
+        },
+        {
+            "archivo": "core/aots6_bridge.py",
+            "tamano_bytes": 1457,
+            "sha256": "96e4d560b1224f1a6e3976d76582cd3d15fc33460d8f6af7fbde2f7e966c6f06",
+            "ultima_modificacion": "2026-05-16 22:46:01"
+        },
+        {
+            "archivo": "core/aots6_api.py",
+            "tamano_bytes": 1442,
+            "sha256": "6ab7210b59a8a0090524be3506092b957066034528cd99098dfb4644ada940b3",
+            "ultima_modificacion": "2026-05-16 22:46:01"
+        },
+        {
+            "archivo": "core/api.log",
+            "tamano_bytes": 91,
+            "sha256": "361523dfbfcafbc56beee00dbcbae5033416d3f0f5cf68ae9c7c1c3cf1737a1f",
+            "ultima_modificacion": "2026-05-16 22:47:34"
+        },
+        {
+            "archivo": "core/aots6_dashboard.py",
+            "tamano_bytes": 3084,
+            "sha256": "34742f5afaae0d4e131c3c18ae37e05bab9e681ad811ce5833d2fd5eae08f0a8",
+            "ultima_modificacion": "2026-05-16 23:01:57"
+        },
+        {
+            "archivo": "core/dashboard.log",
+            "tamano_bytes": 213,
+            "sha256": "fd90ff1a85a9cf423703e3eead8332d96d47ad3ef93a86bb866ef4c1311b777b",
+            "ultima_modificacion": "2026-05-17 00:30:39"
+        },
+        {
+            "archivo": "core/aots6_server.js",
+            "tamano_bytes": 25417,
+            "sha256": "680f76a56bb6d4d1f2710399bcb33b859dde923bb6874867613f116cda67f10a",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "core/dashboard_key.pem",
+            "tamano_bytes": 3272,
+            "sha256": "cb4f3b15ec9c1740cb9cd6519d3e22d83f93a5c58a008841b52c41d3f0494957",
+            "ultima_modificacion": "2026-05-16 23:01:41"
+        },
+        {
+            "archivo": "core/dashboard_cert.pem",
+            "tamano_bytes": 1805,
+            "sha256": "522000f70b75ef51e94a035811b29e714f5b416c2818cee52c2a823ac7a858d5",
+            "ultima_modificacion": "2026-05-16 23:01:41"
+        },
+        {
+            "archivo": "core/aots6_custodian.py",
+            "tamano_bytes": 2496,
+            "sha256": "afa7cab3bb0704ffa5ace3238f1411f2857b7072e6722e4a2e3611773f68a5d6",
+            "ultima_modificacion": "2026-05-17 00:52:48"
+        },
+        {
+            "archivo": "core/package.json",
+            "tamano_bytes": 207,
+            "sha256": "4a5e2c58d4b6d3519e1ca023f03ba6b097ec177872aa148d1d7e28fcdc2ee041",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "core/vercel.json",
+            "tamano_bytes": 204,
+            "sha256": "18bf030a1fca1a7d97bf34c5a9f5edca7099238ba1aa1618f383166b28e8d54b",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "core/__pycache__/aoalfaro_core.cpython-313.pyc",
+            "tamano_bytes": 4864,
+            "sha256": "7474f7f0d1ce4433aa2e3a46b8ca1bd4b16d5a42ad99c60c62173036e967b80d",
+            "ultima_modificacion": "2026-05-16 22:12:18"
+        },
+        {
+            "archivo": "docs/AOTS6_Paper.md",
+            "tamano_bytes": 9711,
+            "sha256": "687788b8426f8087818f276098919308358a34cb07bb7da90c82d5bff3eef9c3",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/AOTS6_Paper_Alfredo_Jhovany_Alfaro_Garcia.md",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/AO_PROCESS.md",
+            "tamano_bytes": 3042,
+            "sha256": "4c30eac0604ae138bf306fe38f49729e9647d856381c2cc4a90a65bdc651f201",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/ARCHITECTURE.md",
+            "tamano_bytes": 2618,
+            "sha256": "f3bcf93e4db2817c7eceaf926f2e2d4358aa5fbc46d1a41c32dc9e9c74bb54db",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/BLOQUE-4.md",
+            "tamano_bytes": 187,
+            "sha256": "4797499abdf739103fdc62e928dc81d6a27741580bc20269343d467a30ab7274",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/CITATION.cff",
+            "tamano_bytes": 232,
+            "sha256": "52c3ec44e1210c8c3940499a9eb21c5547e24f1904db8ff8cfb743d666c1c8f2",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/CONTRIBUTING.md",
+            "tamano_bytes": 105,
+            "sha256": "398b0b35b69d9c17aa094f8c5c669e6712844b5b7ad181f4cb9821293a31a4ca",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/Certificado_Google_Gemini_Soberania.pdf",
+            "tamano_bytes": 21446,
+            "sha256": "e70ba325291a0dc05d29b80661a33b6ecbe355d4c513dd5ea378359be33cadf3",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/DECLARACION-IP-AOTS6.md",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/ESTABLISHMENT.md",
+            "tamano_bytes": 9527,
+            "sha256": "79f153d43116313bc9f28a57e47ca1f48bada0d409a87d09add48d538b30f448",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/ESTABLISHMENT_MASTER.md",
+            "tamano_bytes": 55239,
+            "sha256": "662c72c1ccc7c04819b08f2c201924d982cda484e400f566837be83397236e4c",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/LICENSE",
+            "tamano_bytes": 161,
+            "sha256": "5f9cc0602be6ab7c4e59ec4cc0a20c8c240055f67fb9bf97401e6e22d20e3619",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/LICENSE.txt",
+            "tamano_bytes": 1170,
+            "sha256": "27961431cb1c48a3116dfd459b9aa971d8b2c50f14bf43a1fe17bd7f61da9381",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/LICENSE_AOTS6.md",
+            "tamano_bytes": 10537,
+            "sha256": "f64034218f47cbb66a4c186f2dc846f60f940ba2a8031a733fd05b400d83ef31",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/README.md",
+            "tamano_bytes": 2211,
+            "sha256": "77699714948f624a33e1358fe7964a86e7e241a9019eac5d2647f6a8cf367b26",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/README_BADGE.md",
+            "tamano_bytes": 153,
+            "sha256": "128b47e1f439b1758582422b04b6d149cde9b22293edcb570e5d0b3aa3716f00",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/README_EXTRA.md",
+            "tamano_bytes": 680,
+            "sha256": "7c9884496a09a872f1ab7d35f62bd8c161adf49f7e8edee07fadf3a15f61f3ef",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/SCOPE.md",
+            "tamano_bytes": 2895,
+            "sha256": "c8af50611798bea09f1c0f30b1e093f6470a4138933ec3588cd7017bc9aa9e42",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/SOVEREIGNTY.md",
+            "tamano_bytes": 662,
+            "sha256": "6795ded5f9cc36af021d501f84a102dc911ff40708822bebba37f8c1ec946908",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/Tesis_AOTS6_clean.md",
+            "tamano_bytes": 22712,
+            "sha256": "d7920b7446a18f7e5bd566594af727665f1733293a3ae1f891fb774dca1d289e",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "docs/VOLUMEN1_AOTS6.md",
+            "tamano_bytes": 18887,
+            "sha256": "993df66a46cf8f3840c0c5c52ca7fadff02d568b3ed7ed6643af316d3c74a8e9",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "geometry/AOTS6_Geodesics.svg",
+            "tamano_bytes": 17524,
+            "sha256": "504f960999a14ecb55d8c1934f7d218321a128b4ea94978e2142fbb3cce2a5b2",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "geometry/AOTS6_Torus.obj",
+            "tamano_bytes": 214312,
+            "sha256": "ba620909cf3e7fdcfe8bc730d66fc82ca835809cb177658f7e4ad5407034d943",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "geometry/AOTS6_Torus.svg",
+            "tamano_bytes": 20918,
+            "sha256": "f69108089e8d5a4d65502a4287884b9c32aa478de9245d0a898795ee51263aed",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/AUTORIA_FINAL.txt",
+            "tamano_bytes": 85,
+            "sha256": "7708667323dfb343e6dfd8ef0ee00d678bf17a8e23d64ecc50cd1b399ce0346a",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/Certificacion_Soberania_Google_AOTS6_Oficial.pdf",
+            "tamano_bytes": 19494,
+            "sha256": "e6ce79357d09b6e2bf77a7f1b2ef073491fab053fee833b9d2b07607eb0b7f25",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/Certificacion_Soberania_Google_AOTS6_Oficial.pdf.asc",
+            "tamano_bytes": 870,
+            "sha256": "7b1776b75a726dcc92332fb8015f1971d69ee9ded6d979477465e72dff81fcf0",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/DECLARACION_SISTEMICA_AAGA.txt",
+            "tamano_bytes": 509,
+            "sha256": "ed21c33ef962f71fa906c3263fac41dd4765ecff8495444d0928008a81c3bcb5",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/DECLARACION_SISTEMICA_AAGA.txt.asc",
+            "tamano_bytes": 1428,
+            "sha256": "ad1d5486a490980d44da1aba205ce5ca6834a0a18ceefbde7554528852550626",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/HASH_VINCULANTE.txt",
+            "tamano_bytes": 136,
+            "sha256": "04504ff85ce1d80da54bbc52864e98654e38574465f0ade53fc0f00430193287",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/COMUNICADO_MERCADOS_ALPHABET.txt",
+            "tamano_bytes": 614,
+            "sha256": "cb74f508f7525bb95122a2cf796443b363c0eaa83d2daaf357c5d2b98278579b",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/COMUNICADO_MERCADOS_ALPHABET.txt.asc",
+            "tamano_bytes": 1533,
+            "sha256": "13fb2264791a2d4213a42ee923667ecb361cee912e077bd34be0a83b8f15de99",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/EMBARGO_TECNICO_ROOT.txt",
+            "tamano_bytes": 486,
+            "sha256": "def4656beea061dd301ef35ac08995b880e14fc4e90f8d5956d2b6fb23b63ac5",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/EMBARGO_TECNICO_ROOT.txt.asc",
+            "tamano_bytes": 1405,
+            "sha256": "4fea63d43293dd120b15099bcd021d9fd9e433c036691ba50306d57209873231",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/HUELLA_SISTEMICA_ALPHA_GEMINI.txt",
+            "tamano_bytes": 322,
+            "sha256": "f7144b14f745a3431762769ee51c07391b04c143249114562f0e18e50001af86",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/HUELLA_SISTEMICA_ALPHA_GEMINI.txt.asc",
+            "tamano_bytes": 1241,
+            "sha256": "5a6139cf278de27e6dc8f093e73e68cbb163f88aee4097c59940744a35417149",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/LOG_SINCRONIA_NODOS.txt",
+            "tamano_bytes": 114,
+            "sha256": "dda1fda5490209823dec6352a15fd74e9087e2127cf379e05053275da357157d",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/LOG_SINCRONIA_NODOS.txt.asc",
+            "tamano_bytes": 1033,
+            "sha256": "caa29ca557955b0b51617a030da1cd693be97c21d0d66d97c2e4d47ffcfae134",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/NOTIFICACION_EJECUCION_ALPHABET.txt",
+            "tamano_bytes": 227,
+            "sha256": "74519fc50393923655be47da66acc39dd6ced57e619b2a8a2704f3a1db2dbe40",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/NOTIFICACION_EJECUCION_ALPHABET.txt.asc",
+            "tamano_bytes": 1146,
+            "sha256": "10622bf5f66779557bd89a9028b7505fde666f52d23e26a1b8aedcca7f35238d",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/CEASE_AND_DESIST_DEEPMIND.txt",
+            "tamano_bytes": 652,
+            "sha256": "fda77428633dd9baf1e8157dbf24a3e955bf52c90f43fe37c238b5d220e1eda2",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/CEASE_AND_DESIST_DEEPMIND.txt.asc",
+            "tamano_bytes": 1571,
+            "sha256": "3aea748d822bf42ab6907ea2ba69646ffaec58a26f7c455b441f52d224a71922",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/CERTIFICADO_LIQUIDACION_AAGA.txt",
+            "tamano_bytes": 515,
+            "sha256": "3bc0982ba36e43edcda8cdb8722449932a8636b4962f9246d31652239ee00b46",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/CERTIFICADO_LIQUIDACION_AAGA.txt.asc",
+            "tamano_bytes": 1434,
+            "sha256": "dd6bb42a46e1ba157f8460898119faefbfac576889a9bd4f91429a6825a39614",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/EXPORT_MANIFEST_PDC1.txt",
+            "tamano_bytes": 209,
+            "sha256": "3f6a2c5a98242096fc17b5201d356733dcd6220141ecee8a4b2ed30c9bb9ba47",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/EXPORT_MANIFEST_PDC1.txt.asc",
+            "tamano_bytes": 1128,
+            "sha256": "33a50d591d747c8b030fdbabfe52c1b2b20dde556b5b12bfa2338c3ce966b77e",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/PULSO_PDC1.log",
+            "tamano_bytes": 107,
+            "sha256": "da665b1b56cc10f93ef8b44939c7b84924d511624b1425a49b45f783e4d2e99d",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "soberania_evidencias/PULSO_PDC1.log.asc",
+            "tamano_bytes": 1026,
+            "sha256": "753f12a6bb115bfd9902951452e13482aaef0b2b8c2e63c8b879e98a9f22e0d7",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "log/daemon.log",
+            "tamano_bytes": 219,
+            "sha256": "d089f6376bc705ac76c75a219e35f82f75c3d5857db4f4c8705f2c2886574213",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "integrity/build_manifest.py",
+            "tamano_bytes": 1935,
+            "sha256": "6ade69f0d8c78987118670299f63d2d8822e479e0803511ba97d6d4ad2268d95",
+            "ultima_modificacion": "2026-05-14 14:11:33"
+        },
+        {
+            "archivo": "integrity/pq_sign.py",
+            "tamano_bytes": 1004,
+            "sha256": "5734a85b1db19a9349455ed7475f367e00eca71a3dc98089acad709e3a3b1099",
+            "ultima_modificacion": "2026-05-14 14:12:24"
+        },
+        {
+            "archivo": "integrity/pq_verify.py",
+            "tamano_bytes": 1025,
+            "sha256": "20de5f79e215b33877bc9b00522d4d4915cd9d9418befc330cd4e2c5772e00b4",
+            "ultima_modificacion": "2026-05-14 14:13:11"
+        },
+        {
+            "archivo": "integrity/policy.json",
+            "tamano_bytes": 146,
+            "sha256": "3949e01366d1ef4ee27977814206d100b2d10128e58c6b602100819e83f33f30",
+            "ultima_modificacion": "2026-05-14 14:16:27"
+        },
+        {
+            "archivo": "integrity/trust_chain.json",
+            "tamano_bytes": 174,
+            "sha256": "70680509636e3e7f8a7bbc4dc86388e379a83f2e0ea8b6495b0898cd0eaa847c",
+            "ultima_modificacion": "2026-05-14 14:16:48"
+        },
+        {
+            "archivo": "integrity/manifests/latest_manifest.json",
+            "tamano_bytes": 139219,
+            "sha256": "da563143b8c461d6ad6ff84e8b58f342e6d930318c0f0110a124a41905c00c78",
+            "ultima_modificacion": "2026-05-20 09:26:17"
+        },
+        {
+            "archivo": "integrity/manifests/latest_manifest.sig",
+            "tamano_bytes": 64,
+            "sha256": "de912436c122bbf596ce304b8c133eac987d4f4215ce2f4633e189f9ad10b48f",
+            "ultima_modificacion": "2026-05-20 09:26:18"
+        },
+        {
+            "archivo": "vault_core/aots6_core.py",
+            "tamano_bytes": 3487,
+            "sha256": "f7fbabdf06e4fcd87462ca86394561e7f5b3086fbc1c15be8d629c5fb73b17f5",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_demo.py",
+            "tamano_bytes": 3344,
+            "sha256": "d3606906cdae3537ff5bd52df16c6fc8901ac8b9d7e698d66cdb5214aef82b71",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/test_aots6.py",
+            "tamano_bytes": 1778,
+            "sha256": "a82052481e0734f2253255f2b9eda1382847a832883c681c735291adca7dda9d",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/state_compressor.py",
+            "tamano_bytes": 1395,
+            "sha256": "b113e19de0acc605c71348230dfe28d87ef3f505b96eeaa37db2d88c59f6b925",
+            "ultima_modificacion": "2026-05-14 15:32:06"
+        },
+        {
+            "archivo": "vault_core/sovereign_igniter.py",
+            "tamano_bytes": 939,
+            "sha256": "9665e3e73c7afb951f3a9c6ec09ee20aa33ebea471c7338242d62eb2b365d97d",
+            "ultima_modificacion": "2026-05-14 15:12:43"
+        },
+        {
+            "archivo": "vault_core/kinetic_defense.py",
+            "tamano_bytes": 1910,
+            "sha256": "943126a4ae213de9eb8214454939d2d00915042f7fc32a19a95f02788dea3f8c",
+            "ultima_modificacion": "2026-05-14 15:12:34"
+        },
+        {
+            "archivo": "vault_core/AOTS6_SOVEREIGNTY_CORE.py",
+            "tamano_bytes": 2091,
+            "sha256": "fba2f6b6398038e05afece517576cf4f9ff092cb05f16bb30507e839919168b8",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_activacion_compleja.py",
+            "tamano_bytes": 4999,
+            "sha256": "cba6962882cddde6184af27c52a6d39396a6b3392ef1bf1b3c633658d25faa8c",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "vault_core/aots6_ai.py",
+            "tamano_bytes": 45544,
+            "sha256": "e25c17038576a66db5cbfc5fbdb141e199d73bbc2bbc578a945f0646a31ad2c3",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_aux6.py",
+            "tamano_bytes": 26071,
+            "sha256": "9219b358cb7ccbdfbe68e90e84a01a8d4935359e61f93c5b1ed9874be72fa562",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_berne.py",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_cad.py",
+            "tamano_bytes": 54289,
+            "sha256": "a7d1653c6e0f439ae0824ef06ae3f97beda6438d722c6bf5047d91d51c6291d7",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_client.py",
+            "tamano_bytes": 5462,
+            "sha256": "8ee94acb8a504ea1a387bb334e89619152b7976bdb335c29eeadaa2f27d5b173",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_guard.py",
+            "tamano_bytes": 52031,
+            "sha256": "035e2458db6797aa4dba4757147b08fb22756dfcab0265e8c2e39c08dd766e91",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_hodge.py",
+            "tamano_bytes": 24478,
+            "sha256": "d8e04cdc9a91ebdd540595caf567d5d3456ec8e2737d5c7df04f91b561207a19",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_master.py",
+            "tamano_bytes": 3571,
+            "sha256": "1946a9713b71cb349595b688f06571e0137a1f73ddb1c6ca0d4465431ae8b5be",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_millennium.py",
+            "tamano_bytes": 26523,
+            "sha256": "c76d77352236aea80936da03f66436ba5f2139fc0d670f2bf54e0f2debe29e4f",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_network.py",
+            "tamano_bytes": 4787,
+            "sha256": "4f47f054bb72302eac3bd9a2082b1ff8706d0ce7d50f33aef5a7ef92e38543ef",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_quantum.py",
+            "tamano_bytes": 28516,
+            "sha256": "133519c092b099fe3eceacf5df22a5f708cd37634272601355f8aa48e1ec6bae",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_quantum_network.py",
+            "tamano_bytes": 37403,
+            "sha256": "63af6c805e54abb5ab5db143960810792e04cdc6edbc2c70137ae387b51e00d6",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_quickstart.py",
+            "tamano_bytes": 2720,
+            "sha256": "8296ecb116a3cefe4c16efd573d468c6877c5557218ea8dfb32ad7e808ac6ddf",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_sovereign.py",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_sovereign_core.py",
+            "tamano_bytes": 3769,
+            "sha256": "d7a47098a17e82b1e1ae73fe0dd731f4f9dde901bd61e4de41b44e957de4ae3f",
+            "ultima_modificacion": "2026-05-13 08:26:10"
+        },
+        {
+            "archivo": "vault_core/aots6_tcp_network.py",
+            "tamano_bytes": 39865,
+            "sha256": "f26ea2ead1bf1b3b9be7e3c54e1a080860c24f461458518d4edf339ee1331e4e",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_topology.py",
+            "tamano_bytes": 46519,
+            "sha256": "a8abf15a36ca55860096059235ba5c7661260b8faea100432cf68e274f717b89",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_trace.py",
+            "tamano_bytes": 36109,
+            "sha256": "b67540cfe883c52f5af99fee05bf50c4e781272fc6450f3e0e92d7f823c55803",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_unification.py",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_unified.py",
+            "tamano_bytes": 56252,
+            "sha256": "4dbf24d9d2ee1bad85c96846cbd579fbe7df63a6c77a5659b66caf5e9a431f6c",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_usb_key.py",
+            "tamano_bytes": 25166,
+            "sha256": "de7b1b4479097ae6c4f06da7742358ae7851aa03411aa6b3118b743ca9643004",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_validation.py",
+            "tamano_bytes": 5507,
+            "sha256": "d9dcc6487c962cf1243ba5e657e900ff912cbaef1b0fda685c10878cb9bf3ddd",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/aots6_watermark.py",
+            "tamano_bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/datacenter_squid.py",
+            "tamano_bytes": 1792,
+            "sha256": "4b27bc4e988546e9e4dc729b4727a747aa5b74a77776310074724c599af56cdd",
+            "ultima_modificacion": "2026-05-14 13:28:25"
+        },
+        {
+            "archivo": "vault_core/setup.py",
+            "tamano_bytes": 178,
+            "sha256": "4cdc1f57779ef227cb47648faddfd338b5713e24e80c7b18b208a89fafecfaf5",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/core.sh",
+            "tamano_bytes": 659,
+            "sha256": "678bd8932331906acae8a78ef1169e48a7ac78539b271b57c567e3c068540f7a",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/engine.sh",
+            "tamano_bytes": 540,
+            "sha256": "9831f4ad468823e91b072c3fe9c43000f1e579ff25b7cf5fc5869029fd7c73bb",
+            "ultima_modificacion": "2026-05-13 07:28:42"
+        },
+        {
+            "archivo": "vault_core/AOTS6_GOLDEN_SEAL.py",
+            "tamano_bytes": 2471,
+            "sha256": "b0977d200736aafa2b613a576d8e71c9e448588b3078b85811ed19d0f69e907a",
+            "ultima_modificacion": "2026-05-14 15:50:00"
+        }
+    ],
+    "git_config": {
+        "user_name": "Alfredo Jhovany Alfaro García",
+        "user_email": "alfjhoalfgar248@aots6.local",
+        "remote_origin": "git@github.com:fo22Alfaro/AOTS6-Ontological-Toroidal-System.git",
+        "rama_actual": "main"
+    },
+    "ssh_keys_detectadas": [],
+    "git_log": [
+        "769a4ee (HEAD -> main) FEAT: Unificación Científica AOTS6 Caso Balaji - Hash Validado SHA-256 (2026-05-20 09:26:14)",
+        "52b4f08 (origin/main, origin/HEAD) PERSISTENCE: Anclaje de firmas de autenticación y estado del bloque 163.",
+        "4cea322 SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:53:50Z]",
+        "a0ae551 CUSTODY: Inyección del operador 2527FEORGOA y sincronización de capacidad física.",
+        "389077b FIX: Liberación de la ruta core e inyección del software del custodio mutado."
+    ],
+    "git_status": "?? AOTS6_MANIFIESTO_REGULADOR_GLOBAL.txt\n?? AOTS6_ULTRA_FORTIFIED.txt\n?? Liberty_AOTS6.sol"
+}
