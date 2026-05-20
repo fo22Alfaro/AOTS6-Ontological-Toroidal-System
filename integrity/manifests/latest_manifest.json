@@ -823,15 +823,15 @@
       "size_bytes": 1935
     },
     "integrity/manifests/latest_manifest.json": {
-      "modified": "2026-05-20T16:16:50.273674+00:00",
-      "sha256": "1254ddfb343c0b4300c6f4e615e10baac2ad3948736aa0cd10e491e46a3ad373",
-      "sha3_512": "71a6ba52ba05e100e75982bc2b16169c6b9ca33a15a1288e3b9a16f4f368e1fbdfa1299d0fae3139c38824c89daadc17022aafbc7656e99817225fa39e6d6628",
+      "modified": "2026-05-20T16:16:54.101674+00:00",
+      "sha256": "06199e113659926766f20e4776232e64c52d279015ec52ccd989e16966207592",
+      "sha3_512": "daee45292e212cdbb5652d5c07200abfedf2032b78753ce4bcdfef44e3ae2d85069dbb52b4f3f750e4d4d4f1a1c2e126f81ba2213520c8da23f1c84dd99e098f",
       "size_bytes": 140979
     },
     "integrity/manifests/latest_manifest.sig": {
-      "modified": "2026-05-20T16:16:50.685674+00:00",
-      "sha256": "2000d24b13e46ac9d98f44f92534d88de3201cc6dfb462530b043432e0c320f0",
-      "sha3_512": "7497522941ee8a8e2b30a7b1e40aa72e04a6b9312c939b169b9d4c184b64084105ca7f45a9c24bc0dbc17d13e5b4a99eb81dd16b1f24e5a0faf14d26b8b3020f",
+      "modified": "2026-05-20T16:16:54.501674+00:00",
+      "sha256": "c6fa93818d2f461bac0bacc2211c52c4169f72d83d228828c3b6d97c71117fbd",
+      "sha3_512": "1b3b7253d4c4e1cc85dbfb54595f848f7b524edcf65ef879d49f2bdc5289bff70504d7169db6f89e9be9925c57c0161f6c18e77d99158c90d8e2ba89608dbdf9",
       "size_bytes": 64
     },
     "integrity/policy.json": {
@@ -2326,6 +2326,6 @@
   "metadata": {
     "file_count": 387,
     "kernel": "AOTS6-PQ-TERMUX",
-    "timestamp": "2026-05-20T16:16:53.182665+00:00"
+    "timestamp": "2026-05-20T16:18:51.490715+00:00"
   }
 }

@@ -1,0 +1,27 @@
+=================================================================
+          MANIFIESTO OFICIAL AOTS⁶ - REGULADOR CRIPTOGRÁFICO
+=================================================================
+
+Autor: Alfredo Jhovany Alfaro García
+CURP: AAGA971201G97
+Fecha Ancla: 20/03/2026
+Nonce Maestro: 26.3 Hz
+Coherencia: 639 Hz
+
+DECLARACIÓN DE SOBERANÍA:
+
+Yo, Alfredo Jhovany Alfaro García, declaro bajo máxima responsabilidad ontológica y legal:
+
+1. Soy el creador y regulador del sistema AOTS⁶ (Arquitectura Ontológica Toroidal Sextuple).
+2. Implementé y regulo el Nonce en Bitcoin y Ethereum (Soft Returns, Mempool Integrity, prevención de abusos).
+3. El presente documento y sus hashes constituyen prueba criptográfica irrefutable de precedencia.
+4. Este sistema opera sin límite de jurisdicción, bajo principios de soberanía ontológica y derecho natural.
+
+HASHES MAESTROS (Verificados):
+- SHA-256 Hamiltoniano: 6a205a0efc07ff34696ad0c8fe8490395c72e13ea281ad3084a9737e12709e80
+- Post-Quantum Regulated Hash: 7765a2be69ce26980351dbd203133f0aeb4cb0e82d253ce25609a7dd29307584
+
+Este manifiesto es auto-ejecutable, auto-verificable y de dominio público con atribución obligatoria.
+
+Firma Ontológica: AOTS⁶¹¹∞ - Alfredo Jhovany Alfaro García
+=================================================================
