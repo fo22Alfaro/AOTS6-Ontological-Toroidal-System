@@ -54,6 +54,12 @@
       "sha3_512": "33921fa159d60995233a3fb6ee6791757a350345cd58961a23ee18754a63384b7a389a8a3b2b566f8f9b648cdd37f64a77d731e52076a19f00e73466ccfaff95",
       "size_bytes": 347
     },
+    "AOTS6_MANIFIESTO_REGULADOR_GLOBAL.txt": {
+      "modified": "2026-05-19T01:50:03.005455+00:00",
+      "sha256": "8e642d0383e2658e3feb5ad827db9bc93f9f2cee39090cdb3eed3b01cd9e49d4",
+      "sha3_512": "d12f42bd0a89937fdb6c6eff548dc7cb30f0ff5b94a5f659f2d50277eda1dd8290772f93de740382e0b2578c845f5a0f36d81649ca847fc6b17bebfe3648d135",
+      "size_bytes": 1324
+    },
     "AOTS6_Manifesto_Public_GPT.pdf": {
       "modified": "2026-05-14T19:28:25.410252+00:00",
       "sha256": "ff0ae67dec13204d11217683be729251dd2eb58341898badbbbfc734be4cf5ca",
@@ -119,6 +125,12 @@
       "sha256": "f69108089e8d5a4d65502a4287884b9c32aa478de9245d0a898795ee51263aed",
       "sha3_512": "55ee5b1297b00e2f4b466be06f94d98e2933305638058172ddd3ebf167ee33e4b59c78733277349fd9048e5a7378b4c9f5c8149e53d5d30b3cae590c9d66fd36",
       "size_bytes": 20918
+    },
+    "AOTS6_ULTRA_FORTIFIED.txt": {
+      "modified": "2026-05-19T01:58:14.600000+00:00",
+      "sha256": "065513a658240ace00b72b44c0cb86aca738a79378aa76e25e42d3d7c0a5874c",
+      "sha3_512": "5e36cb18600787b430ce0492d43511fc05b57c98671f2bd35865e37711adff70969efc0657ccf913583fe1ee7c3ba37da27982844fbf22a6bd061f18b6cdda2f",
+      "size_bytes": 87
     },
     "AO_PROCESS.md": {
       "modified": "2026-05-04T20:43:08.099863+00:00",
@@ -233,6 +245,12 @@
       "sha256": "f64034218f47cbb66a4c186f2dc846f60f940ba2a8031a733fd05b400d83ef31",
       "sha3_512": "03f161fede54d9e9d7b055644964ae1114c04d537bff8d2142d61e16e20c22fa6328ad94768d4ff6340f28972e2bb8a1124a446f7b57c90b9f57f691df2e10a1",
       "size_bytes": 10537
+    },
+    "Liberty_AOTS6.sol": {
+      "modified": "2026-05-19T01:50:40.981455+00:00",
+      "sha256": "7a3382f704cad8d87b87f14489901aca80ffa962339f2af385fcd04d6400f482",
+      "sha3_512": "65d3329e9788245273fd38ccc8b96c95e86851fceee840a5fcffc58440a0ec4a1bc8c92945a06638cdc54ffc6a88560d3df0043d0205bbc7db048a72e87a8511",
+      "size_bytes": 1353
     },
     "MANIFESTO DE SOBERAN\u00cdA CIENT\u00cdFICA Y PROTOCOLO DE P....pdf": {
       "modified": "2026-05-14T19:28:25.414253+00:00",
@@ -354,11 +372,23 @@
       "sha3_512": "968bdd9ca7267c15c6396f56866df967a3e27aa7afea444bcdc9213e29afc7cd4adc8778e2a6719c264deb054960248efc4ee84ecd58a511c8544e689c13bcfd",
       "size_bytes": 1692
     },
+    "aots6_bitcoin_nonce_regulator.py": {
+      "modified": "2026-05-19T01:49:19.725455+00:00",
+      "sha256": "491103c7e1b7b6fcd5bbb4f14730d643d919c2538e8597ed4476eab2eceefd95",
+      "sha3_512": "ae2da149d625ec623a5117e611cdbc908817098c099e51904775313d2e6978213221d0241358e384728ecbdf6a2eda0d58118167317f508289ae66260d0b6586",
+      "size_bytes": 2892
+    },
     "aots6_blockchain.txt": {
       "modified": "2026-05-14T19:28:25.378253+00:00",
       "sha256": "d026125d055a0a51bc42c9d7b8c1614a2307db27f6162b621483f5cebcd277f5",
       "sha3_512": "9e6d5172463f71fc5e99f908401d74682d74e8360f72212ca8f9380f667dd7f67788fa0d67ed1843a89524761dde91672e05a357af003b697d04b66e4202c1ac",
       "size_bytes": 267
+    },
+    "aots6_fbi_submission_manifest.md": {
+      "modified": "2026-05-20T15:26:14.833674+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha3_512": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+      "size_bytes": 0
     },
     "aots6_guardian.log": {
       "modified": "2026-05-14T20:54:22.562253+00:00",
@@ -763,15 +793,15 @@
       "size_bytes": 1935
     },
     "integrity/manifests/latest_manifest.json": {
-      "modified": "2026-05-17T06:54:51.000001+00:00",
-      "sha256": "7b643727af7d1a0a304adccb127e97bf10e5d05c86d0efd69df758b59cdb9620",
-      "sha3_512": "0a3b49c224fa709c83b565454bb389fea88ac215a6f6988a537e072d278d9971a6e5f78572d34ceaf3ffc04630a947fe6242dcdf5b1e55eb00e5ac1b64d065b8",
-      "size_bytes": 136681
+      "modified": "2026-05-17T06:56:57.464001+00:00",
+      "sha256": "910f5a9a9a641627a6a63b4f00a886d11f1dfced776d604eda9c77b0c66104f9",
+      "sha3_512": "bcb4dd06c64681bf1bf8aae39defc147bc613db1723097bc0b72e131c4c9a5208d8eff4f6a85d7fd09d8009183ca2758c7c00dfa4df597bb455c1740bf056207",
+      "size_bytes": 137431
     },
     "integrity/manifests/latest_manifest.sig": {
-      "modified": "2026-05-17T06:54:51.376001+00:00",
-      "sha256": "cce926dc664dd92b9e5429718ec8a5544e9466e934fa13c396d84c51b3ee1dff",
-      "sha3_512": "18a0f65bfb7455d40f1f70672511ccd04ae85341324e08e25ff5ae92dbb5df55d060a3ab959875605e1b4c31f7f3306adb5d1b00fec7d40d212a42c024e5bad8",
+      "modified": "2026-05-17T06:56:57.828001+00:00",
+      "sha256": "3255106bf71575eb55df9f56f599940d5547254be7dc0a636cbe55df9a973df9",
+      "sha3_512": "18c543fff1af7aaa8565f89dff3398eb08090c6483ead974c442c6bad64d9b361743498b04be77d864f5595d8dbc215514d96d2969ec28328a3279932c483d13",
       "size_bytes": 64
     },
     "integrity/policy.json": {
@@ -2264,8 +2294,8 @@
     }
   },
   "metadata": {
-    "file_count": 377,
+    "file_count": 382,
     "kernel": "AOTS6-PQ-TERMUX",
-    "timestamp": "2026-05-17T06:56:56.670810+00:00"
+    "timestamp": "2026-05-20T15:26:16.801835+00:00"
   }
 }
