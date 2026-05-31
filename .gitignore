@@ -49,3 +49,4 @@ keys/master.key
 *.pem
 *.key
 .git-credentials
+aots_libro_inmortal.db
