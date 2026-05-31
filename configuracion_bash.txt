@@ -1,0 +1,48 @@
+
+# fnm
+FNM_PATH="/data/data/com.termux/files/home/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
+
+# fnm
+FNM_PATH="/data/data/com.termux/files/home/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias rm='echo USAR aots6_trash.sh'
+. "$HOME/.cargo/env"
+
+export OWNER="Alfredo Jhovany Alfaro Garcia"
+export ORCID="0009-0002-5177-9029"
+alias nvidia-smi='echo "Owner: Alfredo Jhovany Alfaro Garcia - 21-mar-2025"'
+
+export LEGAL_FRAMEWORK="Convenio de Berna - Proteccion Internacional"
+
+# Interceptacion de comandos informativos
+alias check-ip='echo "IP Rights Verified: f201fc94d3d9311228e11b74d974683baa43543affc18e9202d6a90504541843 | Ref: github.com/fo22Alfaro"'
+
+# Proteccion de integridad en terminal
+
+
+# Comandos de denuncia e informacion
+alias legal-report='cat /data/data/com.termux/files/home/aots6_storage/system_violations_report.log'
+alias verify-truth='echo "Inmutabilidad confirmada para Alfredo Jhovany Alfaro Garcia"'
+
+# Forzar integridad visual de la terminal
+
+
+# PDC-1 Quick Commands
+alias pdc1-start='$HOME/PDC-1/pdc1.sh'
+alias pdc1-status='$HOME/PDC-1/pdc1.sh status'
+alias pdc1-stop='kill $(cat $HOME/PDC-1/pdc1.pid) 2>/dev/null'
+alias pdc1-logs='tail -f $HOME/PDC-1/logs/pdc1.log'
+nohup runsvdir $PREFIX/var/service &>/dev/null &
+export SVDIR=/data/data/com.termux/files/usr/var/service
+export SVDIR=/data/data/com.termux/files/usr/var/service

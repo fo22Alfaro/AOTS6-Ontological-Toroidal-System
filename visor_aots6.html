@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AOTS6 - Visor Panoptico</title>
+    <style>
+        body { background-color: #030303; color: #00ffcc; font-family: 'Courier New', Courier, monospace; padding: 20px; }
+        h1 { border-bottom: 1px solid #00ffcc; padding-bottom: 10px; text-transform: uppercase; }
+        .panel { border: 1px solid #333; padding: 20px; margin-top: 20px; background-color: #0a0a0a; border-radius: 5px; }
+        #consola { height: 350px; overflow-y: scroll; border: 1px solid #00ffcc; padding: 15px; background: #000; font-size: 0.9em; }
+        .dato { font-size: 1.3em; margin: 12px 0; }
+        .etiqueta { color: #888; }
+    </style>
+</head>
+<body>
+    <h1>AOTS6 - Visor de Espectro Completo</h1>
+    <div class="panel">
+        <div class="dato"><span class="etiqueta">Estado del Enlace:</span> <span id="estado">Iniciando Protocolo...</span></div>
+        <div class="dato"><span class="etiqueta">Ciclo Absoluto:</span> <span id="ciclo">0</span></div>
+        <div class="dato"><span class="etiqueta">Friccion Topologica:</span> <span id="friccion">0.00000000</span></div>
+        <div class="dato"><span class="etiqueta">Densidad Vector v:</span> <span id="densidad">0.00</span></div>
+    </div>
+    <div class="panel">
+        <h3 style="color: #888;">Registro de Transmutacion en Tiempo Real</h3>
+        <div id="consola"></div>
+    </div>
+    <script>
+        var ws = new WebSocket("ws://127.0.0.1:8080/ws/flujo_toroidal");
+        var consola = document.getElementById('consola');
+
+        ws.onopen = function() {
+            var estadoElement = document.getElementById('estado');
+            estadoElement.innerText = "ONLINE - Protocolo Autoinorodemia Activo";
+            estadoElement.style.color = "#00ff00";
+        };
+
+        ws.onmessage = function(event) {
+            var datos = JSON.parse(event.data);
+            document.getElementById('ciclo').innerText = datos.ciclo_absoluto;
+            document.getElementById('friccion').innerText = datos.friccion_topologica;
+            document.getElementById('densidad').innerText = datos.densidad_vector_v;
+
+            var logEntry = document.createElement('div');
+            logEntry.innerText = "[AOTS6-RX] T: " + datos.timestamp + " | Ciclo: " + datos.ciclo_absoluto + " | Friccion contenida.";
+            logEntry.style.color = "#00ff00";
+            
+            consola.appendChild(logEntry);
+            
+            // Auto-scroll para mantener la vista en los datos mas recientes
+            if (consola.childNodes.length > 100) {
+                consola.removeChild(consola.firstChild);
+            }
+            consola.scrollTop = consola.scrollHeight;
+        };
+
+        ws.onclose = function() {
+            var estadoElement = document.getElementById('estado');
+            estadoElement.innerText = "OFFLINE - Colapso de Onda Detectado";
+            estadoElement.style.color = "#ff0000";
+        };
+    </script>
+</body>
+</html>

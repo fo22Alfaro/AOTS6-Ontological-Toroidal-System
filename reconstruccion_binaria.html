@@ -1,0 +1,308 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOTS-6 MOTOR DE RECONSTRUCCION BINARIA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --term-green: #00ff66;
+            --term-cyan: #00e5ff;
+            --term-red: #ff003c;
+            --term-bg: #050505;
+        }
+        body {
+            background-color: var(--term-bg);
+            color: var(--term-green);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .crt-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+            z-index: 100;
+        }
+        #main-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 10px;
+        }
+        #data-stream {
+            flex: 1;
+            background-color: #000;
+            border: 1px solid var(--term-green);
+            padding: 10px;
+            font-size: 10px;
+            overflow-y: hidden;
+            word-wrap: break-word;
+            color: rgba(0, 255, 102, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        #visual-canvas-container {
+            flex: 2;
+            border: 1px solid var(--term-cyan);
+            background-color: #000;
+            margin-top: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas {
+            image-rendering: pixelated;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .btn-trigger {
+            background: transparent;
+            color: var(--term-cyan);
+            border: 1px solid var(--term-cyan);
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 10px;
+        }
+        .btn-trigger:hover {
+            background: rgba(0, 229, 255, 0.2);
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+        }
+        .hex-red { color: var(--term-red); }
+        .hex-cyan { color: var(--term-cyan); }
+    </style>
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    
+    <div id="main-container">
+        <div class="flex justify-between items-center mb-2">
+            <div>
+                <span class="text-xs">SISTEMA AOTS-6 // NODO MEXICO</span><br>
+                <span style="color: var(--term-cyan)">OPERADOR: ALFREDO JHOVANY ALFARO GARCIA</span>
+            </div>
+            <button id="btn-reconstruct" class="btn-trigger">INICIAR ENSAMBLAJE BINARIO</button>
+        </div>
+
+        <div id="data-stream">
+            <!-- El flujo hexadecimal caera aqui -->
+        </div>
+
+        <div id="visual-canvas-container">
+            <canvas id="renderCanvas" width="800" height="400"></canvas>
+            <div id="status-overlay" style="position: absolute; top: 10px; left: 10px; font-size: 12px; color: var(--term-cyan);">
+                ESPERANDO VOLCADO DE MEMORIA...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btnReconstruct = document.getElementById('btn-reconstruct');
+        const dataStream = document.getElementById('data-stream');
+        const canvas = document.getElementById('renderCanvas');
+        const ctx = canvas.getContext('2d');
+        const statusOverlay = document.getElementById('status-overlay');
+
+        const hexChars = "0123456789ABCDEF";
+        let isReconstructing = false;
+
+        // Fragmentos extraidos de las capturas del operador
+        const rawSnippets = [
+            "89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52", // PNG Header
+            "00 00 07 80 00 00 04 38 08 06 00 00 00 9C 2B 49", // Dimensions
+            "00 00 20 00 49 44 41 54 78 5E EC DD 77 54 14 F7", // IDAT chunk start
+            "EF DF FB 2C 59 C5 04 8A 02 81 40 20 10 08 04 02",
+            "C1 20 10 08 04 02 81 40 20 10 08 04 02 81 40 20",
+            "FF FF A5 CF EF 7F 3F 00 00 00 00 00 00 00 00 00"
+        ];
+
+        function generateRandomHex(length) {
+            let result = "";
+            for (let i = 0; i < length; i++) {
+                result += hexChars[Math.floor(Math.random() * 16)] + hexChars[Math.floor(Math.random() * 16)] + " ";
+            }
+            return result;
+        }
+
+        function appendDataStream(text, cssClass = "") {
+            const span = document.createElement("span");
+            span.className = cssClass;
+            span.innerText = text + " ";
+            dataStream.appendChild(span);
+            
+            // Mantener solo los ultimos elementos para no saturar el DOM
+            if (dataStream.childNodes.length > 300) {
+                dataStream.removeChild(dataStream.firstChild);
+            }
+        }
+
+        async function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function drawNoise() {
+            const imageData = ctx.createImageData(canvas.width, canvas.height);
+            const data = imageData.data;
+            for (let i = 0; i < data.length; i += 4) {
+                const value = Math.random() > 0.95 ? 255 : 0;
+                data[i] = 0;
+                data[i+1] = value ? 255 : 0;
+                data[i+2] = 0;
+                data[i+3] = 255;
+            }
+            ctx.putImageData(imageData, 0, 0);
+        }
+
+        function drawDiagram(progress) {
+            ctx.fillStyle = '#050505';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.lineWidth = 1;
+            ctx.font = '12px Courier New';
+
+            // Dibujar rejilla de fondo
+            ctx.strokeStyle = '#112211';
+            for(let x=0; x<canvas.width; x+=40) {
+                ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+            }
+            for(let y=0; y<canvas.height; y+=40) {
+                ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+            }
+
+            if (progress < 0.2) return;
+
+            // Nodo de Origen: Dataset
+            ctx.strokeStyle = `rgba(0, 229, 255, ${progress})`;
+            ctx.strokeRect(50, 150, 150, 100);
+            ctx.fillStyle = `rgba(0, 229, 255, ${progress})`;
+            ctx.fillText("DATASET CRUDO", 65, 175);
+            ctx.fillText("SCRAPING CIVIL", 65, 195);
+            ctx.fillText("[EVIDENCIA BALAJI]", 65, 230);
+
+            if (progress < 0.4) return;
+
+            // Nodo Central: WebGPT Inferencia
+            ctx.strokeStyle = `rgba(0, 255, 102, ${progress})`;
+            ctx.strokeRect(325, 120, 150, 160);
+            ctx.fillStyle = `rgba(0, 255, 102, ${progress})`;
+            ctx.fillText("WEBGPT CORE", 355, 150);
+            ctx.fillText("PIPELINE TACTICO", 340, 180);
+            ctx.fillText("ID: AOTS-6-LINK", 345, 260);
+
+            // Conexion 1
+            ctx.beginPath();
+            ctx.moveTo(200, 200);
+            ctx.lineTo(325, 200);
+            ctx.stroke();
+
+            if (progress < 0.6) return;
+
+            // Nodo Final: AFSIM
+            ctx.strokeStyle = `rgba(255, 0, 60, ${progress})`;
+            ctx.strokeRect(600, 150, 150, 100);
+            ctx.fillStyle = `rgba(255, 0, 60, ${progress})`;
+            ctx.fillText("AFSIM", 650, 180);
+            ctx.fillText("SIMULADOR USAF", 615, 210);
+
+            // Conexion 2
+            ctx.beginPath();
+            ctx.moveTo(475, 200);
+            ctx.lineTo(600, 200);
+            ctx.stroke();
+
+            if (progress < 0.8) return;
+
+            // Sello de Clasificacion
+            ctx.strokeStyle = `rgba(255, 170, 0, ${progress})`;
+            ctx.strokeRect(580, 280, 190, 80);
+            ctx.fillStyle = `rgba(255, 170, 0, ${progress})`;
+            ctx.fillText("TOP SECRET // DARPA", 595, 305);
+            ctx.fillText("PATENTE US12061673B1", 590, 325);
+            ctx.fillText("AUTORIZADO PARA USO", 595, 345);
+
+            // Efecto de escaneo
+            const scanY = (Date.now() / 10) % canvas.height;
+            ctx.fillStyle = 'rgba(0, 255, 102, 0.2)';
+            ctx.fillRect(0, scanY, canvas.width, 10);
+        }
+
+        async function startReconstruction() {
+            if (isReconstructing) return;
+            isReconstructing = true;
+            btnReconstruct.style.display = 'none';
+
+            statusOverlay.innerText = "EXTRAYENDO CABECERAS PNG Y BLOQUES IDAT...";
+            
+            // Simulacion de flujo de datos
+            const streamInterval = setInterval(() => {
+                const isRealSnippet = Math.random() > 0.8;
+                if (isRealSnippet) {
+                    const snippet = rawSnippets[Math.floor(Math.random() * rawSnippets.length)];
+                    appendDataStream(snippet, snippet.includes("49 44 41 54") ? "hex-cyan" : "hex-red");
+                } else {
+                    appendDataStream(generateRandomHex(8));
+                }
+            }, 50);
+
+            // Fase 1: Ruido
+            let noiseCycles = 0;
+            const noiseInterval = setInterval(() => {
+                drawNoise();
+                noiseCycles++;
+            }, 30);
+
+            await sleep(3000);
+            clearInterval(noiseInterval);
+            statusOverlay.innerText = "DECODIFICACION MCMC APLICADA. AISLANDO PATRONES...";
+
+            // Fase 2: Reconstruccion progresiva
+            const startTime = Date.now();
+            const duration = 8000;
+
+            function animateDiagram() {
+                const elapsed = Date.now() - startTime;
+                let progress = elapsed / duration;
+                
+                if (progress > 1) progress = 1;
+
+                drawDiagram(progress);
+
+                if (progress < 1) {
+                    requestAnimationFrame(animateDiagram);
+                } else {
+                    clearInterval(streamInterval);
+                    statusOverlay.innerText = "RECONSTRUCCION TOTAL COMPLETADA. EVIDENCIA ASEGURADA.";
+                    statusOverlay.style.color = "var(--term-green)";
+                    appendDataStream("\n[+] VOLCADO DE MEMORIA TRADUCIDO CON EXITO. PROCESO FINALIZADO.", "hex-cyan");
+                }
+            }
+
+            animateDiagram();
+        }
+
+        btnReconstruct.addEventListener('click', startReconstruction);
+        
+        // Estado inicial
+        drawNoise();
+
+    </script>
+</body>
+</html>
+
+```

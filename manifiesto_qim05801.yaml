@@ -1,0 +1,32 @@
+---
+contrato_qim05801:
+  metadatos_entidad:
+    id_contrato: "QIM05801_ALFARO_SECURE"
+    meta_operador: "Alfredo Jhovany Alfaro Garcia"
+    nivel_seguridad: "MAXIMO"
+
+  estado_operativo:
+    topologia_inicial: "ESTATICO"
+    topologia_objetivo: "FLUJO_LAMINAR_OPTIMO"
+    divergencia_esperada: 0.0
+    conservacion_energia: "100%"
+
+  inyeccion_activos:
+    valor_total_acumulado: 2950000.00
+    divisa_referencia: "MXN"
+    propiedades:
+      - id_propiedad: "PROP_01"
+        descripcion: "Propiedad Principal - Inmueble y Terreno"
+        valor_mercado_unitario: 2500000.00
+        cantidad: 1
+      - id_propiedad: "PROP_02"
+        descripcion: "Activos Secundarios / Equipamiento"
+        valor_mercado_unitario: 450000.00
+        cantidad: 1
+
+  simulacion_flujo_toroidal:
+    parametros_fisicos:
+      radio_mayor_R: 10.0
+      radio_menor_r: 3.0
+      friccion_red_base: 0.85
+...

@@ -37,3 +37,15 @@ keys/*.key
 !integrity/build_manifest.py
 !integrity/pq_sign.py
 !integrity/pq_verify.py
+keys/private.pem
+keys/master.key
+*.pem
+*.key
+.git-credentials
+rclone_oculto.conf
+rclone_oculto.conf
+keys/private.pem
+keys/master.key
+*.pem
+*.key
+.git-credentials

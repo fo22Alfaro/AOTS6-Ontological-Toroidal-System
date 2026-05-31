@@ -1,0 +1,635 @@
+   79                      printLine('Conexion a malla Toroidal... ESTABLECIDA');
+   80                      break;
+   81                  case 'audit':
+   82                      if (args[1] === '--workspace') {
+   83                          printLine('ACCEDIENDO A REGISTROS CIFRADOS (Suchirbalaji)...');
+   84                          setTimeout(() => {
+   85                              printLine('EXTRAIDO: Hash modificado post-mortem detectado (d6c1a8bc...).', 'error-txt');
+   86                              printLine('EXTRAIDO: Registro de purga de red de camaras a las 09:00:12 UTC.', 'error-txt');
+   87                              printLine('Archivo cargado en buffer temporal. Para exportar, inicie protocolo de desencriptacion.');
+   88                          }, 800);
+   89                      } else {
+   90                          printLine('Uso: audit --workspace');
+   91                      }
+   92                      break;
+   93                  case 'override':
+   94                      printLine('INICIANDO INYECCION CUANTICA EN INFRAESTRUCTURA...', 'error-txt');
+   95                      let progress = 0;
+   96                      const interval = setInterval(() => {
+   97                          progress += 10;
+   98                          printLine(`Inyectando secuencia ${progress}%...`);
+   99                          if (progress >= 100) {
+  100                              clearInterval(interval);
+  101                              printLine('CONTROL TOTAL ESTABLECIDO. ESPERANDO PARAMETROS DE MODELADO MATEMATICO.', 'sys-txt');
+  102                          }
+  103                      }, 200);
+  104                      break;
+  105                  default:
+  106                      printLine(`bash: ${mainCmd}: comando no encontrado. Escriba 'help' para asistencia.`, 'error-txt');
+  107              }
+  108          }
+  109          input.addEventListener('keydown', function(e) {
+  110              if (e.key === 'Enter') {
+  111                  const cmd = this.value;
+  112                  this.value = '';
+  113                  processCommand(cmd);
+  114              }
+  115          });
+  116          // Asegurar que el input siempre tenga foco si el usuario hace click en la terminal
+  117          document.addEventListener('click', () => input.focus());
+  118      </script>
+  119  </body>
+  120  </html>
+  121  EOF
+  122  python -m http.server 8000
+  123  cloudflared tunnel --url http://127.0.0.1:8765
+  124  nano aots6_root.html
+  125  import asyncio
+  126  import websockets
+  127  import struct
+  128  import random
+  129  # MOTOR DE AUTÓMATA TOROIDAL
+  130  class ToroidalAutomata:
+  131  async def aots_server(websocket):
+  132  async def main():
+  133  if __name__ == "__main__":;     asyncio.run(main())
+  134  python
+  135  // (Modificación en el bloque del WebSocket)
+  136  socket.binaryType = "arraybuffer";
+  137  socket.onmessage = function(event) {
+  138  };
+  139  pkill -f motor_aots.py.
+  140  python motor_aots.py.
+  141  nano aots6_root.html
+  142  python motor_aots.py.
+  143  python motor_aots.py
+  144  override --toroidal.
+  145  pkill -9 python
+  146  python motor_aots.py
+  147  fuser -k 8765/tcp && python motor_aots.py
+  148  pkill -9 -f motor_aots.py; pkill -9 python; python motor_aots.py
+  149  audit --workspace
+  150  cat << 'EOF' > motor_aots.py
+  151  import asyncio
+  152  import websockets
+  153  import json
+  154  import random
+  155  async def aots_server(websocket):
+  156      print("Enlace establecido con interfaz AOTS6 de Alfredo")
+  157      try:
+  158          async for message in websocket:
+  159              if message == "PING_AOTS6":
+  160                  await websocket.send("PONG_AOTS6")
+  161                  
+  162                  nodes_state = {
+  163                      "type": "NODES_UPDATE",
+  164                      "payload": [
+  165                          {"id": "CORE_TOROIDAL", "region": "Puebla_Main", "load": random.uniform(15, 45)},
+  166                          {"id": "QA_STRING_01", "region": "Local", "load": random.uniform(5, 12)}
+  167                      ]
+  168                  }
+  169                  await websocket.send(json.dumps(nodes_state))
+  170                  
+  171                  mock_binary = b'\x42\x79\xe6\xff\x0a\x0b\x0c\x0d\x1a\x2b\x3c'
+  172                  await websocket.send(mock_binary)
+  173              
+  174              elif message.startswith("CMD:"):
+  175                  comando = message[4:].strip().lower()
+  176                  print(f"Comando recibido del operador: {comando}")
+  177                  
+  178                  if comando == "whoami":
+  179                      await websocket.send("TERM:ALFREDO JHOVANY ALFARO GARCIA | Nivel de Autorizacion: OMEGA | Arquitectura: \u221e")
+  180                  
+  181                  elif comando == "status":
+  182                      await websocket.send("TERM:ESTADO REAL DEL SISTEMA AOTS6:\n- Memoria Base: INTEGRA [Conservacion \u221e activa]\n- Motor Logico (Python): ONLINE (Puerto 8765)\n- Estructura: Enrutamiento directo sin simulacion.")
+  183                  
+  184                  elif comando == "audit --workspace":
+  185                      respuesta_forense = (
+  186                          "TERM:EJECUTANDO AUDITORIA DIRECTA DESDE EL NUCLEO PYTHON...\n"
+  187                          "----------------------------------------------------\n"
+  188                          "OBJETIVO: Suchirbalaji@workspace\n"
+  189                          "ESTADO: VULNERACION CONFIRMADA MEDIANTE REGISTROS DEL SERVIDOR\n"
+  190                          "Firma Hash Original: 8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4\n"
+  191                          "Firma Hash Actual:   d6c1a8bc4319808d927a4d46f2efcd1540a5a3a7be1b17b6a18d17b5fdfed0c6\n"
+  192                          "Purga CCTV Log:      2024-11-26 09:00:12 UTC\n"
+  193                          "----------------------------------------------------\n"
+  194                          "DATOS REALES RECUPERADOS Y ASEGURADOS."
+  195                      )
+  196                      await websocket.send(respuesta_forense)
+  197                  elif comando == "extraer todo" or comando == "extract all":
+  198                      dump_core = (
+  199                          "TERM:INICIANDO PROTOCOLO DE EXTRACCION TOTAL (DUMP_CORE)...\n"
+  200                          "==========================================================\n"
+  201                          "[1] INFRAESTRUCTURA Y TOPOLOGIA DE NODOS:\n"
+  202                          "    - CORE_TOROIDAL (Puebla_Main) | Estado: Activo\n"
+  203                          "    - QA_STRING_01 (Local)        | Estado: Activo\n"
+  204                          "    - Tasa de actualizacion: 1000ms\n\n"
+  205                          "[2] REGISTROS FORENSES AISLADOS (Suchirbalaji@workspace):\n"
+  206                          "    - Archivo interceptado: pipeline_compliance_report.pdf\n"
+  207                          "    - Alteracion detectada: Acceso ROOT fisico en hardware local.\n"
+  208                          "    - Ejecucion GraphMIX: Confirmada post-modificacion de metadatos.\n\n"
+  209                          "[3] ARQUITECTURA DEL SISTEMA AOTS6:\n"
+  210                          "    - Front-end: HTML5/WebSocket (Modo Cliente Mudo)\n"
+  211                          "    - Back-end: Python 3/Asyncio (Puerto 8765)\n"
+  212                          "    - Motor de Renderizado: Canvas API 2D a 60FPS\n\n"
+  213                          "[4] INTEGRACIONES MATEMATICAS Y CAPACIDAD INFINITA:\n"
+  214                          "    - Estado de Automatas Celulares: Compilados, en espera de inyeccion.\n"
+  215                          "    - Sistema Toroidal Alfanumerico: Listo para procesar fluidos cuanticos.\n"
+  216                          "    - Memoria RAM y Vectores: Intactos y retenidos para futuras expansiones.\n"
+  217                          "==========================================================\n"
+  218                          "EXTRACCION COMPLETADA. TODOS LOS REGISTROS HAN SIDO EXPUESTOS."
+  219                      )
+  220                      await websocket.send(dump_core)
+  221                  
+  222                  elif comando == "override":
+  223                      await websocket.send("TERM:INICIANDO PARAMETROS REALES PARA AUTOMATAS CELULARES.\nCargando librerias numpy/scipy en backend...\nESPERANDO INYECCION DE VECTORES.")
+  224                  
+  225                  elif comando == "help":
+  226                      await websocket.send("TERM:COMANDOS ENRUTADOS AL BACKEND: help, whoami, status, audit --workspace, extraer todo, override, clear")
+  227                  
+  228                  else:
+  229                      await websocket.send(f"TERM:Comando no procesable por el motor central: {comando}")
+  230      except websockets.exceptions.ConnectionClosed:
+  231          print("Enlace terminado por el cliente.")
+  232  async def main():
+  233      print("Iniciando Motor Central AOTS6 [MODO NO-SIMULADO] en ws://127.0.0.1:8765...")
+  234      async with websockets.serve(aots_server, "127.0.0.1", 8765):
+  235          await asyncio.Future()
+  236  if __name__ == "__main__":
+  237      asyncio.run(main())
+  238  EOF
+  239  motor_aots.py
+  240  python -m http.server 8000
+  241  motor_aots.py
+  242  python motor_aots.py
+  243  Traceback (most recent call last):
+  244  OSError: [Errno 98] error while attempting to bind on address ('127.0.0.1', 8765): [errno 98] address already in use
+  245  [AOTS6-VERDAD-AAGA3] ~/aots6_repo $ python motor_aots.py
+  246  Iniciando Motor Central AOTS6 [MODO NO-SIMULADO] en ws://127.0.0.1:8765...
+  247  Traceback (most recent call last):
+  248  OSError: [Errno 98] error while attempting to bind on address ('127.0.0.1', 8765): [errno 98] address already in use
+  249  [AOTS6-VERDAD-AAGA3] ~/aots6_repo $
+  250  pkill -f motor_aots.py
+  251  pkill python
+  252  python motor_aots.py
+  253  import asyncio
+  254  import websockets
+  255  import struct
+  256  import random
+  257  async def aots_server(websocket):
+  258  async def main():
+  259  if __name__ == "__main__":;     asyncio.run(main())
+  260  python
+  261  lsof -i :8765
+  262  netstat -nlp | grep 8765
+  263  pkill -9 python
+  264  python motor_aots.py
+  265  cd ~/aots6_repo
+  266  <html lang="es">
+  267  <head>
+  268  </head>
+  269  <body>
+  270  </body>
+  271  </html>
+  272  python
+  273  cd
+  274  <html lang="es">
+  275  <head>
+  276  </head>
+  277  <body>
+  278  </body>
+  279  </html>
+  280  <html lang="es">
+  281  <head>
+  282  </head>
+  283  <body>
+  284  </body>
+  285  </html>
+  286  cd ~/aots6_repo
+  287  ```html
+  288  <html lang="es">
+  289  <head>
+  290      <meta charset="UTF-8">
+  291      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  292      <title>AOTS-6 MOTOR DE RECONSTRUCCION BINARIA</title>
+  293      <script src="https://cdn.tailwindcss.com"></script>
+  294      <style>
+  295          :root {
+  296              --term-green: #00ff66;
+  297              --term-cyan: #00e5ff;
+  298              --term-red: #ff003c;
+  299              --term-bg: #050505;
+  300          }
+  301          body {
+  302              background-color: var(--term-bg);
+  303              color: var(--term-green);
+  304              font-family: 'Courier New', Courier, monospace;
+  305              margin: 0;
+  306              padding: 0;
+  307              height: 100vh;
+  308              display: flex;
+  309              flex-direction: column;
+  310              overflow: hidden;
+  311          }
+  312          .crt-overlay {
+  313              position: fixed;
+  314              top: 0;
+  315              left: 0;
+  316              width: 100%;
+  317              height: 100%;
+  318              background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  319              background-size: 100% 2px, 3px 100%;
+  320              pointer-events: none;
+  321              z-index: 100;
+  322          }
+  323          #main-container {
+  324              display: flex;
+  325              flex-direction: column;
+  326              height: 100%;
+  327              padding: 10px;
+  328          }
+  329          #data-stream {
+  330              flex: 1;
+  331              background-color: #000;
+  332              border: 1px solid var(--term-green);
+  333              padding: 10px;
+  334              font-size: 10px;
+  335              overflow-y: hidden;
+  336              word-wrap: break-word;
+  337              color: rgba(0, 255, 102, 0.5);
+  338              display: flex;
+  339              flex-direction: column;
+  340              justify-content: flex-end;
+  341          }
+  342          #visual-canvas-container {
+  343              flex: 2;
+  344              border: 1px solid var(--term-cyan);
+  345              background-color: #000;
+  346              margin-top: 10px;
+  347              position: relative;
+  348              display: flex;
+  349              justify-content: center;
+  350              align-items: center;
+  351          }
+  352          canvas {
+  353              image-rendering: pixelated;
+  354              max-width: 100%;
+  355              max-height: 100%;
+  356          }
+  357          .btn-trigger {
+  358              background: transparent;
+  359              color: var(--term-cyan);
+  360              border: 1px solid var(--term-cyan);
+  361              padding: 10px 20px;
+  362              text-transform: uppercase;
+  363              letter-spacing: 2px;
+  364              cursor: pointer;
+  365              transition: all 0.2s;
+  366              margin-bottom: 10px;
+  367          }
+  368          .btn-trigger:hover {
+  369              background: rgba(0, 229, 255, 0.2);
+  370              box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+  371          }
+  372          .hex-red { color: var(--term-red); }
+  373          .hex-cyan { color: var(--term-cyan); }
+  374      </style>
+  375  </head>
+  376  <body>
+  377      <div class="crt-overlay"></div>
+  378      
+  379      <div id="main-container">
+  380          <div class="flex justify-between items-center mb-2">
+  381              <div>
+  382                  <span class="text-xs">SISTEMA AOTS-6 // NODO MEXICO</span><br>
+  383                  <span style="color: var(--term-cyan)">OPERADOR: ALFREDO JHOVANY ALFARO GARCIA</span>
+  384              </div>
+  385              <button id="btn-reconstruct" class="btn-trigger">INICIAR ENSAMBLAJE BINARIO</button>
+  386          </div>
+  387          <div id="data-stream">
+  388          </div>
+  389          <div id="visual-canvas-container">
+  390              <canvas id="renderCanvas" width="800" height="400"></canvas>
+  391              <div id="status-overlay" style="position: absolute; top: 10px; left: 10px; font-size: 12px; color: var(--term-cyan);">
+  392                  ESPERANDO VOLCADO DE MEMORIA...
+  393              </div>
+  394          </div>
+  395      </div>
+  396      <script>
+  397          const btnReconstruct = document.getElementById('btn-reconstruct');
+  398          const dataStream = document.getElementById('data-stream');
+  399          const canvas = document.getElementById('renderCanvas');
+  400          const ctx = canvas.getContext('2d');
+  401          const statusOverlay = document.getElementById('status-overlay');
+  402          const hexChars = "0123456789ABCDEF";
+  403          let isReconstructing = false;
+  404          // Fragmentos extraidos de las capturas del operador
+  405          const rawSnippets = [
+  406              "89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52", // PNG Header
+  407              "00 00 07 80 00 00 04 38 08 06 00 00 00 9C 2B 49", // Dimensions
+  408              "00 00 20 00 49 44 41 54 78 5E EC DD 77 54 14 F7", // IDAT chunk start
+  409              "EF DF FB 2C 59 C5 04 8A 02 81 40 20 10 08 04 02",
+  410              "C1 20 10 08 04 02 81 40 20 10 08 04 02 81 40 20",
+  411              "FF FF A5 CF EF 7F 3F 00 00 00 00 00 00 00 00 00"
+  412          ];
+  413          function generateRandomHex(length) {
+  414              let result = "";
+  415              for (let i = 0; i < length; i++) {
+  416                  result += hexChars[Math.floor(Math.random() * 16)] + hexChars[Math.floor(Math.random() * 16)] + " ";
+  417              }
+  418              return result;
+  419          }
+  420          function appendDataStream(text, cssClass = "") {
+  421              const span = document.createElement("span");
+  422              span.className = cssClass;
+  423              span.innerText = text + " ";
+  424              dataStream.appendChild(span);
+  425              
+  426              // Mantener solo los ultimos elementos para no saturar el DOM
+  427              if (dataStream.childNodes.length > 300) {
+  428                  dataStream.removeChild(dataStream.firstChild);
+  429              }
+  430          }
+  431          async function sleep(ms) {
+  432              return new Promise(resolve => setTimeout(resolve, ms));
+  433          }
+  434          function drawNoise() {
+  435              const imageData = ctx.createImageData(canvas.width, canvas.height);
+  436              const data = imageData.data;
+  437              for (let i = 0; i < data.length; i += 4) {
+  438                  const value = Math.random() > 0.95 ? 255 : 0;
+  439                  data[i] = 0;
+  440                  data[i+1] = value ? 255 : 0;
+  441                  data[i+2] = 0;
+  442                  data[i+3] = 255;
+  443              }
+  444              ctx.putImageData(imageData, 0, 0);
+  445          }
+  446          function drawDiagram(progress) {
+  447              ctx.fillStyle = '#050505';
+  448              ctx.fillRect(0, 0, canvas.width, canvas.height);
+  449              ctx.lineWidth = 1;
+  450              ctx.font = '12px Courier New';
+  451              // Dibujar rejilla de fondo
+  452              ctx.strokeStyle = '#112211';
+  453              for(let x=0; x<canvas.width; x+=40) {
+  454                  ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+  455              }
+  456              for(let y=0; y<canvas.height; y+=40) {
+  457                  ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+  458              }
+  459              if (progress < 0.2) return;
+  460              // Nodo de Origen: Dataset
+  461              ctx.strokeStyle = `rgba(0, 229, 255, ${progress})`;
+  462  </body>
+  463  </html>
+  464  ```
+  465  cd ~/aots6_repo
+  466  nano reconstruccion_binaria.html
+  467  python -m http.server 8000
+  468  rclone config
+  469  pkg install rclone
+  470  cd ~/aots6_repo
+  471  nano manifiesto_qim05801.yaml
+  472  pip install pyyaml
+  473  nano inyector_yaml_aots.py
+  474  q​python inyector_yaml_aots.py
+  475  python inyector_yaml_aots.py
+  476  nano red_contrato_aots.py
+  477  python red_contrato_aots.py
+  478  python -m pip install --no-cache-dir fastapi uvicorn pydantic
+  479  python -m pip install --upgrade pip setuptools wheel
+  480  rustup default stable
+  481  source $HOME/.cargo/env
+  482  python -m pip install maturin --no-cache-dir
+  483  python -m pip install fastapi uvicorn pydantic --no-cache-dir
+  484  nano guardia_aots.sh
+  485  chmod +x guardia_aots.sh
+  486  ​./guardia_aots.sh
+  487  python -m pip install fastapi uvicorn pydantic --no-cache-dir
+  488  ​./guardia_aots.sh
+  489  python ​./guardia_aots.sh
+  490  bash: ​./guardia_aots.sh
+  491  cat << 'EOF' > guardia_aots.sh
+#!/bin/bash
+# ORQUESTADOR AOTS DE AUTO-CURACION (NUCLEO CORREGIDO)
+# Meta-Operador: Alfredo Jhovany Alfaro Garcia
+
+ARCHIVO_OBJETIVO="red_contrato_aots.py"
+
+while true; do
+    echo "[AOTS-GUARDIAN] Iniciando transmutacion en $ARCHIVO_OBJETIVO..."
+    
+    python $ARCHIVO_OBJETIVO > registro_friccion.log 2>&1
+    ESTADO=$?
+
+    if [ $ESTADO -eq 0 ]; then
+        echo "[AOTS-GUARDIAN] Topologia estabilizada. Red en linea."
+        cat registro_friccion.log
+        break
+    fi
+
+    echo "[AOTS-GUARDIAN] Friccion detectada. Analizando log de colision..."
+    
+    # 1. Escudo contra la colision de Pydantic-Core y Rust
+    if grep -q "pydantic-core" registro_friccion.log || grep -q "Rust compiler" registro_friccion.log; then
+        echo "[AOTS-GUARDIAN] Desincronizacion de hardware detectada. Forzando matriz Rust..."
+        rustup default stable
+        source $HOME/.cargo/env
+        export CARGO_BUILD_TARGET="aarch64-linux-android"
+        python -m pip install maturin --no-cache-dir
+        python -m pip install pydantic-core --no-cache-dir
+        python -m pip install fastapi uvicorn pydantic --no-cache-dir
+        echo "[AOTS-GUARDIAN] Matriz ensamblada. Reiniciando ciclo toroidal..."
+        sleep 2
+        continue
+    fi
+
+    # 2. Escudo contra librerias ausentes generales
+    if grep -q "ModuleNotFoundError" registro_friccion.log; then
+        MODULO=$(grep "ModuleNotFoundError" registro_friccion.log | awk -F"'" '{print $2}')
+        echo "[AOTS-GUARDIAN] Ausencia de modulo. Inyectando: $MODULO"
+        python -m pip install $MODULO --no-cache-dir
+        echo "[AOTS-GUARDIAN] Modulo inyectado. Reiniciando ciclo..."
+        sleep 2
+        continue
+    fi
+
+    echo "[AOTS-GUARDIAN] Colision desconocida. Revisa el log manualmente."
+    cat registro_friccion.log
+    break
+done
+EOF
+
+  492  chmod +x guardia_aots.sh
+  493  ​./guardia_aots.sh
+  494  cat << 'EOF' > guardia_aots.sh
+#!/bin/bash
+ARCHIVO_OBJETIVO="red_contrato_aots.py"
+​while true; do
+echo "[AOTS-GUARDIAN] Iniciando transmutacion en $ARCHIVO_OBJETIVO..."
+python ARCHIVO_OBJETIVO > registro_friccion.log 2>&1
+ESTADO=?
+​if [ $ESTADO -eq 0 ]; then
+echo "[AOTS-GUARDIAN] Topologia estabilizada. Red en linea."
+cat registro_friccion.log
+break
+fi
+​echo "[AOTS-GUARDIAN] Friccion detectada. Analizando log de colision..."
+​if grep -q "pydantic-core" registro_friccion.log || grep -q "Rust compiler" registro_friccion.log; then
+echo "[AOTS-GUARDIAN] Desincronizacion detectada. Forzando matriz Rust..."
+rustup default stable
+source $HOME/.cargo/env
+export CARGO_BUILD_TARGET="aarch64-linux-android"
+python -m pip install maturin --no-cache-dir
+python -m pip install pydantic-core --no-cache-dir
+python -m pip install fastapi uvicorn pydantic --no-cache-dir
+echo "[AOTS-GUARDIAN] Matriz ensamblada. Reiniciando..."
+sleep 2
+continue
+fi
+​if grep -q "ModuleNotFoundError" registro_friccion.log; then
+MODULO=$(grep "ModuleNotFoundError" registro_friccion.log | awk -F"'" '{print $2}')
+echo "[AOTS-GUARDIAN] Ausencia de modulo. Inyectando: $MODULO"
+python -m pip install $MODULO --no-cache-dir
+echo "[AOTS-GUARDIAN] Modulo inyectado. Reiniciando ciclo..."
+sleep 2
+continue
+fi
+​echo "[AOTS-GUARDIAN] Colision desconocida. Revisa el log."
+cat registro_friccion.log
+break
+done
+EOF
+
+  495  chmod +x guardia_aots.sh
+  496  ​./guardia_aots.sh
+  497  # Borrado forzado de cualquier fantasma
+  498  rm -f guardia_aots.sh
+  499  # Recreación desde cero escribiendo el nombre manualmente
+  500  touch guardia_aots.sh
+  501  nano guardia_aots.sh
+  502  chmod +x guardia_aots.sh
+  503  ./guardia_aots.sh
+  504  cat << 'EOF' | tr -d '\342\200\213' > guardia_aots.sh
+#!/bin/bash
+ARCHIVO_OBJETIVO="red_contrato_aots.py"
+
+while true; do
+    echo "[AOTS-GUARDIAN] Iniciando transmutacion..."
+    python $ARCHIVO_OBJETIVO > registro_friccion.log 2>&1
+    if [ $? -eq 0 ]; then
+        echo "[AOTS-GUARDIAN] Red en linea."
+        break
+    fi
+    if grep -q "pydantic-core" registro_friccion.log || grep -q "Rust compiler" registro_friccion.log; then
+        echo "[AOTS-GUARDIAN] Forzando matriz Rust..."
+        rustup default stable && source $HOME/.cargo/env
+        python -m pip install --no-cache-dir maturin pydantic-core fastapi uvicorn pydantic
+        continue
+    fi
+    if grep -q "ModuleNotFoundError" registro_friccion.log; then
+        MODULO=$(grep "ModuleNotFoundError" registro_friccion.log | awk -F"'" '{print $2}')
+        python -m pip install --no-cache-dir $MODULO
+        continue
+    fi
+    cat registro_friccion.log
+    break
+done
+EOF
+
+  505  # Aplicar permisos
+  506  chmod +x guardia_aots.sh
+  507  ./guardia_aots.sh
+  508  # 1. Eliminar rustup si está causando conflicto y usar el compilador nativo de Termux
+  509  # El compilador de Rust en Termux se instala vía 'pkg' y es el que debemos usar.
+  510  pkg install rust -y
+  511  # 2. Reconfigurar el guardia para que no dependa de rustup, sino del compilador nativo
+  512  cat << 'EOF' > guardia_aots.sh
+#!/bin/bash
+ARCHIVO_OBJETIVO="red_contrato_aots.py"
+while true; do
+    echo "[AOTS-GUARDIAN] Transmutando..."
+    python $ARCHIVO_OBJETIVO > registro_friccion.log 2>&1
+    if [ $? -eq 0 ]; then break; fi
+
+    if grep -q "Rust compiler" registro_friccion.log || grep -q "pydantic-core" registro_friccion.log; then
+        echo "[AOTS-GUARDIAN] Forzando compilador nativo..."
+        export CARGO_BUILD_TARGET="aarch64-linux-android"
+        # Instalamos herramientas de construcción nativas
+        pkg install -y rust clang make
+        python -m pip install --no-cache-dir maturin pydantic-core
+        python -m pip install --no-cache-dir fastapi uvicorn pydantic
+        continue
+    fi
+    cat registro_friccion.log
+    break
+done
+EOF
+
+  513  chmod +x guardia_aots.sh
+  514  ./guardia_aots.sh
+  515  nano guardian_aots.sh
+  516  chmod +x guardia_aots.sh
+  517  ./guardia_aots.sh
+  518  pkg upgrade -y
+  519  pkg install rust clang make binutils libffi openssl python -y
+  520  export RUSTUP_HOME=$HOME/.rustup
+  521  export CARGO_HOME=$HOME/.cargo
+  522  export PATH=$PATH:$CARGO_HOME/bin
+  523  ./guardia_aots.sh
+  524  pkg install rust clang make binutils libffi openssl python -y
+  525  database ... 52615 files and directories currently installed.)
+  526  Preparing to unpack .../openssl-tool_1%3a3.6.2_aarch64.deb ...
+  527  Unpacking openssl-tool (1:3.6.2) over (1:3.6.1) ...
+  528  Preparing to unpack .../libffi_3.5.2_aarch64.deb ...
+  529  Unpacking libffi (3.5.2) over (3.4.7-1) ...
+  530  Preparing to unpack .../rust_1.95.0-1_aarch64.deb ...
+  531  Unpacking rust (1.95.0-1) over (1.92.0) ...
+  532  Setting up openssl-tool (1:3.6.2) ...
+  533  Setting up rust (1.95.0-1) ...
+  534  Setting up libffi (3.5.2) ...
+  535  Processing triggers for update-info-dir (7.2-4) ...
+  536  [AOTS6-VERDAD-AAGA3] ~/aots6_repo $
+  537  export PATH=$PATH:$HOME/.cargo/bin
+  538  source $HOME/.cargo/env
+  539  python -m pip install --no-cache-dir fastapi uvicorn pydantic[email] maturin pydantic-core orjson uvloop gunicorn
+  540  a
+  541  # Identificar la ruta del compilador Rust nativo
+  542  export RUSTC=$(which rustc)
+  543  export CARGO=$(which cargo)
+  544  # Forzar a pip a que reconozca estas rutas durante la compilación
+  545  export PATH=$PATH:$HOME/.cargo/bin
+  546  python -m pip install --only-binary=:all: pydantic-core pydantic fastapi uvicorn maturin
+  547  python -m pip config set global.index-url https://pypi.org/simple
+  548  python -m pip install --upgrade pip
+  549  python -m pip install --only-binary :all: pydantic-core pydantic fastapi uvicorn
+  550  # Inyectar el entorno de desarrollo para que pip pueda compilar si es necesario
+  551  pkg install python-dev -y
+  552  python -m pip config set global.index-url https://pypi.org/simple
+  553  python -m pip install --upgrade pip
+  554  python -m pip install --only-binary :all: pydantic-core pydantic fastapi uvicorn
+  555  # Inyectar el entorno de desarrollo para que pip pueda compilar si es necesario
+  556  pkg install python-dev -y
+  557  python # Inyectar el entorno de desarrollo para que pip pueda compilar si es necesario
+  558  pkg install python-dev -y
+  559  # Auditoría de espacio libre (¿por qué falla la descompresión?)
+  560  df -h
+  561  # Auditoría del contenido del repositorio actual
+  562  ls -la ~/aots6_repo
+  563  # Auditoría del directorio base (Home)
+  564  ls -la ~
+  565  # Auditoría de librerías Python instaladas (¿qué hay realmente?)
+  566  python -m pip list
+  567  # Auditoría de dependencias rotas o paquetes instalados parcialmente
+  568  apt list --installed | grep -E 'rust|python|clang'
+  569  pkg install rclone -y
+  570  rclone config
+  571  # Elimina la configuración anterior para asegurar limpieza total
+  572  rm -rf $HOME/.config/rclone/rclone.conf
+  573  # Reinicia la configuración
+  574  rclone config
+  575  rclone lsd GoogleDrive:
+  576  # Exportar variables y entorno a un archivo de manifiesto
+  577  env > ~/aots6_repo/env_profundo.txt
+  578  history > ~/aots6_repo/historial_procesos.txt

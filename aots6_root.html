@@ -1,0 +1,26 @@
+// (Modificación en el bloque del WebSocket)
+socket.binaryType = "arraybuffer";
+
+socket.onmessage = function(event) {
+    if (event.data instanceof ArrayBuffer) {
+        const view = new Uint8Array(event.data);
+        const ctx = document.getElementById('latencyCanvas').getContext('2d');
+        const size = 20;
+        const cellW = ctx.canvas.width / size;
+        const cellH = ctx.canvas.height / size;
+        
+        // MÁSCARA DE TRANSFORMACIÓN (Fondo semitransparente para efecto rastro)
+        ctx.fillStyle = 'rgba(5, 5, 5, 0.3)';
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        
+        ctx.fillStyle = '#00ff66';
+        for(let i = 0; i < 400; i++) {
+            if(view[i] === 1) {
+                const x = i % size;
+                const y = Math.floor(i / size);
+                ctx.fillRect(x*cellW, y*cellH, cellW-1, cellH-1);
+            }
+        }
+    }
+};
+

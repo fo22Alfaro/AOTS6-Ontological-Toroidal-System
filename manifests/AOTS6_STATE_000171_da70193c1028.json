@@ -1,0 +1,22 @@
+{
+  "state_id": "AOTS6_STATE_000171",
+  "timestamp": "2026-05-31T04:19:35.833036+00:00",
+  "event": "MANUAL_SNAPSHOT",
+  "data": {
+    "files_indexed": 1577,
+    "master_hash": "95f0289866a77acaaa16986334646d714d5b1f4cd66efc35bbd89d12aa2142d8"
+  },
+  "author": "Alfredo Jhovany Alfaro Garcia",
+  "orcid": "0009-0002-5177-9029",
+  "coord_T6": [
+    0.7481712698936462,
+    0.7481712698936462,
+    0.5045445561408997,
+    0.0,
+    0.18821144104003906,
+    0.21881103515625
+  ],
+  "dist_canonical": 0.7829873,
+  "prev_hash": "2b863c45931068139d64a8aac154c26fe3ae96f3d0352d0a8de501bcae94f13d",
+  "state_hash": "da70193c1028a894c3ed0a565b5f97f89bcc471239f56c0477393a947fd670d4"
+}

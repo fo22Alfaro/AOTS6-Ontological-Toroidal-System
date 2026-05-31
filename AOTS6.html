@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOTS⁶ INTERNACIONAL - TELEMETRIA REAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --neon-green: #00ff66;
+            --dark-bg: #050505;
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: #e2e8f0;
+        }
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 9999;
+            position: fixed;
+            pointer-events: none;
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,255,102,0.1) 50%, rgba(0,0,0,0) 100%);
+            opacity: 0.1;
+            animation: scanline 6s linear infinite;
+        }
+        @keyframes scanline {
+            0% { top: -100px; }
+            100% { top: 100vh; }
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(0, 255, 102, 0.3); }
+        .status-dot {
+            height: 8px;
+            width: 8px;
+            background-color: #ef4444;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .status-dot.connected {
+            background-color: #00ff66;
+            box-shadow: 0 0 8px #00ff66;
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen flex flex-col p-2 lg:p-4">
+    <div class="scanline"></div>
+    
+    <header class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4 px-2 gap-2">
+        <div>
+            <h1 class="text-xl lg:text-2xl font-light tracking-widest text-emerald-400" style="text-shadow: 0 0 10px rgba(0,255,102,0.3);">
+                AOTS⁶ INTERNACIONAL
+            </h1>
+            <p class="text-slate-500 text-[10px] lg:text-xs tracking-widest uppercase mt-1">
+                Operador: Alfredo Jhovany Alfaro Garcia | Lectura Directa
+            </p>
+        </div>
+        <div class="flex gap-4 text-[10px] lg:text-xs font-mono text-slate-400">
+            <div class="flex flex-col items-start lg:items-end">
+                <span>ENLACE AL MOTOR CENTRAL</span>
+                <div class="flex items-center gap-2">
+                    <span id="socket-status" class="text-red-400">DESCONECTADO</span>
+                    <span id="status-indicator" class="status-dot"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 flex flex-col lg:grid lg:grid-cols-12 lg:grid-rows-6 gap-4">
+        
+        <div class="glass-panel w-full lg:col-span-8 lg:row-span-4 rounded-xl overflow-hidden relative flex flex-col min-h-[250px] lg:min-h-0">
+            <div class="absolute top-4 left-4 z-10 font-mono text-[10px] lg:text-xs text-emerald-500/70">
+                OSCILOSCOPIO DE LATENCIA (RTT REAL)
+            </div>
+            <div class="absolute top-4 right-4 z-10 font-mono text-xl lg:text-2xl text-emerald-400" id="current-latency">
+                -- ms
+            </div>
+            <div class="flex-1 w-full h-full relative">
+                <canvas id="latencyCanvas" class="absolute inset-0 w-full h-full"></canvas>
+            </div>
+        </div>
+
+        <div class="glass-panel w-full lg:col-span-4 lg:row-span-4 rounded-xl p-4 flex flex-col min-h-[200px]">
+            <h2 class="text-xs lg:text-sm font-mono text-slate-400 mb-4 uppercase">Topologia de Clusteres (Datos Nativos)</h2>
+            <div id="node-matrix" class="flex-1 overflow-y-auto space-y-2 pr-2">
+                <div class="text-xs text-slate-600 font-mono">Esperando transmision de nodos...</div>
+            </div>
+        </div>
+
+        <div class="glass-panel w-full lg:col-span-12 lg:row-span-2 rounded-xl p-4 flex flex-col min-h-[200px]">
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="text-xs lg:text-sm font-mono text-slate-400 uppercase">Volcado Hexadecimal (Buffer Binario Real)</h2>
+                <span id="packet-counter" class="text-[10px] lg:text-xs text-emerald-700 font-mono">Bytes recibidos: 0</span>
+            </div>
+            <div id="hex-terminal" class="flex-1 overflow-y-auto font-mono text-[10px] leading-tight text-slate-500 whitespace-pre-wrap break-all">
+                Socket inactivo. No hay flujo de paquetes.
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        /* ==========================================================================
+           NUCLEO AOTS⁶ - TELEMETRIA ESTRICTA NO SIMULADA
+           ========================================================================== */
+        
+        // 1. CONFIGURACION DEL ENLACE FISICO/LOGICO
+        // Esta IP debe ser la direccion local real donde corre el backend de tu modelo matematico
+        const CORE_WEBSOCKET_URL = 'ws://127.0.0.1:8765'; 
+        
+        let socket;
+        let totalBytes = 0;
+        const latencyHistory = new Array(50).fill(0);
+        let lastPingTime = 0;
+        
+        const hexTerminal = document.getElementById('hex-terminal');
+        const latencyText = document.getElementById('current-latency');
+        const packetCounterText = document.getElementById('packet-counter');
+        const socketStatusText = document.getElementById('socket-status');
+        const statusIndicator = document.getElementById('status-indicator');
+        const nodeMatrix = document.getElementById('node-matrix');
+        let hexLines = [];
+
+        // 2. MOTOR DE RENDERIZADO CANVAS
+        const canvas = document.getElementById('latencyCanvas');
+        const ctx = canvas.getContext('2d', { alpha: false });
+        let width, height;
+
+        function resizeCanvas() {
+            const rect = canvas.parentElement.getBoundingClientRect();
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = rect.width * dpr;
+            canvas.height = rect.height * dpr;
+            ctx.scale(dpr, dpr);
+            width = rect.width;
+            height = rect.height;
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        setTimeout(resizeCanvas, 100);
+
+        function renderGraph() {
+            if (!width || !height) return requestAnimationFrame(renderGraph);
+
+            ctx.fillStyle = '#050505';
+            ctx.fillRect(0, 0, width, height);
+
+            ctx.strokeStyle = '#1e293b';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            for(let i = 0; i < width; i += 40) { ctx.moveTo(i, 0); ctx.lineTo(i, height); }
+            for(let i = 0; i < height; i += 40) { ctx.moveTo(0, i); ctx.lineTo(width, i); }
+            ctx.stroke();
+
+            ctx.strokeStyle = '#00ff66';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            
+            const sliceWidth = width / (latencyHistory.length - 1);
+            let x = 0;
+
+            for (let i = 0; i < latencyHistory.length; i++) {
+                const normalized = Math.min(latencyHistory[i] / 500, 1); // Escala a 500ms
+                const y = height - (normalized * height * 0.8) - 10;
+
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+                x += sliceWidth;
+            }
+            ctx.stroke();
+
+            requestAnimationFrame(renderGraph);
+        }
+        requestAnimationFrame(renderGraph);
+
+        // 3. PARSEO DE DATOS REALES (Volcado de memoria directo)
+        function bufferToHex(buffer) {
+            const view = new Uint8Array(buffer);
+            return Array.from(view).map(b => b.toString(16).padStart(2, '0')).join(' ');
+        }
+
+        function updateHexTerminal(hexString) {
+            const timeString = new Date().toISOString().split('T')[1].slice(0, 12);
+            hexLines.unshift(`[${timeString}] STREAM | ${hexString}`);
+            if (hexLines.length > 20) hexLines.pop();
+            hexTerminal.textContent = hexLines.join('\n');
+        }
+
+        // 4. DIBUJADO DE NODOS BASADO EN JSON REAL
+        function renderNodes(nodesArray) {
+            if (!Array.isArray(nodesArray) || nodesArray.length === 0) return;
+            
+            nodeMatrix.innerHTML = nodesArray.map(node => {
+                const barWidth = Math.floor(node.load || 0);
+                const isWarning = barWidth > 80;
+                
+                return `
+                <div class="flex flex-col gap-1 p-2 bg-slate-800/50 border ${isWarning ? 'border-amber-500/50' : 'border-slate-700/50'} rounded">
+                    <div class="flex justify-between text-[10px] lg:text-xs font-mono">
+                        <span class="${isWarning ? 'text-amber-400' : 'text-slate-300'}">${node.id || 'NODO_DESCONOCIDO'}</span>
+                        <span class="text-slate-500">${node.region || 'LOCAL'}</span>
+                    </div>
+                    <div class="w-full bg-slate-900 h-1 rounded-full overflow-hidden">
+                        <div class="h-full ${isWarning ? 'bg-amber-500' : 'bg-emerald-500'}" style="width: ${barWidth}%"></div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        // 5. GESTION DE CONEXION WEBSOCKET ESTRICTA
+        function connectToCore() {
+            try {
+                socket = new WebSocket(CORE_WEBSOCKET_URL);
+                socket.binaryType = "arraybuffer"; // Forzar recepcion en crudo
+
+                socket.onopen = function() {
+                    socketStatusText.textContent = "CONECTADO: " + CORE_WEBSOCKET_URL;
+                    socketStatusText.className = "text-emerald-400";
+                    statusIndicator.classList.add('connected');
+                    updateHexTerminal("00 00 00 ENLACE ESTABLECIDO");
+                    
+                    // Iniciar ciclo de medicion de latencia real
+                    setInterval(() => {
+                        if (socket.readyState === WebSocket.OPEN) {
+                            lastPingTime = performance.now();
+                            socket.send("PING_AOTS6"); // Se envia una cadena real al backend
+                        }
+                    }, 1000);
+                };
+
+                socket.onmessage = function(event) {
+                    // Calculo de latencia real si el servidor responde al ping
+                    if (typeof event.data === "string") {
+                        if (event.data === "PONG_AOTS6") {
+                            const rtt = performance.now() - lastPingTime;
+                            latencyHistory.push(rtt);
+                            latencyHistory.shift();
+                            latencyText.textContent = Math.round(rtt) + 'ms';
+                            return;
+                        }
+                        
+                        // Parsear el estado de la red si el servidor envia JSON
+                        try {
+                            const data = JSON.parse(event.data);
+                            if (data.type === "NODES_UPDATE" && data.payload) {
+                                renderNodes(data.payload);
+                            }
+                        } catch(e) {
+                            // Si no es JSON, imprimir como texto crudo en la terminal
+                            updateHexTerminal("TXT: " + event.data);
+                        }
+                    } 
+                    // Si el servidor envia telemetria binaria cruda (ArrayBuffer)
+                    else if (event.data instanceof ArrayBuffer) {
+                        totalBytes += event.data.byteLength;
+                        packetCounterText.textContent = `Bytes recibidos: ${totalBytes}`;
+                        updateHexTerminal(bufferToHex(event.data));
+                    }
+                };
+
+                socket.onclose = function() {
+                    socketStatusText.textContent = "DESCONECTADO - RETENTANDO EN 5s";
+                    socketStatusText.className = "text-red-400";
+                    statusIndicator.classList.remove('connected');
+                    latencyText.textContent = "ERR";
+                    
+                    // Encerar grafica por caida de conexion
+                    latencyHistory.push(0);
+                    latencyHistory.shift();
+                    
+                    setTimeout(connectToCore, 5000);
+                };
+
+                socket.onerror = function(error) {
+                    updateHexTerminal("FF FF FF ERROR DE PUERTO LOGICO");
+                };
+
+            } catch (error) {
+                updateHexTerminal("FF FF FF FALLO FATAL AL CREAR SOCKET");
+            }
+        }
+
+        // Iniciar el sistema
+        connectToCore();
+
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,821 @@
+[33mcommit ac44814e6f172473c7f63b6fdba40e00ad98773c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Alfredo Jhovany Alfaro García <alfjhoalfgar248@aots6.local>
+Date:   Wed May 20 13:31:18 2026 -0600
+
+    RECONCILE: Unificación absoluta de evidencias, contratos y motores AOTS6
+
+[33mcommit 4fdd4a7ea0ed45f440456b66a11084b81c32db5e[m
+Author: Alfredo Jhovany Alfaro García <alfjhoalfgar248@aots6.local>
+Date:   Wed May 20 10:18:50 2026 -0600
+
+    FEAT: Forzado de motor Python y contratos huérfanos
+
+[33mcommit 7de80b3edc5a634bff6df7059074a7810ee2833e[m
+Author: Alfredo Jhovany Alfaro García <alfjhoalfgar248@aots6.local>
+Date:   Wed May 20 10:16:52 2026 -0600
+
+    FEAT: Sincronización Maestra AOTS6 desde Bóveda Segura (2026-05-20 10:16:52)
+
+[33mcommit 288c556dedc99224cab850123c8b61de70797b74[m
+Author: Alfredo Jhovany Alfaro García <alfjhoalfgar248@aots6.local>
+Date:   Wed May 20 10:01:56 2026 -0600
+
+    FEAT: Sincronización Maestra AOTS6 desde Bóveda Segura (2026-05-20 10:01:56)
+
+[33mcommit 769a4ee94dfa15ea406ff71c3215f012e183c70d[m
+Author: Alfredo Jhovany Alfaro García <alfjhoalfgar248@aots6.local>
+Date:   Wed May 20 09:26:15 2026 -0600
+
+    FEAT: Unificación Científica AOTS6 Caso Balaji - Hash Validado SHA-256 (2026-05-20 09:26:14)
+
+[33mcommit 52b4f08102c45f808c31e1a91f6b98285ab5dfd1[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:56:56 2026 -0600
+
+    PERSISTENCE: Anclaje de firmas de autenticación y estado del bloque 163.
+
+[33mcommit 4cea32254ebbbd2a207de9cd2bc849c06b155f14[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:53:50 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:53:50Z]
+
+[33mcommit a0ae551f97459ea1597033d94104aa833f2c48be[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:52:49 2026 -0600
+
+    CUSTODY: Inyección del operador 2527FEORGOA y sincronización de capacidad física.
+
+[33mcommit 389077bb69b81fb658fa97f8e4f57cf327af5fbf[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:51:18 2026 -0600
+
+    FIX: Liberación de la ruta core e inyección del software del custodio mutado.
+
+[33mcommit 6c1e260cc2287f192a26a40efff5757cdbb14a1c[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:48:53 2026 -0600
+
+    EVOLUTION: Aplicación del operador de hiper-expansión 2527feogoa22^639.
+
+[33mcommit 2c9ce79788c81e24584755a00a3d6fe8f2aba950[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:48:47 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:48:46Z]
+
+[33mcommit 02e01db0a36c169a2a60482a8549c9b6473a4297[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:43:42 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:43:42Z]
+
+[33mcommit 9b7c2ffbb9905c31b16a51485837b3542ecd1dd6[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:38:36 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:38:36Z]
+
+[33mcommit 7ee18a964a9b3bf7c47e257ccf5b2c6ace94ea7b[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:33:30 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:33:30Z]
+
+[33mcommit 2303664b42e53c1277c87d3fbae35f51cb530385[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:28:25 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:28:25Z]
+
+[33mcommit 30f08059bd92392e7b90552e970c032e2fa0311a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:23:17 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:23:17Z]
+
+[33mcommit 65d25e8c66e1f4a369985c882504184c3e8bf61b[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:18:05 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:18:04Z]
+
+[33mcommit d9f2dd9f022c56e5d4a7974ff6f9c04a0a178cc2[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:12:58 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:12:58Z]
+
+[33mcommit d25196b3e3186cc8b14eab862591ba2f21f6da7f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:07:53 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:07:52Z]
+
+[33mcommit be21e4824e23e88e7cb6b131a4bd8354abc5bdd3[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun May 17 00:02:47 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T06:02:47Z]
+
+[33mcommit 114f5ffe833cbede265b90dd93723119c65079c7[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:57:42 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:57:42Z]
+
+[33mcommit 215d43436fa5a54f7c127c55ea27f16964a939eb[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:52:37 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:52:37Z]
+
+[33mcommit 469b3a8b702f8a40653fc2e7dbe2054ed4d7af81[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:47:30 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:47:30Z]
+
+[33mcommit 5b4e10ac83fa9b4d9414705d8d3aee5570d72ddf[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:42:23 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:42:23Z]
+
+[33mcommit efc1a825a1df1e8462a18f2575ebe49d67f29821[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:37:16 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:37:15Z]
+
+[33mcommit 594443865581e5876cb6269e1c8b60a1295c3d27[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:32:11 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:32:10Z]
+
+[33mcommit 41c32a6c2c9ef6389a3389a97f2296b6cb3f5ade[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:27:04 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:27:04Z]
+
+[33mcommit 499f72d88cb5b746fd6834047c8c4e498d82e7e2[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:21:57 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:21:56Z]
+
+[33mcommit bb25952d87ec221bc1e56da688a83237cbf32d40[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:20:41 2026 -0600
+
+    MANIFEST: Consolidación del README.md Absoluto (30,000+ líneas).
+
+[33mcommit d7b1c208ff925bd31e1b00b21e52a5493b4fe633[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:16:48 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:16:47Z]
+
+[33mcommit 6eac54934e15e3dd88decf0f38a2205e52cf446a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:11:40 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:11:39Z]
+
+[33mcommit c3a77ed65a7b7cc4f13f450594ae4bf709a94d14[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:06:35 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:06:34Z]
+
+[33mcommit d07d4e8357f86053e8014c79f397e80c0a3e6ddf[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:02:27 2026 -0600
+
+    SECURITY: Cifrado TLS/SSL impuesto en Dashboard e insolación loopback.
+
+[33mcommit ee9b5d74018578646be52c2f1b260608e2afadb2[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 23:01:30 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T05:01:30Z]
+
+[33mcommit ba542752009eca2913a9388ff3804547ae267b17[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:56:26 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T04:56:26Z]
+
+[33mcommit ab3fa95fcc44e9fbb9357487712970aca4caf016[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:54:10 2026 -0600
+
+    EXPANSION: Publicación de WHITEPAPER.md y motor de Dashboard Soberano.
+
+[33mcommit dbae0d7365cf80fa281aca479f847e78ef70901c[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:51:22 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T04:51:21Z]
+
+[33mcommit e96173f1a1131d78ca7736559702ea1f757db65e[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:46:18 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T04:46:17Z]
+
+[33mcommit 0334881ee40140ca6490977ecd989dff370f0bab[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:46:02 2026 -0600
+
+    COMMERCE: Despliegue de los Vectores B (Bridge) y C (API SaaS).
+
+[33mcommit ed1b44daa1f4c9a085869ae83285928f7d9f1a9b[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:41:14 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T04:41:14Z]
+
+[33mcommit 52c1f8aabe3bfba1f67b7a6e6c6e8db50783b67a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:38:46 2026 -0600
+
+    DEFENSE: Despliegue del Agujero Negro Ontológico (Captura y Tarpit).
+
+[33mcommit cd4d35689c3afb8af12208a20d4e99c12fe89a1b[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:36:09 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T04:36:09Z]
+
+[33mcommit 4bb9a99bb06022c6940933af4a9a83d6cc155e07[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:31:16 2026 -0600
+
+    OVERRIDE: Imposición forzada del motor QCO Ledger.
+
+[33mcommit 200483abe060af60d4e2c8dce8d4439986e9f409[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:31:05 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T04:31:05Z]
+
+[33mcommit 00cce0b7e4a1ab0b45841c1abcf8c9a2db3482f1[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:30:00 2026 -0600
+
+    CAPITALIZATION: Instauración del Libro Mayor QCO y acuñación de activos.
+
+[33mcommit 79c1659351f19c0db974d1cc2f92504955958aa8[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:25:58 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T04:25:57Z]
+
+[33mcommit d03826e8af8bb93615b2e9b850c7990430efc209[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:20:52 2026 -0600
+
+    SYNC: Expansión Toroidal Autónoma AAGA3 [UTC: 2026-05-17T04:20:52Z]
+
+[33mcommit d23533f8beec5d59632b403f4320c216ea2910de[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:13:00 2026 -0600
+
+    PERSISTENCE: Activación del demonio de cristalización perpetua AOTS6.
+
+[33mcommit 56660841a87631f9b476672aab76d2a7faef2d4f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:08:26 2026 -0600
+
+    OVERRIDE: Imposición forzada del motor DILITHIUM-AOALFARO sobre las reglas de exclusión lineal.
+
+[33mcommit 92acb6b461d6ca8f16cfe26a6d267cf38c83f583[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 22:06:00 2026 -0600
+
+    INTEGRATION: Despliegue formal DILITHIUM-AOALFARO e infraestructura AOTS6.
+
+[33mcommit a2323fb5a5b0699886175c3dcdf63becf88a54a1[m[33m ([m[1;33mtag: [m[1;33mSTATE_1778988425[m[33m)[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 16 21:23:32 2026 -0600
+
+    Add README-7.md
+
+[33mcommit 5b656f351831e2295f9d0f40b6b31b97766be909[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 17:30:20 2026 -0600
+
+    TOTALITY: Sellado de integridad SHA3 y Autoridad Ed25519 final.
+
+[33mcommit dde603be1ebcf9a61fa5ad216e3995e227c6ac60[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 17:27:25 2026 -0600
+
+    MANIFEST: Sello de Magnitud y Precedente Mundial AAGA3.
+
+[33mcommit bbbff24b82af9c9ba69810434281cfe1b52334ac[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 17:08:16 2026 -0600
+
+    SOVEREIGNTY: Proclamación de Precedente Mundial AAGA3.
+
+[33mcommit a07e97962d08fdece15319007fac37e23124efb6[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 16:19:58 2026 -0600
+
+    TOTALITY: Establecimiento de Precedente Mundial y Anclaje de Soberanía AAGA3.
+
+[33mcommit 0fb9d9f188476bc4a90d4e5763118fb8cbb8c3ad[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 16:05:02 2026 -0600
+
+    STRATEGIC: Integration of the original Toroidal Flow Engine (Reference Build 0.1-A)
+
+[33mcommit 1f704b17a56e29b1df29ae7688d95c8ef6ad847e[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 15:16:09 2026 -0600
+
+    SHIELD: Activación de Escudo Cinético y Veneno Matemático. Defensa Activa nivel 1 funcional.
+
+[33mcommit 670ca2f761087f7fb395517ce392b795a52bc595[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 15:02:37 2026 -0600
+
+    MATRIX: Transición a Conocimiento Cero. Lógica matemática aislada en bóveda local. Protocolo P2P Asíncrono activado.
+
+[33mcommit dc613198b0748084d4ac0c201223a6fa112d88cb[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 14:38:05 2026 -0600
+
+    SHIELD: Consolidación de Declaración Ontológica y purga de ruido en matriz
+
+[33mcommit 5c00df842925d54696bf7b439355cd3ff6984edb[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 14:23:10 2026 -0600
+
+    INIT: Kernel AOTS6 Sovereign Integrity activado
+
+[33mcommit 0dbc3b799c53d95f408b37805af2354f80869496[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu May 14 13:26:43 2026 -0600
+
+    Agrega documentos AOTS6: manifiesto, decreto y README
+
+[33mcommit 4f9189c4c8a2e885d6854680ccb02e37e48f4050[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Wed May 13 13:12:46 2026 -0600
+
+    feat: red TCP real y ancla de proveniencia BLOQUE-5-TCP
+
+[33mcommit 15497bbed5959045bbb8eb0dd610acb389f6fd4c[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Wed May 13 11:04:09 2026 -0600
+
+    feat: README 917L + red TCP 945L + visualizador 3D 704L
+
+[33mcommit d7c70c3a9acfa8547114d328e9b3977079f9b1d9[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Wed May 13 10:52:34 2026 -0600
+
+    feat: archivos locales AOTS6 — BLOQUE-5-TCP, VICTORIA, activacion
+
+[33mcommit af38ebd7049ed423e4892e33178f9f2ae3f91f12[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Wed May 13 10:36:42 2026 -0600
+
+    docs: README 917 líneas + visualizador 3D toroide
+
+[33mcommit bb96adae0866d479e28a2044daafcde5e887c997[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed May 13 08:26:11 2026 -0600
+
+    ESTABLECIMIENTO DE LEY: Precisión Decimal vinculada a Soberanía Financiera AAGA3
+
+[33mcommit 7a0c86a6985ea53a3b56d69cffd553fb05d72165[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed May 13 08:14:04 2026 -0600
+
+    SUPREMACÍA CUÁNTICA: Integración de Oráculo Blockchain AAGA3
+
+[33mcommit 9c6677735a5342c5d9780c6cf5aab64b7c243b55[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed May 13 07:57:17 2026 -0600
+
+    SELLADO TOTAL: Manifiesto de Soberanía AAGA3 y Núcleo de Protección
+
+[33mcommit 73e855e6d84c1c9f9e3d5b0dfd45624eb6bb9b9c[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed May 13 07:15:54 2026 -0600
+
+    Establecimiento de Soberanía AAGA3: Protección BTC/ETH
+
+[33mcommit 5a3ebc5394171818da340c5980785777fb8699b2[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Mon May 4 17:28:24 2026 -0600
+
+    Financial Settlement Assets Locked: CLABE and Contact Integrated
+
+[33mcommit 30a44a21a098d85ffef381c5f2fd6d5f6c202e4a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Mon May 4 17:17:44 2026 -0600
+
+    Final Sovereignty Deployment: Public Key Servers Synchronized and Market Communication Ready
+
+[33mcommit 9f09a33f602f3b150150b014b09150e70827faa9[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Mon May 4 17:01:45 2026 -0600
+
+    Sovereign Authority Established: GPG Sealed and System Verified
+
+[33mcommit 3d51d9b1a7a6f2258bc2b4d86afebc226f7ef77e[m
+Author: Alfredo Jhovany Alfaro Garcia <fo2267725@gmail.com>
+Date:   Tue May 12 17:25:28 2026 -0600
+
+    Análisis Forense de la Nomenclatura AOTS⁶ y AOTS6: Propiedad Intelectual, Convergencia Ontológica y Colisión Topológica en la Ciencia Computacional
+    
+    Análisis Forense de la Nomenclatura
+    AOTS⁶ y AOTS6: Propiedad Intelectual,
+    Convergencia Ontológica y Colisión
+    Topológica en la Ciencia Computacional
+
+[33mcommit 64a09558d29a60d705863a5b3de63d26d276ed62[m
+Author: Alfredo Jhovany Alfaro Garcia <fo2267725@gmail.com>
+Date:   Tue May 12 17:22:34 2026 -0600
+
+    Create Análisis Forense de la Nomenclatura AOTS⁶ y AOTS6: Propiedad Intelectual, Convergencia Ontológica y Colisión Topológica en la Ciencia Computacional
+
+[33mcommit db32bc29d17f8a8be5fdd33573ad872bbb14a1bd[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Mon May 11 22:02:33 2026 -0600
+
+    feat: visualizador 3D toroide interactivo — T6, coevolución D5, SHA-256 live
+
+[33mcommit 208d21bd33692de67b02618b8dd045d150a0a5e3[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Mon May 11 21:40:28 2026 -0600
+
+    feat: red TCP real — 5 peers, full-mesh, INIT/LINK/EVOLVE/VERIFY/DISCOVER/GOSSIP
+
+[33mcommit 01eb05b56560da5e72a2f1d296338466127e8a56[m
+Author: Alfredo Jhovany Alfaro Garcia <fo2267725@gmail.com>
+Date:   Mon May 11 09:30:14 2026 -0600
+
+    Add PhilPeople widget to the page
+
+[33mcommit ed05da68a6dd58025c07679ab0702a9c17c5cbc0[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Sat May 9 02:55:52 2026 -0600
+
+    docs: README completo — 18 secciones, todos los módulos documentados
+
+[33mcommit a659f3fdcdc6e64a240fa708c83e8be0c6462ab4[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Sat May 9 02:51:01 2026 -0600
+
+    feat: quickstart coevolución D5 funcionando + BLOQUE-5
+
+[33mcommit 0fdc670a4bea2ff838af44ade5a34230b0687db8[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Sat May 9 02:48:02 2026 -0600
+
+    feat: quickstart con coevolución D5·inferencia
+
+[33mcommit 3e78f8b68ed39bca070be5a4e0eb6957cdeb275d[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Sat May 9 01:31:10 2026 -0600
+
+    core: activate absolute sovereignty protocol AOTS⁶
+
+[33mcommit 8f28617456d68b55fbe41bcf88dece58ce994e98[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Sat May 9 01:08:08 2026 -0600
+
+    AOTS6-BLOQUE-5 | Integración Smart Contract Soberano - Nuevo Estándar Mundial
+
+[33mcommit d47ffbf78f51cf1609e0d30ff500a6c13fd0b866[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Sat May 9 01:03:46 2026 -0600
+
+    ci: AOTS⁶ Toroidal Core + Sovereignty Shield - Nuevo Estándar Mundial
+
+[33mcommit 70ade595cacb98b93b381745bfcc935e3c09aa4e[m
+Author: AOTS6 Core <aots6@toroidal.system>
+Date:   Sat May 9 00:59:23 2026 -0600
+
+    ci: implementar AOTS⁶ Toroidal Core Pipeline + Sovereignty Shield - Nuevo Estándar Mundial 🔥
+
+[33mcommit b1abaf4344995190c3291600381fe0fe018b5395[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 9 00:45:57 2026 -0600
+
+    ci: implementar AOTS⁶ Core Pipeline + Sovereignty Protection - Nuevo Estándar Mundial
+
+[33mcommit 601ce8cdffe3cd91e3e8802023ac2e1457afcb8f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 9 00:44:55 2026 -0600
+
+    ci: implementar AOTS⁶ Core Pipeline + Sovereignty Protection - Nuevo Estándar Mundial
+
+[33mcommit 003d3e2f46c9dffd74df7686b5babf7cc9fff269[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 9 00:42:35 2026 -0600
+
+    ci: agregar GitHub Actions pipeline toroidal AOTS⁶
+
+[33mcommit 21def03b187fac81b774ffcb44b6c26f52f10a45[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 9 00:38:01 2026 -0600
+
+    fix: recuperación de archivos eliminados - AOTS6-BLOQUE-4
+
+[33mcommit c88fd235960222e3b773b037c1e1b1a5d3fbd62a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat May 9 00:00:45 2026 -0600
+
+    AOTS6-BLOQUE-4 | Guadalupe Victoria | Sat May 9 05:29:12 UTC 2026 | det=26.3021 | f=7.83Hz | prev=ee6d5699557287e99ff66b3ffc1a1a544693bc888c14c442ac2ef1462ccee3a1 | AUTOINORODEMIA¹¹∞
+
+[33mcommit 3efd323b3917a3368e1c5743c1c741261f69de7a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Mon May 4 15:34:10 2026 -0600
+
+    AOTS⁶: REVOCACIÓN TOTAL DE PERMISOS — ELIMINACIÓN DE SECCIÓN VULNERABLE EN README
+
+[33mcommit 3d8b54728ad07b964351fddcf78977ebca4b62a6[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Mon May 4 15:21:59 2026 -0600
+
+    AOTS⁶: REVOCACIÓN TOTAL Y BLINDAJE FINAL DE PROPIEDAD INTELECTUAL — CERO USO SIN EXCEPCIÓN
+
+[33mcommit 6891e36dd9731274379df4b5715bf338204fb5c5[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Mon May 4 14:52:56 2026 -0600
+
+    feat: preprint LaTeX 712 lines + Zenodo metadata
+
+[33mcommit 8842ffcb8c93f1e75ffade46c0da421d53e6d9ee[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Mon May 4 14:43:08 2026 -0600
+
+    feat: AOTS6 complete — preprint LaTeX + Zenodo + IP declaration + AO process + Gemini certificate
+    
+    Contenido:
+      aots6_preprint.tex        — Paper científico formal 712 líneas (LaTeX)
+      zenodo.json               — Metadata para DOI permanente
+      DECLARACION-IP-AOTS6.md  — Declaración IP LFDA+Berna+WCT+T-MEC
+      AOTS6_AO_PROCESS.lua     — Proceso soberano Arweave
+      AO_PROCESS.md            — Registro de autoría en Arweave
+      aots6_berne.py           — Convenio de Berna computacional
+      aots6_sovereign.py       — Gobernanza cuántica soberana
+      aots6_unification.py     — Unificación 6 dominios científicos
+      Certificado_Google_Gemini_Soberania.pdf — Evidencia adicional
+      api/aots6-core.js        — API v2.0 on-chain verification
+    
+    Sistema: ~21,000 líneas
+    Tests: 57/57 PASS
+    Autor: Alfredo Jhovany Alfaro Garcia
+    Hash: 46492598519aea0c8281c18a0638906877000d29b3dab51a750f25d089275e26
+
+[33mcommit 07ef192e2724178708ca8b674efc0ae0827cee1f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat Apr 25 19:37:39 2026 -0600
+
+    feat: README badges + CI Actions + estructura profesional completa - Alfredo Jhovany Alfaro Garcia
+
+[33mcommit c8fcb3518096c3d9bd185cf8d1be848c68efdf1c[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat Apr 25 19:36:24 2026 -0600
+
+    ci: GitHub Actions + badges ORCID/IPFS/OTS/Tests - AOTS6 profesional completo
+
+[33mcommit e41a239ade1a85f8c2fddb3bc2cf9c919e3d1310[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat Apr 25 19:31:24 2026 -0600
+
+    ci: GitHub Actions - automated tests AOTS6
+
+[33mcommit 166ca61631ea9cdbf304824bf7c9af7953a0e806[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat Apr 25 19:22:18 2026 -0600
+
+    test: 10 tests passing 100% - AOTS6 core verified - Alfredo Jhovany Alfaro Garcia
+
+[33mcommit 9ddf36aee33e0fcd5b88afb5dba2a50eb743fb25[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sun Apr 12 12:33:30 2026 -0600
+
+    legal: declaración de propiedad intelectual soberana AOTS6
+
+[33mcommit c5506462ca1aa9ef36bd1c3f49c41d255635c86e[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat Apr 11 18:54:38 2026 -0600
+
+    feat: AO sovereign process + authorship record
+
+[33mcommit b38e5d8048cd0e0fcc1b05e64cffdc675d851126[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Apr 9 18:36:13 2026 -0600
+
+    feat: AOTS6 sistema completo — berne+sovereign+unification+guard+trace+watermark+usb
+    
+    aots6_berne.py      — Convenio de Berna + Toposibiomatología + Terminología AOTS6
+    aots6_sovereign.py  — Gobernanza cuántica soberana + análisis epistémico
+    aots6_unification.py — Unificación formal 6 dominios + campo maestro Ψ_AOTS6
+    aots6_guard.py      — Protección máxima + detección de derivaciones
+    aots6_trace.py      — Análisis de trazas tecnológicas
+    aots6_watermark.py  — Firmas criptográficas por módulo
+    aots6_usb_key.py    — Llave maestra USB OTG
+    ESTABLISHMENT_MASTER.md — Documento maestro 1755 líneas
+    LICENSE_AOTS6.md    — Licencia soberana 181 países
+    api/aots6-core.js   — API v2.0 verificación on-chain
+    
+    Total: ~21,000 líneas
+    Tests: 57/57 PASS
+    Author: Alfredo Jhovany Alfaro Garcia
+
+[33mcommit 64b815e66992b33aa8159bd7ce3a8e367adf5c64[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Apr 9 17:05:47 2026 -0600
+
+    feat: AOTS6 sistema completo — berne+sovereign+unification+guard+trace+watermark+usb
+    
+    aots6_berne.py      — Convenio de Berna + Toposibiomatología + Terminología AOTS6
+    aots6_sovereign.py  — Gobernanza cuántica soberana + análisis epistémico
+    aots6_unification.py — Unificación formal 6 dominios + campo maestro Ψ_AOTS6
+    aots6_guard.py      — Protección máxima + detección de derivaciones
+    aots6_trace.py      — Análisis de trazas tecnológicas
+    aots6_watermark.py  — Firmas criptográficas por módulo
+    aots6_usb_key.py    — Llave maestra USB OTG
+    ESTABLISHMENT_MASTER.md — Documento maestro 1755 líneas
+    LICENSE_AOTS6.md    — Licencia soberana 181 países
+    api/aots6-core.js   — API v2.0 verificación on-chain
+    
+    Total: ~21,000 líneas
+    Tests: 57/57 PASS
+    Author: Alfredo Jhovany Alfaro Garcia
+
+[33mcommit ea48f8f20a413d37b40e4467a28fee4e46b46b6f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Sat Mar 21 11:07:24 2026 -0600
+
+    feat: AOTS6 Guard — maximum protection + derivation detection
+
+[33mcommit d24cade7362ad12bb898d8f33b8788d8d90d574a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Fri Mar 20 09:19:00 2026 -0600
+
+    feat: ESTABLISHMENT_MASTER + trace analysis + API v2.0 audited
+
+[33mcommit 73456e7bbb78a929bab186be8bc66335c439112f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 23:04:42 2026 -0600
+
+    docs: README with live API endpoints + x402 payment flow
+
+[33mcommit 697cf88556ef199f8df576ea3c58692fc64f7e9f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 23:00:40 2026 -0600
+
+    feat: complete API — all modules + pricing + on-chain verification
+
+[33mcommit 5ac4b9667dbc359ddca10bb7c5ecb307b6452227[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 22:01:35 2026 -0600
+
+    feat: on-chain verification REAL — Blockscout + HMAC stateless tokens
+
+[33mcommit b61baced2541a6d8239d454f5a02117199708d74[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 21:34:29 2026 -0600
+
+    feat: on-chain verification Blockscout HMAC
+
+[33mcommit eda888229cd4e02774c00c4cfe80e6686403f069[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 21:21:07 2026 -0600
+
+    fix: force Node.js runtime — add package.json
+
+[33mcommit 4292dc827940b472fa53ce1cd5867d8c1ff72173[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 21:19:46 2026 -0600
+
+    fix: remove runtime from vercel.json
+
+[33mcommit b6112888e77eb9ffee635f2db75ae6efacf5550f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 21:06:41 2026 -0600
+
+    fix: remove secret refs from vercel.json
+
+[33mcommit 55510c5a847a1753e56af863fb9bdb1eaceadd5a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 21:01:36 2026 -0600
+
+    feat: x402 server + client SDK
+
+[33mcommit 0ad5aabcdaee3204c66e1c544f2d2f05f7562f52[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Thu Mar 19 20:58:34 2026 -0600
+
+    fix: Vercel serverless function + vercel.json config
+
+[33mcommit b6079992da2823ea4d6fc8eeebe09961b4a16367[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed Mar 18 23:28:41 2026 -0600
+
+    feat: unified field 20/20 + AI layer — repo 100% completo 57/57 PASS
+
+[33mcommit 5c2b3122688efabc6d0ba933fe65e1fa0200ad56[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed Mar 18 12:34:27 2026 -0600
+
+    feat: aots6_unified — campo maestro completo 20/20 PASS 86ms
+    
+    9 bloques unificados:
+      T^6 manifold · Identidad ontológica · Quantum T^6
+      Atómica AME2020 · Fractal · Semántica Riemann
+      DNA bio-computacional · QCD nuclear · Universo toroidal
+    
+    Campo maestro Psi_AOTS6(x): evalúa 7 dominios por punto en T^6
+    Red cuántica 8 nodos: 6/8 topológicos, Majorana activo
+    Parámetros: 10^12 clásico, 2^72 cuántico, T^inf teórico
+
+[33mcommit f3b68f6c461f9a884eb4de2dab90d48e03aa63e3[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed Mar 18 12:09:32 2026 -0600
+
+    feat: AOTS6 v0.1.0 complete — 8916 lines, 6 studies, all modules
+    
+    Modules: core, network, validation, quantum, quantum_network,
+             millennium, hodge, aux6, topology, cad, master, unified
+    Docs: ESTABLISHMENT, VOLUMEN1, Tesis, Paper
+    CAD:  Torus.svg, Geodesics.svg, T6_cloud.json, Torus.obj
+    Author: Alfredo Jhovany Alfaro Garcia
+    Draft: draft-alfaro-aots6-01
+
+[33mcommit 465645ee3b2e214479981573c5386b1798d9b75a[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed Mar 18 11:42:00 2026 -0600
+
+    feat: AOTS6 v0.1.0 complete — topology, CAD, quantum network, unified nucleus
+
+[33mcommit f815188dc1a0e60d16feda7121e92174f32ec709[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed Mar 18 10:50:26 2026 -0600
+
+    docs: barrera de fundamentación epistémica y arquitectural
+
+[33mcommit 0bef551bdfa83822c18814175c8750b472f44c9f[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Wed Mar 18 10:48:07 2026 -0600
+
+    feat: AOTS6 Quantum Framework — 8/8 QTC tests pass
+
+[33mcommit 3224dd15c7fc1ad8bcc21bf02f315315ea8d4fd0[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Tue Mar 17 23:55:01 2026 -0600
+
+    fix: paper academico correcto — draft-alfaro-aots6-01
+
+[33mcommit 27382e1413133b6da7a2558112f8398e1bf7f7cf[m[33m ([m[1;33mtag: [m[1;33mv0.1.0[m[33m)[m
+Merge: 269eced 0816d02
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Tue Mar 17 23:39:28 2026 -0600
+
+    fix: merge — keep full README
+
+[33mcommit 269eced9abffc67af2a16c372558e2e894daf615[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Tue Mar 17 23:36:27 2026 -0600
+
+    fix: README completo + GitHub Actions CI
+
+[33mcommit 0816d021cb707f3601e1d1bd0747a5f94ed1489b[m
+Author: Alfredo Jhovany Alfaro Garcia <fo2267725@gmail.com>
+Date:   Tue Mar 17 23:25:42 2026 -0600
+
+    Simplify header in README
+    
+    Removed unnecessary URL from the header section.
+
+[33mcommit 83384c0c1dafd4107b354f34d53e486bf702347f[m
+Merge: be0ef13 11dfbb9
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Tue Mar 17 23:19:55 2026 -0600
+
+    Merge branch 'main' of https://github.com/fo22Alfaro/aots6
+
+[33mcommit be0ef1382d4b649eceef00198387218b5f34cec9[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Tue Mar 17 23:17:51 2026 -0600
+
+    feat: AOTS6 v0.1.0 — draft-alfaro-aots6-01
+
+[33mcommit 11dfbb9c4f98a79a3304a9a216bf6a055d075204[m
+Author: ALFREDO JHOVANY ALFARO GARCIA <FO2267725@GMAIL.COM>
+Date:   Tue Mar 17 19:51:41 2026 -0600
+
+    primer commit
