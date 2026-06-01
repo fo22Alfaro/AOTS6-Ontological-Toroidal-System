@@ -24,6 +24,12 @@
       "sha3_512": "b8eff65e58c34aa7a8b86fc22d11338732c2bf3af9b4906adaf18f539b05f299041318ca591dbb368df3a21c61bbb3ab9988889ea23e120bb0018f196f3e9719",
       "size_bytes": 115
     },
+    "0": {
+      "modified": "2026-06-01T04:28:10.001028+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha3_512": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+      "size_bytes": 0
+    },
     "AOTS6 Mega Expansi\u00f3n - Problemas del Milenio.docx": {
       "modified": "2026-05-26T03:58:20.815969+00:00",
       "sha256": "b759adc9e7f6564d3ab93acb8aabfa5d6b6597bc9640aab72aae2bdee32d8550",
@@ -576,6 +582,12 @@
       "sha3_512": "b07b70e335d9197e8331e024e98760e533fd1d5a41f66fa4060a05d8241c2cf835bd8b1cc12b717bac81b7146d1cc084572243fabedbe0b91b07e8a3419206a8",
       "size_bytes": 23150
     },
+    "aots_blockchain_suprema.py": {
+      "modified": "2026-05-31T20:38:07.319212+00:00",
+      "sha256": "022cb34c9b0288b9f0271ead5f1c58fee3dd8610299aac71f52161f340a76e07",
+      "sha3_512": "0b431e8fc6fcd6b80246a8629984d5bfb83f40437cceb560e4f7924f932e1a7a8d6ac5792880afee935a6e7728bb403615a925cc643cf59cda5980a9267361c2",
+      "size_bytes": 7140
+    },
     "aots_core.py": {
       "modified": "2026-05-31T12:32:47.408048+00:00",
       "sha256": "3101994910aeb89129f20710b1c17a46120087d7071e64201ad0c9896a2d8519",
@@ -617,6 +629,12 @@
       "sha256": "5de7f6843687aef8dfff6b6836e1200abfef9761a13c1b9bd00d07a6c00fc4fd",
       "sha3_512": "3aae23904623f0fe6afe4f367bb7ed6e7e9f08a9f21d3137e524b00628b5fc52ad10cc2d033d4711b32e67a5c3e14d340481db43cc663d6f1bdecdebd08c7870",
       "size_bytes": 11112
+    },
+    "aots_start.sh": {
+      "modified": "2026-05-31T23:28:09.378000+00:00",
+      "sha256": "aae566fc584c72001dd1e970afee3a650d1ff8619a172f70169e2e8f4d9ce449",
+      "sha3_512": "296f5127e4d843966c6d47ac4ab1b24bbea0323bab01db9fa4a4b96b781256e25d20f3ddc8decb0e8f03ba3c7503415e87b8aed2beb6f4c9af4c2a0245ea2bfc",
+      "size_bytes": 1547
     },
     "api/aots6-core.js": {
       "modified": "2026-05-04T20:43:08.123863+00:00",
@@ -839,6 +857,12 @@
       "sha256": "759ade048ff2aab97df00c8d08bbb80177e33354229ae11dc3833a5c88aeb128",
       "sha3_512": "bca933faa1aa9aa94e89a02380f92c8e3d929960e153e6c195f383caec6610f8073a3d0f958f95d2f7afda9df0e43acdc37275ef90ae9150dbc4177a673e4a6e",
       "size_bytes": 2768
+    },
+    "demo-script.js": {
+      "modified": "2026-05-31T23:31:36.602000+00:00",
+      "sha256": "b06b134b5456a6cc2886f1346a9c19dcac61d6c8c0349f71e099f29b493c4003",
+      "sha3_512": "7cb89ff811585c7942deeb3430f45decc7876e5ce2c337fafe9624ac45d83093b0c1920cc550b504d59f0f1769624f168d8e17367ae6709a3f19d7d7a9b66fb7",
+      "size_bytes": 1103
     },
     "docs/AOTS6_Paper.md": {
       "modified": "2026-05-13T13:28:42.727006+00:00",
@@ -1069,15 +1093,15 @@
       "size_bytes": 1935
     },
     "integrity/manifests/latest_manifest.json": {
-      "modified": "2026-05-31T12:00:16.264048+00:00",
-      "sha256": "66c3e84b66778d3e35f42dea1dae5b2f0df71c3c69c87e8ef235781852e9e55a",
-      "sha3_512": "3bbbf8e63bb26b68434f99e7e578cf6d6d708e2cc3cece2731ccef90234b42ae18996af0b4e2fba97d0fb0a4d1c40418c252b9dc6a7daaad1b3f3f83167d001d",
-      "size_bytes": 162844
+      "modified": "2026-06-01T23:09:06.616307+00:00",
+      "sha256": "94db65b4abbab6b0980b2d160572525790f50db97eb621bc6e7850c27a694f36",
+      "sha3_512": "4636a3c44e203fb4a25d6a14de35d6ac24c7503da1f64dad1f5fe51ac89fb1c1de6194957fc5e8afaef2d786d5e0fef7dac626e07bd1a0bc2d99519146c4465c",
+      "size_bytes": 165632
     },
     "integrity/manifests/latest_manifest.sig": {
-      "modified": "2026-05-31T12:00:16.684048+00:00",
-      "sha256": "214cd05e0d5fc73f17ac9abfc569472aeb873811e296c8f118700de620429685",
-      "sha3_512": "cea2f256ddf691418e7f1c74dc792287116fa441d72826660e91a8763f2f942d6b073a24ba5bbe74eecff479d331ae0b0d39916d9ef8af164f58a5a7d316ad1b",
+      "modified": "2026-06-01T23:09:07.072306+00:00",
+      "sha256": "88c04823065e7bea120f8cfead5520d067b39deafe5207cc527d3b9614bd12eb",
+      "sha3_512": "098db8a1789ce78fb64e85eb4351ab1ba631d7cb9a1fe3f8c199935d58fab66f3a70dc68aca1d23e294a1ea480f04ca023d28ca9d828c3b3e826c01f619b7461",
       "size_bytes": 64
     },
     "integrity/policy.json": {
@@ -1115,6 +1139,12 @@
       "sha256": "466108cdb4c9440164ae8fdc030f4551b7157b9ef319457b2fb396f7c6d6edfc",
       "sha3_512": "bd07e606a30484c13726dc8b40cd28204fb7189cba1c3db5966dd7d01c1e74140e63c2e6a7c23fcf4f6b19fdb570b2cda384f0c2ad2c7d692fa38e723e966092",
       "size_bytes": 129
+    },
+    "ledger_aots6.json": {
+      "modified": "2026-05-31T20:42:18.116559+00:00",
+      "sha256": "000408f4d2aaec8ea9ce3b612ba0a85ccdbd279160f9ecb740b60e202ec4d57b",
+      "sha3_512": "52a1d0688f97d77304ed04f3d182842e3b4284fe7aef1415a735b67cda7e16f0f5c678e897c0ffe8d65fd7f7705492c5d1dadc9f14683f2a3b1478d7e7e01c6a",
+      "size_bytes": 668
     },
     "llm_broadcast_audit": {
       "modified": "2026-05-27T08:58:35.315325+00:00",
@@ -2232,6 +2262,12 @@
       "sha3_512": "7b3b6b2bd1c335622ed4aa175cd631655d9811b7f987e64bcc71c15773797d53a9580de57170b24a97daec15a3c7b59055f57ed1d00be7259e32502090edf600",
       "size_bytes": 32327
     },
+    "package-lock.json": {
+      "modified": "2026-05-31T23:31:50.534000+00:00",
+      "sha256": "565578f4fbd65fe373b5b58546e1cbc2a610f2dfd7107ef7b73c77776998be6c",
+      "sha3_512": "2e055b82543c5548e6b1d46549dc61cc343df7a71b4f138a579bc1de61fd6f2a6c701b912737dbc63cef07ba3c51138fd8b32d2798cb9a308c5e2599a280338f",
+      "size_bytes": 232
+    },
     "package.json": {
       "modified": "2026-03-20T03:21:07.098903+00:00",
       "sha256": "4a5e2c58d4b6d3519e1ca023f03ba6b097ec177872aa148d1d7e28fcdc2ee041",
@@ -2279,6 +2315,12 @@
       "sha256": "f5b44c0a4cde8e4e161da1604dca73a1a37d865261d163f906a100da9c74f0dc",
       "sha3_512": "ee92809c849a272bee28214cba159da5ba9c7ad350208c5e8d0b6c69b92d804c766d207778170015030032f7075bdb53d6f40b915233dd48ba52a1351e73b72b",
       "size_bytes": 64
+    },
+    "puente_solana.py": {
+      "modified": "2026-05-31T20:18:54.499212+00:00",
+      "sha256": "0ba597936b48c56d0812042841f5cb5a300ec5111f004e22da11e302a551ca27",
+      "sha3_512": "c5ba5b009d8e79112df907c030ce1e0ad66c0001353cfc8b5e8c2d5122f4ab6937aecc6bce5c05c8fb65aafd077d4cb80687e6cf016014c7af5443e57f485942",
+      "size_bytes": 1083
     },
     "rclone_oculto.conf": {
       "modified": "2026-05-30T21:03:42.515562+00:00",
@@ -2702,8 +2744,8 @@
     }
   },
   "metadata": {
-    "file_count": 450,
+    "file_count": 457,
     "kernel": "AOTS6-PQ-TERMUX",
-    "timestamp": "2026-05-31T16:15:48.913410+00:00"
+    "timestamp": "2026-06-01T23:49:57.707980+00:00"
   }
 }

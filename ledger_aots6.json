@@ -1,0 +1,21 @@
+{
+    "saldos": {
+        "AOTS_6d4f684694f3a2ca6d140710ce077cebc539cf4e": 998500,
+        "AOTS_e7d0fa53fffd26ee2e7026322d08c6c41fc3d3e2": 1500
+    },
+    "historial": [
+        {
+            "tipo": "GENESIS",
+            "receptor": "AOTS_6d4f684694f3a2ca6d140710ce077cebc539cf4e",
+            "cantidad": 1000000,
+            "sello_tiempo": 401533355
+        },
+        {
+            "emisor": "AOTS_6d4f684694f3a2ca6d140710ce077cebc539cf4e",
+            "receptor": "AOTS_e7d0fa53fffd26ee2e7026322d08c6c41fc3d3e2",
+            "cantidad": 1500,
+            "firma_t6": "c237b96836df4db6341bac905d8d124f",
+            "anclaje_solana": 401533356
+        }
+    ]
+}
