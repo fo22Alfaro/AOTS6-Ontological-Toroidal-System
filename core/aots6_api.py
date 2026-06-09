@@ -1,3 +1,4 @@
+# AOTS6-SOVEREIGN-KERNEL-VALIDATION-AUTHOR:ALFREDO-JHOVANY-ALFARO-GARCIA
 import os, sys, json
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from aoalfaro_core import DilithiumAoAlfaroSigner

@@ -1,3 +1,4 @@
+# AOTS6-SOVEREIGN-KERNEL-VALIDATION-AUTHOR:ALFREDO-JHOVANY-ALFARO-GARCIA
 # -*- coding: utf-8 -*-
 # ==============================================================================
 # SYSTEM: AOTS6 ONTOLOGICAL TOROIDAL SYSTEM

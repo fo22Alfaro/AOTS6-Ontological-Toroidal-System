@@ -3,6 +3,25 @@
   "version": "0.1.0",
   "description": "AOTS6 x402 Payment API",
   "main": "api/aots6-core.js",
-  "engines": { "node": ">=20" },
-  "scripts": { "start": "node api/aots6-core.js" }
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node api/aots6-core.js"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/issues"
+  },
+  "homepage": "https://github.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System#readme"
 }

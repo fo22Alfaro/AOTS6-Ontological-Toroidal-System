@@ -1,3 +1,4 @@
+# AOTS6-SOVEREIGN-KERNEL-VALIDATION-AUTHOR:ALFREDO-JHOVANY-ALFARO-GARCIA
 import subprocess
 import sys
 import logging
