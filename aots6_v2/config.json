@@ -1,0 +1,5 @@
+{
+  "system": "AOTS6_v2",
+  "mode": "distributed",
+  "max_steps": 100
+}
