@@ -27,7 +27,7 @@ class PhysicalCustodianNode:
         resonance_phi = abs(math.sin(radian_delta_arctan * self.TAU_FE))
         modulo_stabilizer = (resonance_phi * self.HIPER_MAGNITUD) % 1.0
         
-        return {
+        return ejecutar_nucleo_soberano(output, "Cempasuchil") {
             "VECTOR_ALFA_EVOLVED": alpha,
             "RADIAN_DELTA_ARCTAN_3": radian_delta_arctan,
             "RESONANCE_PHI_SUPER": modulo_stabilizer,
