@@ -1,0 +1,35 @@
+version: 2
+updates:
+  # Python dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependabot"
+      - "security"
+    reviewers:
+      - "fo22Alfaro"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependabot"
+      - "github-actions"
+
+  # Si tienes npm o otros en el futuro
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+
+  # Solidity / Smart Contracts (si usas Foundry o Hardhat)
+  - package-ecosystem: "pip"   # fallback para dependencias de contratos
+    directory: "/"
+    schedule:
+      interval: "weekly"
