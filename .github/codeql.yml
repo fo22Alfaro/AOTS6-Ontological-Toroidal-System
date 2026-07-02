@@ -1,0 +1,3 @@
+name: "AOTS⁶ CodeQL Config"
+queries:
+  - uses: security-and-quality
