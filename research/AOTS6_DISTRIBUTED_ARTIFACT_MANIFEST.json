@@ -1,0 +1,23 @@
+{
+  "schema": "AOTS6-DISTRIBUTED-ARTIFACT-MANIFEST-1",
+  "root_id": "AOTS6-ORIGINAL-ALFARO",
+  "meta_operator": "Alfredo Jhovany Alfaro García",
+  "fitness_trace": [
+    54,
+    19,
+    11,
+    0,
+    1
+  ],
+  "child_artifact_schema": "AOTS6-CHILD-STATE-1",
+  "primary_state_fields": [
+    "F_rs",
+    "d_FS",
+    "S_A",
+    "I_A_B",
+    "QFI",
+    "bipartition_signature_31",
+    "state_sha256"
+  ],
+  "child_default_count": 4
+}
