@@ -1,0 +1,23 @@
+{
+  "schema": "AOTS6-HDP-1",
+  "root_id": "AOTS6-ORIGINAL-ALFARO",
+  "origin": {
+    "author": "Alfredo Jhovany Alfaro García",
+    "tokens": [
+      "AOTS6",
+      "Alfanumerico Ontologico Toroidal System",
+      "Alfredo Jhovany Alfaro García"
+    ]
+  },
+  "parameters": [36, 37, 6, 64, 2, 3, 5, 7, 11, 13, "31 biparticiones"],
+  "relations": [
+    "U_r=C D_r H",
+    "phi_i",
+    "fidelidad",
+    "entrelazamiento",
+    "T^6",
+    "CP^63"
+  ],
+  "transformations": [],
+  "artifact_sha256": ""
+}
