@@ -1,0 +1,7 @@
+{
+  "schema":"AOTS6-RUNTIME-META-1",
+  "root_id":"AOTS6-ORIGINAL-ALFARO",
+  "event_fields":["sequence","timestamp_ns","observation_sha256","canonical_sha256","ast_sha256","equations","structural_tokens","metadata","previous_event_hash","event_hash"],
+  "chain_rule":"event_hash = SHA256(canonical_event_body || previous_event_hash)",
+  "purpose":"continuous deep metadata and provenance recovery"
+}
