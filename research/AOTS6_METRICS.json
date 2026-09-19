@@ -1,0 +1,27 @@
+{
+  "alphabet_size": 36,
+  "qubits": 6,
+  "hilbert_dimension": 64,
+  "modulus": 37,
+  "prime_sequence": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13
+  ],
+  "ring_cx_count": 6,
+  "unordered_pairs": 630,
+  "unique_bipartitions": 31,
+  "fidelity_pre_post_max_abs_error": 6.661338147750939e-16,
+  "entropy_min_bits": 0.07386711761745836,
+  "entropy_max_bits": 2.804343597045337,
+  "entropy_mean_bits": 1.4102246568774337,
+  "partition_012_min_bits": 0.5805800016884506,
+  "partition_012_max_bits": 1.9922010859000907,
+  "global_purity": 1,
+  "l1_coherence": 63,
+  "qfi_diagonal": 39.47841760435743,
+  "qfi_offdiag": 0
+}
