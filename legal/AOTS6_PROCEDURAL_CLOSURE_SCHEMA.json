@@ -1,0 +1,41 @@
+{
+  "schema": "AOTS6-PROCEDURAL-CLOSURE-1",
+  "root": "AOTS6-ORIGINAL-ALFARO",
+  "author": "Alfredo Jhovany Alfaro García",
+  "fitness": [54, 19, 11, 0, 1],
+  "required_bridge": [
+    "precedence",
+    "source",
+    "scope",
+    "duty",
+    "fact",
+    "evidence",
+    "correspondence",
+    "remedy",
+    "procedure",
+    "authority"
+  ],
+  "closure_states": [
+    "SOURCE_VERIFIED",
+    "SCOPE_ESTABLISHED",
+    "OBLIGATION_ESTABLISHED",
+    "FACT_RECORDED",
+    "EVIDENCE_SEALED",
+    "CORRESPONDENCE_VERIFIED",
+    "BREACH_ESTABLISHED",
+    "REMEDY_IDENTIFIED",
+    "PROCEDURE_IDENTIFIED",
+    "ACTION_READY",
+    "RESOLUTION",
+    "EXECUTION",
+    "CLOSED",
+    "GAP",
+    "NO_LEGAL_BASIS"
+  ],
+  "integrity": {
+    "canonical_encoding": "UTF-8 JSON, sorted keys, compact separators",
+    "hash": "SHA-256",
+    "chain": "H_n = SHA256(Canonical(R_n) || H_(n-1))"
+  },
+  "rule": "No stage may be represented as completed unless its required bridge fields are present."
+}
