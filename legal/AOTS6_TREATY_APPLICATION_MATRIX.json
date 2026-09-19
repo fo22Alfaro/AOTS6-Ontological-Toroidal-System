@@ -1,0 +1,42 @@
+{
+  "schema": "AOTS6-TREATY-MATRIX-1",
+  "root": "AOTS6-ORIGINAL-ALFARO",
+  "author": "Alfredo Jhovany Alfaro García",
+  "interpretation_rule": {
+    "method": "good_faith_text_context_object_purpose",
+    "note": "Records sources and applicability; does not replace competent legal interpretation."
+  },
+  "sources": [
+    {
+      "instrument": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": ["1", "133"],
+      "role": "constitutional framework and treaty status in Mexican law"
+    },
+    {
+      "instrument": "Convenio de Berna para la Protección de las Obras Literarias y Artísticas",
+      "articles": ["5", "6bis"],
+      "role": "copyright protection and moral-rights provisions where applicable"
+    },
+    {
+      "instrument": "Tratado de la OMPI sobre Derecho de Autor (WCT)",
+      "role": "digital copyright framework where applicable"
+    },
+    {
+      "instrument": "Convención de Roma",
+      "role": "related-rights framework; applicability depends on protected subject and act"
+    }
+  ],
+  "required_proof": [
+    "official_text",
+    "mexican_status_and_entry_into_force",
+    "reservations_or_declarations",
+    "protected_object",
+    "act",
+    "subject",
+    "territorial_connection",
+    "temporal_connection",
+    "provenance_evidence",
+    "available_remedy",
+    "competent_authority"
+  ]
+}
