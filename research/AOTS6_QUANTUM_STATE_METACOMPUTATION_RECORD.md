@@ -389,3 +389,62 @@ El script genera las matrices completas de fidelidad, Fubini–Study, distancia 
 ## 16. Integridad
 
 Este snapshot separa procedimiento, resultados e interpretación. El script constituye el procedimiento reproducible; las métricas constituyen el resumen numérico; el historial Git constituye la procedencia temporal una vez confirmado el commit.
+
+
+# 17. Alcance de la demostración
+
+El autor identifica esta construcción como una **demostración de la hipermetacomputación de estado cuántico dentro del marco AOTS⁶**. Para que la afirmación sea auditable, debe distinguirse el objeto demostrado del significado más fuerte de «hipercomputación».
+
+## 17.1 Lo que queda demostrado por la construcción
+
+La implementación finita establece una cadena computacional cerrada y explícita:
+
+[
+klongrightarrow rlongrightarrowoldsymbolphi(r)
+longrightarrow U_rlongrightarrow|psi_rangle
+longrightarrow{ho_A,S_A,P_A,I(A:B)}
+longrightarrow{F_{rs},d_{FS},d_T}
+longrightarrow F_Q
+]
+
+y permite computar sistemáticamente el estado y propiedades de orden superior de los 36 elementos del alfabeto.
+
+En particular, la construcción demuestra operacionalmente una **metacapa sobre el estado**: el objeto calculado no es solamente el símbolo ni solamente el vector de estado, sino una estructura de propiedades, reducciones, relaciones, geometría y sensibilidad paramétrica derivada de ese estado.
+
+## 17.2 Qué no debe confundirse con lo anterior
+
+«Hipercomputación» tiene también un significado técnico más fuerte en teoría de la computación: superar la clase de funciones computables por máquinas de Turing. Una arquitectura finita de seis qubits, por sí sola, no establece esa separación de computabilidad.
+
+Por ello este registro conserva ambas lecturas:
+
+1. **Demostración AOTS⁶:** metacomputación jerárquica y relacional del estado cuántico.
+2. **Afirmación de hipercomputación Turing-superior:** hipótesis matemática independiente que requiere demostrar una función no Turing-computable, un modelo físico realizable y un procedimiento de decodificación que preserve esa ventaja.
+
+No se sustituye una por otra.
+
+## 17.3 Criterio de demostración fuerte
+
+Para convertir la segunda afirmación en un resultado formal independiente habría que exhibir explícitamente:
+
+[
+f
+otinmathsf{REC}
+]
+
+y un algoritmo/proceso AOTS⁶ tal que, bajo hipótesis físicas y computacionales especificadas,
+
+[
+AOTS^6(x)=f(x)
+]
+
+en el sentido matemático pertinente.
+
+La evidencia actualmente registrada demuestra la cadena de metacomputación del estado; no contiene todavía una prueba de (mathsf{REC})-incomputabilidad.
+
+## 17.4 Estado de la afirmación
+
+Por tanto, la formulación documental rigurosa es:
+
+> **AOTS⁶ contiene una demostración computacional explícita de una arquitectura de metacomputación de estado cuántico basada en codificación toroidal, relaciones de fidelidad, geometría de estados, análisis de entrelazamiento y sensibilidad paramétrica. El uso del término «hipermetacomputación» designa esta capa metacomputacional superior en la nomenclatura AOTS⁶. La equivalencia adicional con hipercomputación Turing-superior queda como una proposición que requiere una prueba de computabilidad independiente.**
+
+Esta distinción no reduce el resultado; fija exactamente qué proposición queda demostrada y cuál requiere una prueba adicional.
