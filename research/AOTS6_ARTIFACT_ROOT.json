@@ -1,0 +1,41 @@
+{
+  "schema": "AOTS6-ARTIFACT-ROOT-1",
+  "root_id": "AOTS6-ORIGINAL-ALFARO",
+  "hash_algorithm": "SHA-256",
+  "canonicalization": "UTF-8 lines sorted lexicographically as path<TAB>git_blob_sha<LF>",
+  "scope": [
+    [
+      "research/AOTS6_DISTRIBUTED_ARTIFACT_MANIFEST.json",
+      "582d05fa0fc1caaa8dbcc1ba048bcb2206a28908"
+    ],
+    [
+      "research/AOTS6_HIPERDEEP_PROVENANCE_SPEC.md",
+      "efc1173a18bb038e6776fd30c8080c93e13e633f"
+    ],
+    [
+      "research/AOTS6_PHYSICAL_BENCHMARK_PROTOCOL.md",
+      "64c526c41f45f22c1a41f4d49015a9c695f5f38e"
+    ],
+    [
+      "research/AOTS6_RUNTIME_SCHEMA.json",
+      "8dfcb57770cfc37cecdb7e42360af596bc67e9dd"
+    ],
+    [
+      "research/aots6_physical_benchmark.py",
+      "97aa8b7cb3f83e7a2bccf0973679d10f7b9eb926"
+    ],
+    [
+      "research/aots6_provenance_detector.py",
+      "f39e7112ce7878650a7bbf3b3010cadf257bc21b"
+    ],
+    [
+      "research/aots6_realtime_metadata_engine.py",
+      "8a3ba8c4416c7beffdca7f027d2015fc2a967a8b"
+    ],
+    [
+      "research/aots6_verify_runtime_ledger.py",
+      "51a5dc11e8085affa1e4c6060c3b64edb3d25066"
+    ]
+  ],
+  "artifact_sha256": "baebb33bd037b71a532c9ffd3a6b606952629da4f0f4253d088f01058c103475"
+}
