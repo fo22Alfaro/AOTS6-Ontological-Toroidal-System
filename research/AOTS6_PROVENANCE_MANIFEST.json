@@ -19,5 +19,7 @@
     "CP^63"
   ],
   "transformations": [],
-  "artifact_sha256": ""
+  "artifact_sha256": "baebb33bd037b71a532c9ffd3a6b606952629da4f0f4253d088f01058c103475",
+  "artifact_hash_definition": "SHA-256 of canonical UTF-8 lines path<TAB>git_blob_sha<LF>, sorted lexicographically; scope is recorded in research/AOTS6_ARTIFACT_ROOT.json.",
+  "artifact_root_file": "research/AOTS6_ARTIFACT_ROOT.json"
 }
