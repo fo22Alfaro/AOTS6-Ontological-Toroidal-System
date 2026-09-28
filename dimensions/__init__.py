@@ -1,0 +1,1 @@
+"""AOTS6 toroidal dimension/network model."""
