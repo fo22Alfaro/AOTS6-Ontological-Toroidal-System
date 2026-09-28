@@ -1,0 +1,11 @@
+{
+  "schema":"AOTS6-GLOBAL-NET-1",
+  "architecture":"toroidal_control_plane_plus_cellular_automata",
+  "status":"software_control_plane_deployed",
+  "physical_global_deployment":"requires_real_nodes_and_links",
+  "defensive_layer":"NemesisDefense",
+  "safeguards":["authorization_required","bounded_actions","allowlist","reproducible_topology_digest"],
+  "quantum_claim_status":"unverified_without_benchmark_data",
+  "biocomputational_claim_status":"unverified_without_biological_hardware_or_experiment",
+  "communications_scope":"defensive_control_plane_only"
+}
