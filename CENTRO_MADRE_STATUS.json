@@ -1,0 +1,6 @@
+{
+  "schema":"AOTS6-CENTRO-MADRE-1",
+  "root_id":"AOTS6-ORIGINAL-ALFARO",
+  "purpose":"Integración verificable de los componentes AOTS6 existentes.",
+  "critical_rule":"No declarar como ejecutada una capacidad sin evidencia reproducible."
+}
