@@ -1,0 +1,13 @@
+{
+  "schema":"AOTS6-CRYPTO-PROTOCOL-MATRIX-1",
+  "source":"sandbox_recovered_through_toroidal_core",
+  "root_id":"AOTS6-ORIGINAL-ALFARO",
+  "implemented":["SHA-256","HMAC-SHA-256","HKDF-SHA-256","secure-random-tokens","Ed25519","X25519","AES-256-GCM","ChaCha20-Poly1305"],
+  "conditional_backend":["ML-DSA-65","ML-KEM-768"],
+  "integration_only":["QKD","ZK-SNARK"],
+  "digest_extensions_in_runtime":["SHA3-512","BLAKE2b"],
+  "external_adapters":["OpenSSL ML-DSA"],
+  "documented_alternatives_not_claimed_installed":["PyNaCl","libsodium","liboqs","pqcrypto"],
+  "important_boundary":"A documented library or protocol is not declared deployed unless executable repository evidence exists.",
+  "recovered_data":["AOTS6 crypto runtime","Nucleo Toroidal crypto/core.py","cryptography>=49,<50","PQC integration analysis"]
+}
