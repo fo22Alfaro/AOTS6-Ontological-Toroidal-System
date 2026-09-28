@@ -1,0 +1,25 @@
+name: AOTS6 Centro Madre Audit
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["main"]
+permissions:
+  contents: read
+jobs:
+  centro-madre:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m compileall -q centro_madre tests
+      - run: python -m unittest discover -s tests -v
+      - name: Critical secret-pattern gate
+        shell: bash
+        run: '! grep -RInE --exclude-dir=.git --exclude="*.md" "(BEGIN (RSA|OPENSSH|EC|DSA|PRIVATE) KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,})" .'
+      - name: Centro Madre registry
+        run: python -m centro_madre.registry > centro-madre-registry.json
+      - name: Verify registry
+        run: python -m centro_madre.verify
