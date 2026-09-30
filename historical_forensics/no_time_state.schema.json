@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"AOTS6 No-Time Evidence State",
+  "type":"object",
+  "required":["object_id","state","source","integrity","locator","provenance"],
+  "properties":{
+    "object_id":{"type":"string","minLength":1},
+    "state":{"enum":["CATALOG_ONLY","ACQUIRED","HASHED","LOCATED","EXTRACTED","CORROBORATED","CONTESTED","NO_DETERMINADO"]},
+    "source":{"type":"object","required":["institution","reference","accessed_at"],"properties":{"institution":{"type":"string"},"reference":{"type":"string"},"url":{"type":"string"},"accessed_at":{"type":"string","format":"date-time"}}},
+    "integrity":{"type":"object","required":["sha256","algorithm"],"properties":{"sha256":{"type":"string","pattern":"^[0-9a-fA-F]{64}$"},"byte_length":{"type":"integer","minimum":0},"algorithm":{"const":"SHA-256"}}},
+    "locator":{"type":"object","required":["kind","value"],"properties":{"kind":{"enum":["page","folio","image","frame","line","record","timestamp","other"]},"value":{"type":"string"}}},
+    "literal":{"type":"object","properties":{"text":{"type":"string"},"language":{"type":"string"},"method":{"enum":["manual","ocr","machine_transcription","other"]},"output_sha256":{"type":"string","pattern":"^[0-9a-fA-F]{64}$"}}},
+    "provenance":{"type":"array","items":{"type":"object","required":["operation","input","output"],"properties":{"operation":{"type":"string"},"input":{"type":"string"},"output":{"type":"string"},"operator":{"type":"string"},"timestamp":{"type":"string"}}}},
+    "restriction":{"type":"object","properties":{"status":{"enum":["NONE_RECORDED","CLAIMED","VERIFIED","EXPIRED","CONTESTED"]},"legal_basis":{"type":"string"},"official_source":{"type":"string"},"scope":{"type":"string"},"start":{"type":"string"},"end":{"type":"string"},"access_route":{"type":"string"}}}
+  }
+}
