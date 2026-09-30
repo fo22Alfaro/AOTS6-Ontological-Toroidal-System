@@ -44,7 +44,7 @@
     "retroactivity_control": "Pendiente de aplicar cuando exista fecha y contenido del acto."
   },
   "defense": {
-    "ordinary_route": "",
+    "ordinary_route": "PENDIENTE_DETERMINAR_CON_ACTO_Y_PROCEDIMIENTO",
     "definitivity_required": null,
     "exception_identified": null,
     "amparo_route": "",
