@@ -26,7 +26,7 @@ class ToroidalCore:
         Dimension("D5","quantum-record","quantum-state record and cryptographic envelope layer"),
         Dimension("D6","integration","cross-layer orchestration and network control layer"),
     )
-    NETWORKS = ("ONTOLOGICAL","TOROIDAL","CRYPTO","QUANTUM_RECORD","GLOBAL_NET","DEFENSIVE")
+    NETWORKS = ("ONTOLOGICAL","TOROIDAL","CRYPTO","QUANTUM_RECORD","GLOBAL_NET","DEFENSIVE","AUDIT")
 
     def __init__(self):
         self.links: list[Link] = []
@@ -42,7 +42,8 @@ class ToroidalCore:
             "dimensions":[d.__dict__ for d in self.DIMENSIONS],
             "networks":list(self.NETWORKS),
             "links":[l.__dict__ for l in self.links],
-            "evidence_rule":"verified means repository/software evidence; physical quantum or biological claims require external measurements"
+            "evidence_rule":"verified means repository/software evidence; physical quantum or biological claims require external measurements",
+            "audit_gate":"A2-OBOM verification is mandatory before validity is reported"
         }
     def digest(self)->str:
         import json

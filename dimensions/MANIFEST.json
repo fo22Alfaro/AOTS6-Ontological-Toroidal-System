@@ -2,7 +2,9 @@
   "schema":"AOTS6-TOROIDAL-CORE-1",
   "status":"software_model_deployed",
   "dimensions":["D1","D2","D3","D4","D5","D6"],
-  "interconnected_networks":["ONTOLOGICAL","TOROIDAL","CRYPTO","QUANTUM_RECORD","GLOBAL_NET","DEFENSIVE"],
+  "interconnected_networks":["ONTOLOGICAL","TOROIDAL","CRYPTO","QUANTUM_RECORD","GLOBAL_NET","DEFENSIVE","AUDIT"],
+  "audit_gate":"A2-OBOM requires verify_a2_obom before validity is reported",
+  "certification_gate":"certify_a2_obom requires explicit user confirmation and re-verification",
   "physical_dimension_claim":"not asserted",
   "external_measurement_required":["quantum hardware","biocomputational hardware","network-wide physical deployment"]
 }

@@ -1,0 +1,15 @@
+name: AOTS6 A2-OBOM Audit
+on:
+  push:
+    paths: ["a2_obom/**", "tests/test_a2_obom.py", ".github/workflows/a2-obom-audit.yml"]
+  pull_request:
+    paths: ["a2_obom/**", "tests/test_a2_obom.py", ".github/workflows/a2-obom-audit.yml"]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Run A2-OBOM audit tests
+        run: python -m unittest discover -s tests -p 'test_a2_obom.py' -v
