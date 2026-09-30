@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "cutoff": "2026-09-30",
+  "sources": [
+    {
+      "source_id": "AN-TEMPLIERS-2026",
+      "institution": "Archives nationales de France",
+      "title": "Les Templiers",
+      "url": "https://www.archives-nationales.culture.gouv.fr/dossiers-thematiques/les-templiers",
+      "verified_at": "2026-09-30",
+      "scope": "chronology and archival holdings for Temple; 1120-1314",
+      "state": "DOCUMENTED"
+    },
+    {
+      "source_id": "PARES-INQ-MEX-SUBSERIES",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Secuestros y confiscaciones de bienes del Tribunal de la Inquisición de México",
+      "reference": "ES.28079.AHN/1.1.11.4.5.2",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746474",
+      "verified_at": "2026-09-30",
+      "scope": "subseries 1642-1662; 52 units; partially digitized",
+      "state": "CATALOG_ONLY"
+    },
+    {
+      "source_id": "PARES-INQ-MEX-4812-2",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Inventario y cuentas de secuestros y confiscaciones del Tribunal de la Inquisición de México",
+      "reference": "INQUISICIÓN,4812,Exp.2",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746476",
+      "verified_at": "2026-09-30",
+      "scope": "1642-1657; compound documentary unit; partially digitized",
+      "state": "CATALOG_ONLY"
+    },
+    {
+      "source_id": "AGN-FONDOS",
+      "institution": "Archivo General de la Nación de México",
+      "title": "Acervos documentales y gráficos",
+      "url": "https://www.gob.mx/agn/acciones-y-programas/que-acervos-documentales-y-graficos-podemos-encontrar-en-el-agn",
+      "verified_at": "2026-09-30",
+      "scope": "novohispanic to early 21st century; Tierras, Indios, Real Hacienda, Real Audiencia, Inquisición and other fonds",
+      "state": "DOCUMENTED"
+    },
+    {
+      "source_id": "AGN-TIERRAS-INDIGENOUS",
+      "institution": "Archivo General de la Nación de México",
+      "title": "Memoria documental de los pueblos indígenas de México",
+      "url": "https://www.gob.mx/agn/articulos/agnresguarda-la-memoria-documental-de-los-pueblos-indigenas-de-mexico",
+      "verified_at": "2026-09-30",
+      "scope": "Tierras; territorial identity, traditional territories, measurements, boundaries and litigation",
+      "state": "DOCUMENTED"
+    },
+    {
+      "source_id": "AGN-INQUISITION",
+      "institution": "Archivo General de la Nación de México",
+      "title": "Fondo Inquisición",
+      "url": "https://www.gob.mx/agn/articulos/fondo-inquisicion-labor-de-preservacion-y-resguardo-del-agn",
+      "verified_at": "2026-09-30",
+      "scope": "1773 volumes; 1522-1819; preservation/access information",
+      "state": "DOCUMENTED"
+    },
+    {
+      "source_id": "UNESCO-MOW-2026",
+      "institution": "UNESCO",
+      "title": "Memory of the World",
+      "url": "https://www.unesco.org/en/memory-world",
+      "verified_at": "2026-09-30",
+      "scope": "documentary heritage preservation, access and dissemination",
+      "state": "DOCUMENTED"
+    }
+  ],
+  "integrity_note": "These records document source locations and catalog facts. They do not assert SHA-256 verification of underlying archival objects unless an object is separately acquired and hashed."
+}
