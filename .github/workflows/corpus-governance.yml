@@ -1,0 +1,26 @@
+name: AOTS6 Corpus Governance
+
+on:
+  push:
+    paths:
+      - "historical_forensics/**"
+      - ".github/workflows/corpus-governance.yml"
+  pull_request:
+    paths:
+      - "historical_forensics/**"
+
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile governance engines
+        run: |
+          python -m py_compile historical_forensics/instantiate_corpus.py
+          python -m py_compile historical_forensics/verify_no_time_state.py
+      - name: Governance tests
+        working-directory: historical_forensics
+        run: python -m pytest -q test_corpus_governance.py test_no_time_state.py test_verify_claims.py
