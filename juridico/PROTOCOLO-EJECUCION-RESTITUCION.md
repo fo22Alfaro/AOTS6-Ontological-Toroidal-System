@@ -44,3 +44,28 @@ python3 -m pytest test_ejecucion_restitucion.py
 
 ## Cadena de auditoría
 Conservar expediente de entrada, salida, versión del motor, versión normativa, hashes, commit Git, fecha/hora y proceso de ejecución.
+
+## Cadena de cumplimiento
+Cada obligación se registra como:
+**obligación -> fuente -> autoridad responsable -> plazo -> acto material de cumplimiento -> evidencia -> verificación -> estado**.
+
+Estados: PENDIENTE, CUMPLIDO, INCUMPLIDO, NO_DETERMINADO.
+Un paso CUMPLIDO exige evidencia identificable. CUMPLIDO_TOTAL sólo procede cuando todos los pasos están CUMPLIDO. Una resolución favorable no se considera cumplimiento por sí sola.
+
+## Control de vigencia normativa
+Para cada norma crítica se registra:
+- fecha de corte del análisis;
+- fuente oficial;
+- fecha/hora de comprobación;
+- estado: VIGENTE, ABROGADA, DEROGADA, REFORMADA, SUSTITUIDA o NO_DETERMINADA;
+- última reforma comprobada;
+- inicio/fin de vigencia cuando sean determinables;
+- SHA-256 del texto capturado.
+
+La vigencia se evalúa a la **fecha jurídicamente relevante del acto**, no sólo con la versión normativa actual. Una norma marcada VIGENTE exige comprobación de reformas.
+
+## Nuevas pruebas negativas
+13. norma VIGENTE sin revisión de reformas;
+14. acto histórico evaluado únicamente con la versión actual;
+15. CUMPLIDO_TOTAL con pasos pendientes, incumplidos o indeterminados;
+16. paso CUMPLIDO sin evidencia.
