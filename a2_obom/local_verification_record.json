@@ -1,0 +1,19 @@
+{
+  "schema": "AOTS6-A2-OBOM-LOCAL-VERIFICATION-1",
+  "source": "operator_supplied_terminal_execution",
+  "rdf_triples": 9,
+  "certify": {
+    "allow": true,
+    "obom_digest": "sha256:c9e264d9c52d96a8def7d4b829287486a370d19950ac60b396cc48390a9202d3",
+    "shacl_conforms": true,
+    "signature_verified": true
+  },
+  "post_certification_verify": {
+    "signature_verified": true,
+    "checksum_failures": [],
+    "policy_allow": true,
+    "verified": true
+  },
+  "independent_github_verification": false,
+  "sensitive_material_included": false
+}
