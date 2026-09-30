@@ -22,7 +22,7 @@ def sha256_file(path: Path) -> str:
 
 def validate(e: dict) -> list[str]:
     errors=[]
-    required=["id","right","act","authority","legality","defense",
+    required=["id","audit_date","right","act","authority","legality","defense",
               "evidence","decision","appeal","restitution","epistemic_state"]
     for k in required:
         if k not in e: errors.append(f"MISSING:{k}")
@@ -50,7 +50,8 @@ def validate(e: dict) -> list[str]:
         errors.append("DECISION:status requerido")
     if e["restitution"].get("executed") and not e["restitution"].get("execution_evidence"):
         errors.append("RESTITUTION:ejecutada=true exige execution_evidence")
-    if e["restitution"].get("executed") and e["compliance_chain"].get("status") != "CUMPLIDO_TOTAL":
+    cc_for_restitution = e.get("compliance_chain") or {}
+    if e["restitution"].get("executed") and cc_for_restitution.get("status") != "CUMPLIDO_TOTAL":
         errors.append("RESTITUTION:ejecutada=true exige cadena CUMPLIDO_TOTAL")
     if e["epistemic_state"] not in STATES + list(FINAL_STATES):
         errors.append("STATE:estado no reconocido")
@@ -61,7 +62,7 @@ def validate(e: dict) -> list[str]:
     if nv is None: errors.append("NORMATIVE_VALIDITY:bloque requerido")
     else:
         if not nv.get("as_of"): errors.append("NORMATIVE_VALIDITY:as_of requerido")
-        if nv.get("as_of") != "2026-09-30": errors.append("NORMATIVE_VALIDITY:as_of debe fijarse a la fecha de auditoría del expediente")
+        if nv.get("as_of") != e.get("audit_date"): errors.append("NORMATIVE_VALIDITY:as_of debe coincidir con audit_date")
         if nv.get("as_of") != e.get("right",{}).get("text_version_date"): errors.append("NORMATIVE_VALIDITY:as_of debe coincidir con text_version_date")
         sources=nv.get("sources",[])
         if not isinstance(sources,list) or not sources: errors.append("NORMATIVE_VALIDITY:sources requerido")
