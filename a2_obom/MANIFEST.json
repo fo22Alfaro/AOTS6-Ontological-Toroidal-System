@@ -1,0 +1,13 @@
+{
+  "schema": "AOTS6-A2-OBOM-INTERFACE-1",
+  "component": "AOTS6 Audit Interface",
+  "status": "software_interface_deployed",
+  "verification_gate": "verify_a2_obom",
+  "certification_gate": "certify_a2_obom",
+  "certification_requires": "explicit_user_confirmation",
+  "verified_true_means": ["cryptographic_integrity_of_canonical_payload", "conformance_to_declared_a2_obom_policy"],
+  "scientific_validity": "not_asserted_by_cryptographic_verification_alone",
+  "sensitive_output": "filtered",
+  "private_keys_tokens_credentials": "never_exposed",
+  "physical_or_experimental_claims": "require_external_evidence"
+}
