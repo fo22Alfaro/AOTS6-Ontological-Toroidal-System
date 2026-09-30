@@ -1,0 +1,18 @@
+name: Historical forensic provenance
+on:
+  push:
+    paths:
+      - historical_forensics/**
+  pull_request:
+    paths:
+      - historical_forensics/**
+jobs:
+  provenance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python historical_forensics/verify_claims.py historical_forensics/claims.initial.jsonl
+      - run: python -m pytest -q historical_forensics/test_historical_manifest.py historical_forensics/test_verify_claims.py
