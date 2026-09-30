@@ -28,8 +28,11 @@ def validate(e: dict) -> list[str]:
         if k not in e: errors.append(f"MISSING:{k}")
     if errors: return errors
     if not e["right"].get("source"): errors.append("RIGHT:source requerido")
-    if not e["act"].get("type") or not e["act"].get("date"):
+    act_pending = e["act"].get("status") == "PENDIENTE_ACREDITAR"
+    if (not e["act"].get("type") or not e["act"].get("date")) and not act_pending:
         errors.append("ACT:tipo y fecha requeridos")
+    if act_pending and e.get("epistemic_state") != "NO-DETERMINADO":
+        errors.append("ACT:PENDIENTE_ACREDITAR solo puede coexistir con NO-DETERMINADO")
     if not e["authority"].get("competence_source"):
         errors.append("AUTHORITY:competence_source requerido")
     if not e["legality"].get("legal_basis"):
@@ -47,6 +50,8 @@ def validate(e: dict) -> list[str]:
         errors.append("DECISION:status requerido")
     if e["restitution"].get("executed") and not e["restitution"].get("execution_evidence"):
         errors.append("RESTITUTION:ejecutada=true exige execution_evidence")
+    if e["restitution"].get("executed") and e["compliance_chain"].get("status") != "CUMPLIDO_TOTAL":
+        errors.append("RESTITUTION:ejecutada=true exige cadena CUMPLIDO_TOTAL")
     if e["epistemic_state"] not in STATES + list(FINAL_STATES):
         errors.append("STATE:estado no reconocido")
     if e["epistemic_state"] in {"AGOTADO-PROCEDIMIENTO","AGOTADO-RECURSO"}:
@@ -56,6 +61,7 @@ def validate(e: dict) -> list[str]:
     if nv is None: errors.append("NORMATIVE_VALIDITY:bloque requerido")
     else:
         if not nv.get("as_of"): errors.append("NORMATIVE_VALIDITY:as_of requerido")
+        if nv.get("as_of") != "2026-09-30": errors.append("NORMATIVE_VALIDITY:as_of debe fijarse a la fecha de auditoría del expediente")
         if nv.get("as_of") != e.get("right",{}).get("text_version_date"): errors.append("NORMATIVE_VALIDITY:as_of debe coincidir con text_version_date")
         sources=nv.get("sources",[])
         if not isinstance(sources,list) or not sources: errors.append("NORMATIVE_VALIDITY:sources requerido")
@@ -63,10 +69,13 @@ def validate(e: dict) -> list[str]:
             for k in ["norm","article","official_source","checked_at","status"]:
                 if not s.get(k): errors.append("NORMATIVE_VALIDITY:sources[%s] %s requerido" % (i,k))
             if s.get("status")=="VIGENTE" and not s.get("last_reform_checked"): errors.append("NORMATIVE_VALIDITY:sources[%s] last_reform_checked requerido" % i)
+            if s.get("status")=="VIGENTE" and not s.get("version_date"): errors.append("NORMATIVE_VALIDITY:sources[%s] version_date requerido" % i)
+            if s.get("status")=="VIGENTE" and s.get("version_date") > nv.get("as_of"): errors.append("NORMATIVE_VALIDITY:sources[%s] version_date no puede ser posterior a as_of" % i)
     cc=e.get("compliance_chain")
     if cc is None: errors.append("COMPLIANCE_CHAIN:bloque requerido")
     else:
         steps=cc.get("steps",[])
+        if cc.get("status") == "NO_DETERMINADO" and not steps: errors.append("COMPLIANCE_CHAIN:debe existir al menos una constancia pendiente de determinación")
         if not isinstance(steps,list) or not steps: errors.append("COMPLIANCE_CHAIN:steps requerido")
         for i,st in enumerate(steps):
             for k in ["step_id","obligation","source_document","responsible_authority","status"]:
