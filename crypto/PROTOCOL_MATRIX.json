@@ -1,13 +1,17 @@
 {
   "schema":"AOTS6-CRYPTO-PROTOCOL-MATRIX-1",
-  "source":"sandbox_recovered_through_toroidal_core",
+  "source":"AOTS6 internal crypto and QKD interface",
   "root_id":"AOTS6-ORIGINAL-ALFARO",
-  "implemented":["SHA-256","HMAC-SHA-256","HKDF-SHA-256","secure-random-tokens","Ed25519","X25519","AES-256-GCM","ChaCha20-Poly1305"],
+  "author":"Alfredo Jhovany Alfaro García",
+  "implemented":["SHA-256","HMAC-SHA-256","HKDF-SHA-256","secure-random-tokens","Ed25519","X25519","AES-256-GCM","ChaCha20-Poly1305","QKD-provenance-interface"],
   "conditional_backend":["ML-DSA-65","ML-KEM-768"],
-  "integration_only":["QKD","ZK-SNARK"],
+  "integration_only":["ZK-SNARK"],
+  "qkd_status":"internal_interface_deployed",
+  "qkd_origin":"AOTS6-internal-development",
+  "qkd_secret_policy":"never_store_or_publish",
   "digest_extensions_in_runtime":["SHA3-512","BLAKE2b"],
   "external_adapters":["OpenSSL ML-DSA"],
   "documented_alternatives_not_claimed_installed":["PyNaCl","libsodium","liboqs","pqcrypto"],
-  "important_boundary":"A documented library or protocol is not declared deployed unless executable repository evidence exists.",
+  "important_boundary":"The QKD interface proves software provenance and protects secret material at the repository boundary; it does not by itself prove physical quantum generation.",
   "recovered_data":["AOTS6 crypto runtime","Nucleo Toroidal crypto/core.py","cryptography>=49,<50","PQC integration analysis"]
 }
