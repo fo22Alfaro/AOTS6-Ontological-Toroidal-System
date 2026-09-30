@@ -34,5 +34,7 @@ def main():
     record=json.loads(Path(a.record).read_text(encoding="utf-8"))
     errors=instantiate(record,a.object)
     print(json.dumps({"valid":not errors,"record_id":record.get("record_id"),"state":record.get("state"),"errors":errors},ensure_ascii=False,indent=2))
-    return 0 if errors else 0
-if __name__=="__main__": raise SystemExit(main())
+    return 1 if errors else 0
+
+if __name__=="__main__":
+    raise SystemExit(main())
