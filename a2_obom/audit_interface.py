@@ -48,14 +48,16 @@ def verify_a2_obom(obom: dict[str, Any]) -> dict[str, Any]:
     payload = dict(filtered)
     payload.pop("digest", None)
     computed_digest = _digest(payload)
-    digest_ok = declared_digest in {None, computed_digest}
-    if not digest_ok:
+    digest_ok = isinstance(declared_digest, str) and declared_digest == computed_digest
+    if declared_digest is None:
+        errors.append("digest_missing")
+    elif not digest_ok:
         errors.append("digest_mismatch")
     return {
         "schema": SCHEMA,
         "verified": not errors,
         "integrity": digest_ok,
-        "policy_conformant": not any(e in errors for e in _policy_check(filtered)),
+        "policy_conformant": not _policy_check(filtered),
         "digest": computed_digest,
         "errors": errors,
         "artifact": filtered,
@@ -72,6 +74,7 @@ def certify_a2_obom(obom: dict[str, Any], *, data: Any, ontology: Any,
     candidate["ontology"] = ontology
     candidate["shacl"] = shacl
     candidate["policy"] = policy
+    candidate = _filter_sensitive(candidate)
     candidate.pop("digest", None)
     candidate["digest"] = _digest(candidate)
     result = verify_a2_obom(candidate)
