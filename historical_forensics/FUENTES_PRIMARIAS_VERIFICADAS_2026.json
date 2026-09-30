@@ -66,7 +66,80 @@
       "verified_at": "2026-09-30",
       "scope": "documentary heritage preservation, access and dissemination",
       "state": "DOCUMENTED"
+    },
+    {
+      "source_id": "PARES-INQ-MEX-4812-4",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Cuenta de los bienes secuestrados y confiscados a Tomás Treviño de Sobremonte y otros",
+      "reference": "INQUISICIÓN,4812,Exp.4",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746478",
+      "verified_at": "2026-09-30",
+      "scope": "1655-1657; accounts and resulting charges involving depositaries and Inquisition officials",
+      "state": "CATALOG_ONLY"
+    },
+    {
+      "source_id": "PARES-INQ-MEX-4812-11",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Cuenta de los bienes secuestrados a Francisco Gómez Tejoso",
+      "reference": "INQUISICIÓN,4812,Exp.11",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746485",
+      "verified_at": "2026-09-30",
+      "scope": "1656-1657; accounts involving depositary and Inquisition officials",
+      "state": "CATALOG_ONLY"
+    },
+    {
+      "source_id": "PARES-INQ-MEX-4812-12",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Cuenta de los bienes secuestrados a Luis Núñez Pérez",
+      "reference": "INQUISICIÓN,4812,Exp.12",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746486",
+      "verified_at": "2026-09-30",
+      "scope": "1656-1657; accounts involving depositary and Inquisition officials",
+      "state": "CATALOG_ONLY"
+    },
+    {
+      "source_id": "PARES-INQ-MEX-4812-18",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Almoneda y cuenta de los bienes secuestrados a Tomé Gómez",
+      "reference": "INQUISICIÓN,4812,Exp.18",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746492",
+      "verified_at": "2026-09-30",
+      "scope": "1656; auction and account of seized goods",
+      "state": "CATALOG_ONLY"
+    },
+    {
+      "source_id": "PARES-INQ-LIMA-4794-35",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Inventario almoneda de los bienes secuestrados a Enrique Jorge Tabares",
+      "reference": "INQUISICIÓN,4794,Exp.35",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746433",
+      "verified_at": "2026-09-30",
+      "scope": "1635-1639; inventory, auction and accounts of seized goods",
+      "state": "CATALOG_ONLY"
+    },
+    {
+      "source_id": "PARES-INQ-LIMA-4794-18",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Inventario y almoneda de bienes secuestrados a Juan de la Parra",
+      "reference": "INQUISICIÓN,4794,Exp.18",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746417",
+      "verified_at": "2026-09-30",
+      "scope": "1639-1641; 17 folio-sized items; inventory and auction",
+      "state": "CATALOG_ONLY"
+    },
+    {
+      "source_id": "PARES-INQ-CARTAGENA-4822-2",
+      "institution": "Archivo Histórico Nacional / PARES",
+      "title": "Inventario y almoneda de los bienes secuestrados a varias reas del Tribunal de la Inquisición de Cartagena de Indias",
+      "reference": "INQUISICIÓN,4822,Exp.2",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746529",
+      "verified_at": "2026-09-30",
+      "scope": "1632-1637; inventory, auction and accounts of seized goods",
+      "state": "CATALOG_ONLY"
     }
   ],
-  "integrity_note": "These records document source locations and catalog facts. They do not assert SHA-256 verification of underlying archival objects unless an object is separately acquired and hashed."
+  "integrity_note": "These records document source locations and catalog facts. They do not assert SHA-256 verification of underlying archival objects unless an object is separately acquired and hashed.",
+  "notes": [
+    "Additional catalog records verified 2026-09-30 through PARES; underlying images/objects remain CATALOG_ONLY until legally acquired and hashed."
+  ]
 }
