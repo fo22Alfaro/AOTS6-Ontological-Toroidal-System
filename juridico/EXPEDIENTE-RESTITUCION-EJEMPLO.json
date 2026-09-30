@@ -203,5 +203,6 @@
     "executed": false,
     "execution_evidence": []
   },
-  "epistemic_state": "NO-DETERMINADO"
+  "epistemic_state": "NO-DETERMINADO",
+  "audit_date": "2026-09-30"
 }
