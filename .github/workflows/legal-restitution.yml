@@ -1,0 +1,23 @@
+name: AOTS6 Legal Restitution Audit
+
+on:
+  push:
+    paths:
+      - "juridico/**"
+  pull_request:
+    paths:
+      - "juridico/**"
+  workflow_dispatch:
+
+jobs:
+  legal-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate legal restitution engine
+        run: python3 juridico/ejecucion_restitucion.py juridico/EXPEDIENTE-RESTITUCION-EJEMPLO.json
+      - name: Run legal regression tests
+        run: python3 -m pytest -q juridico/test_ejecucion_restitucion.py
