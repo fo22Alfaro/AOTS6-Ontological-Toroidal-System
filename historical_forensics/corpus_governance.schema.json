@@ -1,0 +1,17 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"AOTS6 Corpus Governance Record",
+ "type":"object",
+ "required":["record_id","object_id","state","access","provenance","integrity","governance"],
+ "properties":{
+  "record_id":{"type":"string"},
+  "object_id":{"type":"string"},
+  "state":{"enum":["CATALOG_ONLY","ACQUIRED","HASHED","LOCATED","EXTRACTED","CORROBORATED","CONTESTED","NO_DETERMINADO"]},
+  "access":{"enum":["PUBLIC","MEDIATED","RESTRICTED","PERSONAL_DATA","COPYRIGHT_CONTROLLED","UNKNOWN"]},
+  "provenance":{"type":"object","required":["institution","reference"],"properties":{"institution":{"type":"string"},"reference":{"type":"string"},"collection":{"type":"string"},"series":{"type":"string"},"url":{"type":"string"}}},
+  "integrity":{"type":"object","required":["sha256"],"properties":{"sha256":{"type":"string","pattern":"^[0-9a-fA-F]{64}$"},"byte_length":{"type":"integer","minimum":0},"algorithm":{"const":"SHA-256"}}},
+  "governance":{"type":"object","required":["roles","history"],"properties":{"roles":{"type":"array","items":{"type":"string"}},"history":{"type":"array","items":{"type":"object","required":["action","timestamp"],"properties":{"action":{"type":"string"},"timestamp":{"type":"string"},"actor":{"type":"string"},"previous_hash":{"type":"string"},"new_hash":{"type":"string"}}}}}},
+  "restriction":{"type":"object","properties":{"status":{"type":"string"},"legal_basis":{"type":"string"},"norm":{"type":"string"},"article":{"type":"string"},"official_source":{"type":"string"},"scope":{"type":"string"},"start":{"type":"string"},"end":{"type":"string"},"exception":{"type":"string"},"access_route":{"type":"string"},"review_date":{"type":"string"}}},
+  "restitution":{"type":"object","properties":{"state":{"enum":["R0_KNOWLEDGE","R1_DOCUMENTARY","R2_PROVENANCE","R3_PATRIMONIAL_CASE","R4_LEGAL_PROCEEDING","R5_MATERIAL_EXECUTION","R6_PRESERVATION"]},"case_id":{"type":"string"},"competent_authority":{"type":"string"},"procedural_route":{"type":"string"},"decision":{"type":"string"},"execution_evidence":{"type":"string"}}}
+ }
+}
