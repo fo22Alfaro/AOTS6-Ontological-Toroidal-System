@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"AOTS6 Forensic Claim",
+  "type":"object",
+  "required":["claim_id","text","epistemic_state","source","evidence"],
+  "properties":{
+    "claim_id":{"type":"string"},
+    "text":{"type":"string","minLength":1},
+    "epistemic_state":{"enum":["OBSERVADO","DOCUMENTADO","CORROBORADO","RECONSTRUIDO","INFERIDO","HIPOTESIS","REFUTADO","NO-DETERMINADO"]},
+    "source":{"type":"object","required":["institution","reference","url","accessed_at"]},
+    "evidence":{"type":"object","required":["object_id","sha256","locator"]},
+    "corroboration":{"type":"array","items":{"type":"string"}},
+    "reproducibility":{"enum":["REPRODUCIBLE","PARCIALMENTE_REPRODUCIBLE","NO-REPRODUCIBLE"]}
+  }
+}
