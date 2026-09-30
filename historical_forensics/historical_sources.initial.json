@@ -1,0 +1,62 @@
+{
+  "schema": "AOTS6-HISTORICAL-SOURCE-1.0",
+  "cutoff": "2026-09-30",
+  "sources": [
+    {
+      "id": "FR-AN-TEMPLARS",
+      "institution": "Archives nationales de France",
+      "scope": "Temple: archivos del proceso, encomiendas, patrimonio y cronología",
+      "url": "https://www.archives-nationales.culture.gouv.fr/dossiers-thematiques/les-templiers",
+      "status": "VERIFICADO_CATALOGO"
+    },
+    {
+      "id": "FR-AN-TEMPLAR-ROLL",
+      "institution": "Archives nationales de France",
+      "scope": "Rollo de interrogatorio de 1307; 138 templarios",
+      "url": "https://www.archives-nationales.culture.gouv.fr/evenements/le-proces-des-templiers-1307-le-rouleau-dinterrogatoire",
+      "status": "VERIFICADO_DESCRIPCION"
+    },
+    {
+      "id": "PT-ANTT-CRISTO",
+      "institution": "Arquivo Nacional da Torre do Tombo",
+      "scope": "Orden de Cristo y patrimonio templario en Portugal",
+      "url": "https://antt.dglab.gov.pt/exposicoes-virtuais-2/ordem-de-cristo/",
+      "status": "VERIFICADO_CATALOGO"
+    },
+    {
+      "id": "ES-PARES-MEX-CONF",
+      "institution": "PARES / Archivo Histórico Nacional",
+      "scope": "Secuestros y confiscaciones del Tribunal de la Inquisición de México, 1642-1662",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746474",
+      "status": "VERIFICADO_CATALOGO"
+    },
+    {
+      "id": "ES-PARES-LIMA-ACC",
+      "institution": "PARES / Archivo Histórico Nacional",
+      "scope": "Cuenta de bienes confiscados por el Tribunal de Lima, 1639-1648",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746466",
+      "status": "VERIFICADO_CATALOGO"
+    },
+    {
+      "id": "ES-PARES-LIMA-AUCTION",
+      "institution": "PARES / Archivo Histórico Nacional",
+      "scope": "Inventario, remate y almoneda de bienes confiscados a Luis de Lima",
+      "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1746408",
+      "status": "VERIFICADO_CATALOGO"
+    },
+    {
+      "id": "MX-AGN",
+      "institution": "Archivo General de la Nación de México",
+      "scope": "Fondo Inquisición y documentación novohispana",
+      "url": "https://www.gob.mx/agn/",
+      "status": "REPOSITORIO_PRIORITARIO"
+    },
+    {
+      "id": "AOTS6-REPO",
+      "institution": "GitHub",
+      "scope": "Repositorio operativo AOTS6",
+      "url": "https://github.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System",
+      "status": "REPOSITORIO_DE_IMPLEMENTACION"
+    }
+  ]
+}
