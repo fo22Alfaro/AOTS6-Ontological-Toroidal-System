@@ -1,0 +1,24 @@
+name: AOTS6 No-Time Evidence State
+
+on:
+  push:
+    paths:
+      - "historical_forensics/**"
+      - ".github/workflows/no-time-state.yml"
+  pull_request:
+    paths:
+      - "historical_forensics/**"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Python syntax
+        run: python -m py_compile historical_forensics/verify_no_time_state.py
+      - name: Unit tests
+        working-directory: historical_forensics
+        run: python -m pytest -q
