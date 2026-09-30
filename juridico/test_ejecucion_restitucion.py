@@ -19,6 +19,7 @@ def test_example_is_structurally_valid():
     data = json.loads(p.stdout)
     assert data["valid"] is True
     assert data["state"] == "NO-DETERMINADO"
+    assert data["valid"] is True
 
 def test_executed_restitution_requires_evidence(tmp_path):
     x = json.loads(EJEMPLO.read_text(encoding="utf-8"))
@@ -37,3 +38,16 @@ def test_exhaustion_requires_decision_hash(tmp_path):
     p = run(bad)
     assert p.returncode != 0
     assert "decision.document_hash" in p.stdout
+
+
+def test_pending_act_cannot_be_reported_as_final():
+    x = json.loads(EJEMPLO.read_text(encoding="utf-8"))
+    x["epistemic_state"] = "RESTITUCIÓN"
+    bad = ROOT / "_tmp_pending_invalid.json"
+    bad.write_text(json.dumps(x), encoding="utf-8")
+    try:
+        p = run(bad)
+        assert p.returncode != 0
+        assert "PENDIENTE_ACREDITAR" in p.stdout
+    finally:
+        bad.unlink(missing_ok=True)
