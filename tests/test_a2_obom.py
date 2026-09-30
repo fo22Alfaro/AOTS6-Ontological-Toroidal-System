@@ -9,17 +9,18 @@ def sample():
         "policy": {"sensitive_output": "filtered"},
     }
 
-def test_verify_is_required_gate():
+def test_verify_requires_declared_digest():
     result = verify_a2_obom(sample())
-    assert result["verified"] is True
-    assert result["integrity"] is True
-    assert result["policy_conformant"] is True
+    assert result["verified"] is False
+    assert result["integrity"] is False
+    assert "digest_missing" in result["errors"]
 
 def test_sensitive_values_are_filtered():
     obj = sample()
     obj["data"]["private_key"] = "DO_NOT_EXPOSE"
     result = verify_a2_obom(obj)
     assert result["artifact"]["data"]["private_key"] == "[FILTERED]"
+    assert result["verified"] is False
 
 def test_certification_requires_confirmation():
     try:
@@ -39,4 +40,6 @@ def test_certification_reverifies_candidate():
         policy={"sensitive_output": "filtered"}, user_confirmation=True)
     assert result["certified_candidate"] is True
     assert result["verified"] is True
+    assert result["integrity"] is True
+    assert result["policy_conformant"] is True
     assert len(result["digest"]) == 64
