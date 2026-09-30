@@ -1,0 +1,48 @@
+{
+  "id": "AOTS6-CPEUM-001",
+  "right": {
+    "source": "CPEUM",
+    "article": "",
+    "text_version_date": "2026-09-30"
+  },
+  "act": {
+    "type": "",
+    "date": "",
+    "authority": "",
+    "content_hash": ""
+  },
+  "authority": {
+    "competence_source": "",
+    "competence_verified": false
+  },
+  "legality": {
+    "legal_basis": "",
+    "motivation": "",
+    "procedure": ""
+  },
+  "defense": {
+    "ordinary_route": "",
+    "definitivity_required": null,
+    "exception_identified": null,
+    "amparo_route": "",
+    "amparo_legal_basis": "",
+    "amparo_procedural_finding": ""
+  },
+  "evidence": [],
+  "decision": {
+    "status": "",
+    "document_hash": ""
+  },
+  "appeal": {
+    "available": null,
+    "filed": null,
+    "status": ""
+  },
+  "restitution": {
+    "requested": "",
+    "ordered": "",
+    "executed": false,
+    "execution_evidence": []
+  },
+  "epistemic_state": "NO-DETERMINADO"
+}
