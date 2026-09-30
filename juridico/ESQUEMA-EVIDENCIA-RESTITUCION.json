@@ -1,68 +1,14 @@
 {
-  "schema_version": "1.0.0",
-  "date_cutoff": "2026-09-30",
-  "identity": {
-    "author": "Alfredo Jhovany Alfaro García",
-    "system": "AOTS⁶",
-    "repository": "fo22Alfaro/AOTS6-Ontological-Toroidal-System"
-  },
-  "claim": {
-    "id": "",
-    "text": "",
-    "type": "FACT|LAW|INTERPRETATION|REQUEST|RESULT",
-    "source_class": "CONSTITUCION|LEY|JURISPRUDENCIA_OBLIGATORIA|PRECEDENTE|TESIS_AISLADA|ACTO_AUTORIDAD|DOCUMENTO_PRIVADO|NO_VERIFICADO"
-  },
-  "source": {
-    "uri": "",
-    "title": "",
-    "publication_date": "",
-    "accessed_at": "",
-    "version": "",
-    "locator": "",
-    "capture_sha256": ""
-  },
-  "fact": {
-    "act": "",
-    "authority": "",
-    "date": "",
-    "notification": "",
-    "jurisdiction": ""
-  },
-  "legal_effect": {
-    "norm": "",
-    "article": "",
-    "effect_claimed": "",
-    "effect_verified": false
-  },
-  "procedure": {
-    "ordinary_route": "",
-    "definitivity": {
-      "required": null,
-      "exception": null,
-      "source": ""
-    },
-    "amparo": {
-      "route": "",
-      "procedural_basis": "",
-      "verified": false
-    }
-  },
-  "decision": {
-    "document": "",
-    "sha256": "",
-    "status": "NOT_FOUND|LOCATED|RESOLVED",
-    "operative_effect": ""
-  },
-  "restitution": {
-    "requested": "",
-    "ordered": "",
-    "executed": false,
-    "execution_evidence": []
-  },
-  "provenance": {
-    "captured_by": "AOTS6",
-    "capture_method": "",
-    "chain_previous_sha256": "",
-    "record_sha256": ""
-  }
+  "schema_version":"1.1.0","date_cutoff":"2026-09-30",
+  "identity":{"author":"Alfredo Jhovany Alfaro García","system":"AOTS⁶","repository":"fo22Alfaro/AOTS6-Ontological-Toroidal-System"},
+  "claim":{"id":"","text":"","type":"FACT|LAW|INTERPRETATION|REQUEST|RESULT","source_class":"CONSTITUCION|LEY|JURISPRUDENCIA_OBLIGATORIA|PRECEDENTE|TESIS_AISLADA|ACTO_AUTORIDAD|DOCUMENTO_PRIVADO|NO_VERIFICADO"},
+  "source":{"uri":"","title":"","publication_date":"","accessed_at":"","version":"","locator":"","capture_sha256":""},
+  "fact":{"act":"","authority":"","date":"","notification":"","jurisdiction":""},
+  "legal_effect":{"norm":"","article":"","effect_claimed":"","effect_verified":false},
+  "procedure":{"ordinary_route":"","definitivity":{"required":null,"exception":null,"source":""},"amparo":{"route":"","procedural_basis":"","verified":false}},
+  "decision":{"document":"","sha256":"","status":"NOT_FOUND|LOCATED|RESOLVED","operative_effect":""},
+  "normative_validity":{"as_of":"2026-09-30","sources":[{"norm":"","article":"","official_source":"","checked_at":"","status":"VIGENTE|ABROGADA|DEROGADA|REFORMADA|SUSTITUIDA|NO_DETERMINADA","last_reform_checked":"","effective_from":"","effective_until":"","version_sha256":""}]},
+  "compliance_chain":{"chain_id":"","status":"PENDIENTE|PARCIAL|CUMPLIDO_TOTAL|INCUMPLIDO|NO_DETERMINADO","steps":[{"step_id":"","obligation":"","source_document":"","responsible_authority":"","status":"PENDIENTE|CUMPLIDO|INCUMPLIDO|NO_DETERMINADO","due_date":"","evidence":[],"observations":""}],"chain_previous_sha256":"","chain_sha256":""},
+  "restitution":{"requested":"","ordered":"","executed":false,"execution_evidence":[]},
+  "provenance":{"captured_by":"AOTS6","capture_method":"","chain_previous_sha256":"","record_sha256":""}
 }
