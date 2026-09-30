@@ -1,15 +1,207 @@
 {
-  "id":"AOTS6-CPEUM-001",
-  "right":{"source":"CPEUM","article":"","text_version_date":"2026-09-30"},
-  "act":{"type":"","date":"","authority":"","content_hash":""},
-  "authority":{"competence_source":"","competence_verified":false},
-  "legality":{"legal_basis":"","motivation":"","procedure":""},
-  "defense":{"ordinary_route":"","definitivity_required":null,"exception_identified":null,"amparo_route":"","amparo_legal_basis":"","amparo_procedural_finding":""},
-  "evidence":[],
-  "decision":{"status":"","document_hash":""},
-  "appeal":{"available":null,"filed":null,"status":""},
-  "normative_validity":{"as_of":"2026-09-30","sources":[]},
-  "compliance_chain":{"chain_id":"AOTS6-CPEUM-001-CUM","status":"NO_DETERMINADO","steps":[],"chain_previous_sha256":"","chain_sha256":""},
-  "restitution":{"requested":"","ordered":"","executed":false,"execution_evidence":[]},
-  "epistemic_state":"NO-DETERMINADO"
+  "id": "AOTS6-CPEUM-001",
+  "record_status": "AUDITORIA_NORMATIVA_OPERATIVA",
+  "right": {
+    "source": "CPEUM",
+    "article": "1,14,16,17,103,107",
+    "text_version_date": "2026-09-30",
+    "version_source": "CPEUM vigente; ultima reforma DOF 03-03-2026"
+  },
+  "act": {
+    "status": "PENDIENTE_ACREDITAR",
+    "type": "",
+    "date": "",
+    "authority": "",
+    "content_hash": "",
+    "required_constancias": [
+      "acto o resolucion integra",
+      "fecha cierta",
+      "autoridad emisora",
+      "notificacion o constancia de conocimiento",
+      "contenido verificable"
+    ]
+  },
+  "authority": {
+    "competence_source": "Pendiente de identificar a partir del acto concreto",
+    "competence_verified": false,
+    "required_constancias": [
+      "norma atributiva de competencia",
+      "ambito material",
+      "ambito territorial",
+      "vigencia de la competencia",
+      "firma o identificacion de autoridad"
+    ]
+  },
+  "legality": {
+    "legal_basis": [
+      "CPEUM art. 14",
+      "CPEUM art. 16",
+      "CPEUM art. 17"
+    ],
+    "motivation": "",
+    "procedure": "",
+    "temporal_rule": "El acto debe contrastarse con la norma vigente en su fecha, no solo con la version actual.",
+    "retroactivity_control": "Pendiente de aplicar cuando exista fecha y contenido del acto."
+  },
+  "defense": {
+    "ordinary_route": "",
+    "definitivity_required": null,
+    "exception_identified": null,
+    "amparo_route": "",
+    "amparo_legal_basis": "CPEUM arts. 103 y 107; Ley de Amparo vigente",
+    "amparo_procedural_finding": "",
+    "anti_bias_rule": "La via de amparo no se marca como obligatoria por inferencia; debe existir fundamento normativo o determinacion procesal documentada."
+  },
+  "evidence": [
+    {
+      "id": "N-001",
+      "type": "official_normative_source",
+      "description": "CPEUM, texto vigente",
+      "source": "Camara de Diputados",
+      "official_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "verified_at": "2026-09-30",
+      "version_date": "2026-03-03"
+    },
+    {
+      "id": "N-002",
+      "type": "official_normative_source",
+      "description": "Ley de Amparo, texto vigente",
+      "source": "Camara de Diputados",
+      "official_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf",
+      "verified_at": "2026-09-30",
+      "version_date": "2025-10-16"
+    }
+  ],
+  "decision": {
+    "status": "NO_DETERMINADO",
+    "document_hash": ""
+  },
+  "appeal": {
+    "available": null,
+    "filed": null,
+    "status": "NO_DETERMINADO"
+  },
+  "normative_validity": {
+    "as_of": "2026-09-30",
+    "sources": [
+      {
+        "norm": "CPEUM",
+        "article": "1",
+        "official_source": "Camara de Diputados",
+        "checked_at": "2026-09-30",
+        "status": "VIGENTE",
+        "version_date": "2026-03-03",
+        "last_reform_checked": "2026-09-30"
+      },
+      {
+        "norm": "CPEUM",
+        "article": "14",
+        "official_source": "Camara de Diputados",
+        "checked_at": "2026-09-30",
+        "status": "VIGENTE",
+        "version_date": "2026-03-03",
+        "last_reform_checked": "2026-09-30"
+      },
+      {
+        "norm": "CPEUM",
+        "article": "16",
+        "official_source": "Camara de Diputados",
+        "checked_at": "2026-09-30",
+        "status": "VIGENTE",
+        "version_date": "2026-03-03",
+        "last_reform_checked": "2026-09-30"
+      },
+      {
+        "norm": "CPEUM",
+        "article": "17",
+        "official_source": "Camara de Diputados",
+        "checked_at": "2026-09-30",
+        "status": "VIGENTE",
+        "version_date": "2026-03-03",
+        "last_reform_checked": "2026-09-30"
+      },
+      {
+        "norm": "CPEUM",
+        "article": "103",
+        "official_source": "Camara de Diputados",
+        "checked_at": "2026-09-30",
+        "status": "VIGENTE",
+        "version_date": "2026-03-03",
+        "last_reform_checked": "2026-09-30"
+      },
+      {
+        "norm": "CPEUM",
+        "article": "107",
+        "official_source": "Camara de Diputados",
+        "checked_at": "2026-09-30",
+        "status": "VIGENTE",
+        "version_date": "2026-03-03",
+        "last_reform_checked": "2026-09-30"
+      },
+      {
+        "norm": "Ley de Amparo",
+        "article": "1,61,63,77,80,81",
+        "official_source": "Camara de Diputados",
+        "checked_at": "2026-09-30",
+        "status": "VIGENTE",
+        "version_date": "2025-10-16",
+        "last_reform_checked": "2026-09-30"
+      }
+    ]
+  },
+  "compliance_chain": {
+    "chain_id": "AOTS6-CPEUM-001-CUM",
+    "status": "NO_DETERMINADO",
+    "steps": [
+      {
+        "step_id": "C-001",
+        "obligation": "Acreditar el acto concreto, su fecha y autoridad emisora",
+        "source_document": "Acto o resolucion integra pendiente de incorporar",
+        "responsible_authority": "Pendiente de identificar",
+        "status": "NO_DETERMINADO",
+        "evidence": []
+      },
+      {
+        "step_id": "C-002",
+        "obligation": "Acreditar competencia de la autoridad",
+        "source_document": "Norma atributiva de competencia pendiente de identificar",
+        "responsible_authority": "Pendiente de identificar",
+        "status": "NO_DETERMINADO",
+        "evidence": []
+      },
+      {
+        "step_id": "C-003",
+        "obligation": "Determinar fundamentacion y motivacion del acto",
+        "source_document": "Acto/resolucion integra pendiente de incorporar",
+        "responsible_authority": "Autoridad emisora pendiente de identificar",
+        "status": "NO_DETERMINADO",
+        "evidence": []
+      },
+      {
+        "step_id": "C-004",
+        "obligation": "Identificar defensa ordinaria, requisitos, excepciones y agotamiento cuando corresponda",
+        "source_document": "Expediente/procedimiento de origen pendiente de incorporar",
+        "responsible_authority": "Organo competente pendiente de identificar",
+        "status": "NO_DETERMINADO",
+        "evidence": []
+      },
+      {
+        "step_id": "C-005",
+        "obligation": "Determinar restitucion y documentar su ejecucion si fue ordenada",
+        "source_document": "Resolucion firme y constancias de cumplimiento pendientes",
+        "responsible_authority": "Autoridad ejecutora pendiente de identificar",
+        "status": "NO_DETERMINADO",
+        "evidence": []
+      }
+    ],
+    "chain_previous_sha256": "",
+    "chain_sha256": ""
+  },
+  "restitution": {
+    "requested": "",
+    "ordered": "",
+    "executed": false,
+    "execution_evidence": []
+  },
+  "epistemic_state": "NO-DETERMINADO"
 }
