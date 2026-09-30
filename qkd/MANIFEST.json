@@ -1,0 +1,10 @@
+{
+  "schema": "AOTS6-QKD-INTERNAL-INTERFACE-1",
+  "root_id": "AOTS6-ORIGINAL-ALFARO",
+  "author": "Alfredo Jhovany Alfaro García",
+  "status": "software_interface_deployed",
+  "origin_model": "AOTS6-internal-development",
+  "secret_material_policy": "never_store_or_publish",
+  "capabilities": ["provenance_digest", "sequence_replay_guard", "material_verification", "public_safe_record"],
+  "physical_evidence": "required_for_physical_generation_claims"
+}

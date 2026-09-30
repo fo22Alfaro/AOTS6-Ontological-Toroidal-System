@@ -68,13 +68,17 @@ class OpenSSLMLDSA:
         finally: os.unlink(msg)
 
 class QKDEnvelope:
-    """Consumes keys produced by a real QKD system; it does not simulate QKD."""
+    """AOTS6-internal QKD boundary; records a digest, never the secret key."""
     def ingest(self,key_material:bytes, source_id:str, key_id:str, generation_time:str)->Evidence:
         if not key_material: raise ValueError("empty QKD key material")
-        return Evidence("QKD","observed","key_material",
-            base64.b64encode(key_material).decode(),
+        if not source_id.startswith("AOTS6-INTERNAL-"):
+            raise ValueError("QKD source must identify an AOTS6 internal source")
+        material_digest=hashlib.sha256(key_material).hexdigest()
+        return Evidence("QKD","observed","key_material_digest",
+            None,
             {"source_id":source_id,"key_id":key_id,"generation_time":generation_time,
-             "physical_origin_required":True})
+             "material_sha256":material_digest,"material_bytes":len(key_material),
+             "secret_material_excluded":True,"origin":"AOTS6-internal-development"})
 
 class ZKProofEnvelope:
     """Stores/validates provenance metadata for an externally generated ZK-SNARK proof."""
