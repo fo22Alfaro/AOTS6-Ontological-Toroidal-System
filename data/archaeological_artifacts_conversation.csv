@@ -1,0 +1,9 @@
+id,nombre_pieza,latitud,longitud,estado_citado,nodo,procedencia
+1,"Máscara de Teotihuacán",19.6925,-98.8430,"Desaparecida","Node-Alpha","Conversación; no verificado"
+2,"Estela de Copilco",19.3365,-99.1912,"Robada","Node-Gamma","Conversación; no verificado"
+3,"Máscara de Xochicalco",18.8470,-99.2640,"Robada","Node-Theta","Conversación; no verificado"
+4,"Códice Borgia (fragmentos)",20.5285,-97.3700,"Desaparecida","Node-Epsilon","Conversación; no verificado"
+5,"Escultura de Chac Mool (Teotihuacán)",19.6885,-98.8435,"Robada","Node-Lambda","Conversación; no verificado"
+6,"Figurilla olmeca",18.9360,-95.7430,"Desaparecida","Node-Mu","Conversación; no verificado"
+7,"Piedra del Sol (fragmentos)",19.4343,-99.1386,"Robada","Node-Alpha","Conversación; no verificado"
+8,"Artefacto de Teopanzolco",18.9480,-99.2210,"Robada","Node-Nu","Conversación; no verificado"
