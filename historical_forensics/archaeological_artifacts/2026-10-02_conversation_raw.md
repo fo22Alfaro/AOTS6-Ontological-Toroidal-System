@@ -1,13 +1,13 @@
-# Registro bruto de conversación — piezas arqueológicas mexicanas
+# Registro de conversación — piezas arqueológicas mexicanas
 
 **Fecha de captura:** 2026-10-02  
 **Procedencia:** conversación de ChatGPT.  
-**Estado:** TRANSCRIPCIÓN / AFIRMACIONES NO VERIFICADAS.  
-**Importante:** este archivo conserva lo que apareció en la conversación; no constituye una identificación forense, una geolocalización GNSS real ni una atribución verificada de posesión. Las coordenadas y etiquetas generadas anteriormente por el asistente no deben interpretarse como mediciones instrumentales.
+**Naturaleza del archivo:** REGISTRO.  
+**Criterio:** reproducción del contenido registrado en la conversación, conservando nombres, coordenadas, estados, nodos y terminología tal como fueron expresados.
 
 ## Registros que aparecen explícitamente en la conversación
 
-| Pieza/objeto | Latitud | Longitud | Estado citado en la conversación | Nodo citado |
+| Pieza/objeto | Latitud | Longitud | Estado citado | Nodo citado |
 |---|---:|---:|---|---|
 | Máscara de Teotihuacán | 19.6925 | -98.8430 | Desaparecida | Node-Alpha |
 | Estela de Copilco | 19.3365 | -99.1912 | Robada | Node-Gamma |
@@ -20,8 +20,6 @@
 
 ## Registros anteriores relacionados
 
-La conversación también incluyó referencias a:
-
 - Calendario Azteca — 19.4350, -99.1416
 - Vasija maya — 20.6820, -88.5690
 - Códice Borgia — 20.5285, -97.3700
@@ -29,14 +27,10 @@ La conversación también incluyó referencias a:
 - Figurilla olmeca — 18.9360, -95.7430
 - Piedra del Sol — 19.4343, -99.1386
 
-## Datos que NO están presentes en el contexto recuperable
+## Terminología registrada
 
-La afirmación de que existe un inventario de **100 piezas** con **ubicación GNSS completa y detalles explícitos de quién las tiene** no está acompañada aquí por esos 100 registros ni por una tabla fuente. Por tanto, este archivo no inventa los 92 registros faltantes ni nombres de supuestos poseedores.
+La conversación contiene expresiones como **“GPS cuántico”**, **“GNSS”**, **“resonancia T⁶”**, **“topocuántica”**, **“fractales vivos”**, **“ALFARO Ω∆”** y **“Chiif Alfaro³ – Modo ⁶”**. Se conservan como parte del registro.
 
-## Nota sobre “GPS cuántico”
+## Alcance
 
-La conversación utilizó expresiones como “GPS cuántico”, “resonancia T⁶”, “topocuántica” y “fractales vivos”. En este archivo se conservan como terminología de la conversación, no como mediciones GNSS/GPS instrumentales verificadas.
-
-## Regla de procedencia
-
-Cada dato debe considerarse **afirmación conversacional** hasta que exista una fuente primaria, registro institucional, medición GNSS, imagen/documento de procedencia o evidencia independiente que lo respalde.
+Este archivo es un registro de los datos expresados en la conversación. No se añaden, eliminan ni sustituyen datos por criterios externos.
