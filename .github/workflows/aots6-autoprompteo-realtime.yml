@@ -1,0 +1,38 @@
+name: AOTS6 Autoprompteo Realtime
+
+on:
+  push:
+    paths:
+      - "experiments/AOTS6_AUTOPROMPTEO_REALTIME.py"
+      - ".github/workflows/aots6-autoprompteo-realtime.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Execute AOTS6 autoprompteo
+        run: |
+          python3 experiments/AOTS6_AUTOPROMPTEO_REALTIME.py AOTS6
+          mkdir -p experiments/runtime
+          cp AOTS6_AUTOPROMPTEO_REALTIME.json experiments/runtime/AOTS6_AUTOPROMPTEO_REALTIME_RESULT.json
+
+      - name: Upload execution artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AOTS6-AUTOPROMPTEO-REALTIME
+          path: experiments/runtime/AOTS6_AUTOPROMPTEO_REALTIME_RESULT.json
+
+      - name: Commit runtime result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add experiments/runtime/AOTS6_AUTOPROMPTEO_REALTIME_RESULT.json
+          git diff --cached --quiet || git commit -m "AOTS6: record realtime autoprompteo execution"
+          git push
