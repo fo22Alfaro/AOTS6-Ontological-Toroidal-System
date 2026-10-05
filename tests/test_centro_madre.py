@@ -5,7 +5,7 @@ class CentroMadreTests(unittest.TestCase):
     def test_registry_schema(self):
         with tempfile.TemporaryDirectory() as d:
             r=Path(d)
-            for p in ["geometry/AOTS6_Torus.obj","geometry/AOTS6_Geodesics.svg","AOTS6_Paper.md","ARCHITECTURE.md","research/AOTS6_ARTIFACT_ROOT.json","research/AOTS6_PROVENANCE_MANIFEST.json","research/aots6_provenance_detector.py","security/aots6_crypto_runtime.py","security/AOTS6_CRYPTO_RUNTIME.md","research/AOTS6_QUANTUM_STATE_METACOMPUTATION_RECORD.md"]:
+            for p in ["geometry/AOTS6_Torus.obj","geometry/AOTS6_Geodesics.svg","AOTS6_Paper.md","ARCHITECTURE.md","research/AOTS6_ARTIFACT_ROOT.json","research/AOTS6_PROVENANCE_MANIFEST.json","research/aots6_provenance_detector.py","security/aots6_crypto_runtime.py","security/AOTS6_CRYPTO_RUNTIME.md","research/AOTS6_QUANTUM_STATE_METACOMPUTATION_RECORD.md","qkd/interface.py","qkd/MANIFEST.json"]:
                 q=r/p; q.parent.mkdir(parents=True,exist_ok=True); q.write_text("x",encoding="utf-8")
             ok,errors=verify_registry(build_registry(d))
             self.assertTrue(ok,errors)
