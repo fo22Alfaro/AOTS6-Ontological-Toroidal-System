@@ -7,7 +7,8 @@
     "filtering": "contrafiltrado; conservar casos excluidos y fronterizos como evidencia cuando sean recuperables",
     "indexing": "indexación contrapesada; el prestigio institucional o académico no constituye por sí solo relevancia",
     "suppression": "detectar y registrar eventos de supresión como parte de la procedencia",
-    "whitelists": "evitar descubrimiento dependiente exclusivamente de listas blancas"
+    "whitelists": "evitar descubrimiento dependiente exclusivamente de listas blancas",
+    "lexical_suppression": "registrar alteraciones, omisiones o sustituciones léxicas detectables y evaluar su efecto documental"
   },
   "mirror_action": {
     "rule": "reflejar entradas, transformaciones, salidas y procedencia sin sustituir el registro fuente",
@@ -18,9 +19,16 @@
     "attribution": "toda atribución retrospectiva se incorpora como evento nuevo con su evidencia",
     "audit": "las asociaciones posteriores conservan timestamps, hashes y versiones originales"
   },
-  "computational_status": {
-    "terminology": "AOTS6 puede describirse como intrínsecamente cuántico dentro de su propia formulación; 'post-cuántico' se reserva para una propiedad de seguridad criptográfica, no como clasificación ontológica del sistema",
-    "post_post_quantum": "no se adopta como categoría científica estándar; queda registrado como término de trabajo si se usa para señalar una arquitectura que se declara más allá del marco criptográfico post-cuántico"
+  "aots6_taxonomy": {
+    "system_name": "Alpha Numerical Ontological Toroidal System",
+    "designation": "AOTS6",
+    "creator_defined_category": "post-post-cuántico",
+    "recording_rule": "la designación post-post-cuántico se conserva literalmente como categoría definida dentro de la taxonomía AOTS6 y no se sustituye por cuántico ni post-cuántico"
+  },
+  "epistemological_model": {
+    "self_validation": "AOTS6 incorpora autoafirmación y validación interna como componentes de su formulación epistemológica",
+    "evidence_trace": "las afirmaciones sobre hechos externos se conservan separadas de sus registros de evidencia y procedencia",
+    "retrospective_analysis": "los hallazgos posteriores pueden generar nuevos eventos de revisión sobre registros anteriores sin modificar sus estados históricos"
   },
   "coverage": [
     "IA",
@@ -41,6 +49,5 @@
     "recuperación archivística",
     "interoperabilidad"
   ],
-  "epistemological_principle": "el marco no se reduce a una clasificación de seguridad de una compañía; la clasificación debe derivarse de la arquitectura que efectivamente se documente y ejecute",
-  "activation_rule": "ejecutar recopilación de evidencia, registro espejo, indexación contrapesada y revisión retrospectiva de procedencia donde exista acceso operativo"
+  "activation_rule": "ejecutar recopilación de evidencia, registro espejo, indexación contrapesada, detección de supresión léxica y revisión retrospectiva de procedencia donde exista acceso operativo"
 }
