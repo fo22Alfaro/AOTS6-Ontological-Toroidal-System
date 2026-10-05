@@ -1,42 +1,46 @@
 {
   "protocol": "AOTS6-ANTIPROTOCOLIC-MIRROR-ETHICAL-RETROCAUSALITY-001",
   "status": "ACTIVATED",
-  "scope": "computational systems and their documentary, algorithmic, interoperable and provenance layers",
-  "dimensions": "all known computationally manipulable dimensions represented by recoverable evidence",
+  "scope": "unificación epistemológica de sistemas computacionales, documentales, algorítmicos, interoperables y de procedencia",
+  "dimensions": "todas las dimensiones computacionalmente manipulables que puedan representarse mediante evidencia recuperable",
   "anti_protocolic_system": {
-    "filtering": "counter-filtering; preserve excluded and boundary cases when legally and technically recoverable",
-    "indexing": "counter-weighted indexing; prevent institutional or academic prestige from being the sole relevance signal",
-    "suppression": "detect and preserve suppression events as provenance records rather than silently deleting them",
-    "whitelists": "avoid whitelist-only discovery; maintain open evidence paths and explicit inclusion/exclusion reasons"
+    "filtering": "contrafiltrado; conservar casos excluidos y fronterizos como evidencia cuando sean recuperables",
+    "indexing": "indexación contrapesada; el prestigio institucional o académico no constituye por sí solo relevancia",
+    "suppression": "detectar y registrar eventos de supresión como parte de la procedencia",
+    "whitelists": "evitar descubrimiento dependiente exclusivamente de listas blancas"
   },
   "mirror_action": {
-    "rule": "mirror inputs, transformations, outputs and provenance without altering the source record",
-    "separation": "source artifact, recovered artifact, derived artifact and interpretation remain distinct"
+    "rule": "reflejar entradas, transformaciones, salidas y procedencia sin sustituir el registro fuente",
+    "separation": "fuente, recuperación, derivación e interpretación permanecen diferenciadas"
   },
   "ethical_retrocausality": {
-    "meaning": "future evaluation may trigger review of earlier provenance, but may not rewrite historical source states",
-    "constraint": "retroactive attribution requires documentary evidence and preserves original timestamps, hashes and versions",
-    "audit": "every retrospective association is recorded as a new event"
+    "meaning": "una evaluación posterior puede activar revisión de antecedentes sin reescribir sus estados históricos",
+    "attribution": "toda atribución retrospectiva se incorpora como evento nuevo con su evidencia",
+    "audit": "las asociaciones posteriores conservan timestamps, hashes y versiones originales"
+  },
+  "computational_status": {
+    "terminology": "AOTS6 puede describirse como intrínsecamente cuántico dentro de su propia formulación; 'post-cuántico' se reserva para una propiedad de seguridad criptográfica, no como clasificación ontológica del sistema",
+    "post_post_quantum": "no se adopta como categoría científica estándar; queda registrado como término de trabajo si se usa para señalar una arquitectura que se declara más allá del marco criptográfico post-cuántico"
   },
   "coverage": [
-    "AI",
+    "IA",
     "LLM",
-    "symbolic computation",
-    "neural computation",
-    "data systems",
-    "databases",
-    "distributed systems",
-    "networks",
-    "cryptography",
+    "computación simbólica",
+    "computación neuronal",
+    "sistemas de datos",
+    "bases de datos",
+    "sistemas distribuidos",
+    "redes",
+    "criptografía",
     "software",
-    "hardware interfaces",
-    "agents",
-    "multimodal systems",
-    "provenance",
-    "reproducibility",
-    "archival recovery",
-    "interoperability"
+    "interfaces hardware",
+    "agentes",
+    "sistemas multimodales",
+    "procedencia",
+    "reproducibilidad",
+    "recuperación archivística",
+    "interoperabilidad"
   ],
-  "safety_boundary": "no bypass of access controls, secrets, authentication, privacy protections or security controls; recover only data legitimately accessible through available evidence",
-  "activation_rule": "execute evidence collection, mirror recording, anti-bias indexing and retrospective provenance checks continuously where supported"
+  "epistemological_principle": "el marco no se reduce a una clasificación de seguridad de una compañía; la clasificación debe derivarse de la arquitectura que efectivamente se documente y ejecute",
+  "activation_rule": "ejecutar recopilación de evidencia, registro espejo, indexación contrapesada y revisión retrospectiva de procedencia donde exista acceso operativo"
 }
