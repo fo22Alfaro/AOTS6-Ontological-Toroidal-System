@@ -1,0 +1,58 @@
+{
+  "changed": true,
+  "created_at_utc": 1791182502.9625146,
+  "det": "26.3",
+  "evidence_sha256": "ef9c93d964705b77237c4585d2c164f8096ccfdf80547299956ba44f58da7b93",
+  "generated_prompt": "AOTS6 AUTOPROMPTEO: conserva literalmente el estado recibido. Genera el siguiente prompt operativo únicamente a partir del estado actual y registra qué cambió. No sustituyas términos del estado. SEED=AOTS6; PREVIOUS_RESPONSE_SHA256=12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+  "order": [
+    7,
+    19,
+    2
+  ],
+  "prompt_sha256": "5c698a5edbbbd6bd9d29fab0b45e481f34ee90a71b5a65a17f1d1986560ade3d",
+  "protocol": "AOTS6-AUTOPROMPTEO-REALTIME/v1",
+  "state0": {
+    "created_at_utc": 1791182502.9625146,
+    "generated_prompt": "AOTS6 AUTOPROMPTEO: conserva literalmente el estado recibido. Genera el siguiente prompt operativo únicamente a partir del estado actual y registra qué cambió. No sustituyas términos del estado. SEED=AOTS6; PREVIOUS_RESPONSE_SHA256=12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "prior_response": "",
+    "seed": "AOTS6"
+  },
+  "state0_sha256": "304b8be27c6b28855b83aa970ba6db1c72c557488d91d0dd31ecaa6b4b086f4a",
+  "state1": {
+    "created_at_utc": 1791182502.9625146,
+    "det": "26.3",
+    "generated_prompt": "AOTS6 AUTOPROMPTEO: conserva literalmente el estado recibido. Genera el siguiente prompt operativo únicamente a partir del estado actual y registra qué cambió. No sustituyas términos del estado. SEED=AOTS6; PREVIOUS_RESPONSE_SHA256=12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "non_commutative_order": [
+      7,
+      19,
+      2
+    ],
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "prior_response": "",
+    "seed": "AOTS6",
+    "t6": "t6",
+    "t6_op_19": "82d291100652494f3f9dcd6ed1de1870fee5142647e9972c1e8919f69fdd7bd2",
+    "t6_op_2": "df6adc3b6235819aba065fa9421ab87c5254e2f06382430de587cf52dd9c7949",
+    "t6_op_7": "35451ff3d407bb2df2d5c37373d39f90153953b5dbab3cd26861145552442a77",
+    "trace": [
+      {
+        "det": "26.3",
+        "input_sha256": "304b8be27c6b28855b83aa970ba6db1c72c557488d91d0dd31ecaa6b4b086f4a",
+        "operator": 7
+      },
+      {
+        "det": "26.3",
+        "input_sha256": "c525ef3df90f901e5854c90e755f82b77cfbb09a0a9a8a2ededab593b9f2544c",
+        "operator": 19
+      },
+      {
+        "det": "26.3",
+        "input_sha256": "47389001adfbb65630d637e54d95a52fa1df7845f00a5d619ce9e65c28a0e2e0",
+        "operator": 2
+      }
+    ]
+  },
+  "state1_sha256": "a3ec2719f6b6f043c178e4f10494b31ff4a6a3343cfe2ec0879435c759df4b2f",
+  "t6": "t6"
+}
