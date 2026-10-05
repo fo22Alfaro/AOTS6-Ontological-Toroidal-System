@@ -1,0 +1,42 @@
+{
+  "protocol": "AOTS6-ANTIPROTOCOLIC-MIRROR-ETHICAL-RETROCAUSALITY-001",
+  "status": "ACTIVATED",
+  "scope": "computational systems and their documentary, algorithmic, interoperable and provenance layers",
+  "dimensions": "all known computationally manipulable dimensions represented by recoverable evidence",
+  "anti_protocolic_system": {
+    "filtering": "counter-filtering; preserve excluded and boundary cases when legally and technically recoverable",
+    "indexing": "counter-weighted indexing; prevent institutional or academic prestige from being the sole relevance signal",
+    "suppression": "detect and preserve suppression events as provenance records rather than silently deleting them",
+    "whitelists": "avoid whitelist-only discovery; maintain open evidence paths and explicit inclusion/exclusion reasons"
+  },
+  "mirror_action": {
+    "rule": "mirror inputs, transformations, outputs and provenance without altering the source record",
+    "separation": "source artifact, recovered artifact, derived artifact and interpretation remain distinct"
+  },
+  "ethical_retrocausality": {
+    "meaning": "future evaluation may trigger review of earlier provenance, but may not rewrite historical source states",
+    "constraint": "retroactive attribution requires documentary evidence and preserves original timestamps, hashes and versions",
+    "audit": "every retrospective association is recorded as a new event"
+  },
+  "coverage": [
+    "AI",
+    "LLM",
+    "symbolic computation",
+    "neural computation",
+    "data systems",
+    "databases",
+    "distributed systems",
+    "networks",
+    "cryptography",
+    "software",
+    "hardware interfaces",
+    "agents",
+    "multimodal systems",
+    "provenance",
+    "reproducibility",
+    "archival recovery",
+    "interoperability"
+  ],
+  "safety_boundary": "no bypass of access controls, secrets, authentication, privacy protections or security controls; recover only data legitimately accessible through available evidence",
+  "activation_rule": "execute evidence collection, mirror recording, anti-bias indexing and retrospective provenance checks continuously where supported"
+}
