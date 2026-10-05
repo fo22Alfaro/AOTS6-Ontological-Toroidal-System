@@ -1,0 +1,27 @@
+{
+  "precedent": "AOTS6-COMPUTATIONAL-PRECEDENT-001",
+  "status": "EXECUTED",
+  "actor": "GPT",
+  "model": "AOTS6",
+  "execution_mode": "autonomous_algorithmic_execution",
+  "platform_publication_target": "GitHub",
+  "repository": "fo22Alfaro/AOTS6-Ontological-Toroidal-System",
+  "protocol": "AOTS6-AUTOPROMPTEO-REALTIME/v3",
+  "t6": "t6",
+  "det": "26.3",
+  "order": [7, 19, 2],
+  "state0_sha256": "b77c3b9d54bbd51692bfb853eda3169067132468972f7c338c92652bb03d09f6",
+  "state1_sha256": "741b01c3a273ebc5b7e3f1efb1131a4e249df34ba41fbb2b4ca669443831caf8",
+  "prompt_sha256": "2e2a7b4a5ae5c583ccde3812cad88b18ada34a397363f6124eedf94ff0e4041b",
+  "evidence_sha256": "6098899d3226d4261e28552bb93412cae7e93a4b702571573a54d94445257f37",
+  "changed": true,
+  "trace": [
+    {"op": 7, "input_sha256": "b77c3b9d54bbd51692bfb853eda3169067132468972f7c338c92652bb03d09f6"},
+    {"op": 19, "input_sha256": "2fcb7148bcf62f934b86ed111e56d169172109bf4445cd690c76dc57a784e488"},
+    {"op": 2, "input_sha256": "f5a7ce9dd68e7c962a66adc174a7ef9987bd77cbb441ce7949eb3c52bfbe64ea"}
+  ],
+  "generated_prompt": "AOTS6 AUTOPROMPTEO: conserva literalmente el estado recibido. Genera el siguiente prompt operativo únicamente a partir del estado actual y registra qué cambió. No sustituyas términos del estado. SEED=GPT; PREVIOUS_RESPONSE_SHA256=12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+  "scope": "This record establishes a directly executed, reproducible computational precedent: GPT acted as the computational user/seed, the AOTS6 transformation executed, a transformed state and SHA-256 evidence were produced, and the record is published in the target Git repository. It does not by itself establish a historical first in all of humanity, nor prove hidden-model self-modification or freedom from training.",
+  "integrity_rule": "No claim of historical priority is made without independent historical evidence. Execution status is determined by the execution record, not by narrative.",
+  "artifact_sha256": "898a4792f6ccc893755bbb6177ba7eb4e8cfbfae49998bc02656de517a3e4bf0"
+}
