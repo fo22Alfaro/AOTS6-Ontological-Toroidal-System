@@ -1,0 +1,31 @@
+{
+  "autoprompteo": {
+    "changed": true,
+    "det": "26.3",
+    "evidence_sha256": "63586335d7244778889fa84537deef86a8e5e11441de1d217244123d9ebaf97a",
+    "order": [
+      7,
+      19,
+      2
+    ],
+    "prompt_sha256": "5c698a5edbbbd6bd9d29fab0b45e481f34ee90a71b5a65a17f1d1986560ade3d",
+    "state0_sha256": "344930104795c843309d021a39c24c361e833c992615b78e4790f1a68a4947ad",
+    "state1_sha256": "f4651a03aa99236b5e9262803a92bde77c607833dbffc05efe7dbca46ada91fc",
+    "t6": "t6"
+  },
+  "execution_source": "GitHub Actions runner",
+  "execution_utc": "2026-10-05T06:44:46.048737+00:00",
+  "integrity_principle": "Record execution as executed; do not convert non-execution into execution.",
+  "protocol": "AOTS6-AUTOPROMPTEO-REALTIME/v2",
+  "quantum_composition": {
+    "alphabet_size": 36,
+    "hilbert_dimension": 64,
+    "qubits": 6,
+    "ring_cx_count": 6,
+    "unique_bipartitions": 31,
+    "unordered_pairs": 630
+  },
+  "register_sha256": "1574aea92ceb8e9de11a9334673741baef26fa352b5e365212fe2ecd24249447",
+  "scope_note": "This record establishes executable computation and traceability. It does not infer historical priority, hidden-model self-modification, semantic truth, or superiority from hashes alone.",
+  "status": "EXECUTED"
+}
