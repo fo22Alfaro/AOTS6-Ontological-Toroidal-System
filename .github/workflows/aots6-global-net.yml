@@ -14,8 +14,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check --no-input pytest
       - run: python -m compileall -q net tests
-      - run: python -m unittest discover -s tests -v
+      - run: python -m pytest -q tests
       - name: Secret-pattern gate
         shell: bash
         run: '! grep -RInE --exclude-dir=.git --exclude="*.md" "(BEGIN (RSA|OPENSSH|EC|DSA|PRIVATE) KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,})" .'
