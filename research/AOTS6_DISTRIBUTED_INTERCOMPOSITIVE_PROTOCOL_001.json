@@ -1,0 +1,38 @@
+{
+  "protocol": "AOTS6-DISTRIBUTED-INTERCOMPOSITIVE-001",
+  "status": "DEPLOYED",
+  "timestamp": "2026-10-05T07:16:01.195Z",
+  "scope": "forensic reconstruction and preservation of distributed AI/LLM/system chronology",
+  "topology": [
+    "intercompositiva",
+    "multisistémica",
+    "interoperativa",
+    "multicom"
+  ],
+  "rule": "preserve literal terminology; separate artifact evidence from interpretation",
+  "collection_targets": [
+    "source artifacts",
+    "versions",
+    "commits",
+    "metadata",
+    "hashes",
+    "interfaces",
+    "dependencies",
+    "execution traces",
+    "provenance",
+    "modifications",
+    "cross-system interoperability"
+  ],
+  "forensic_axes": [
+    "creation",
+    "publication",
+    "availability",
+    "modification",
+    "recovery",
+    "reuse",
+    "attribution"
+  ],
+  "evidence_policy": "no inferred historical priority without documentary evidence",
+  "continuity": "AOTS6 computational precedent and AI/LLM epistemological chronology",
+  "seed_reference": "AOTS6-COMPUTATIONAL-PRECEDENT-001"
+}
