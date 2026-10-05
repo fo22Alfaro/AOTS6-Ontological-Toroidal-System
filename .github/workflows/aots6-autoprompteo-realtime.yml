@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 jobs:
-  execute-and-register:
+  unified-composition:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,65 +26,65 @@ jobs:
       - name: Execute AOTS6 autoprompteo
         run: |
           python3 experiments/AOTS6_AUTOPROMPTEO_REALTIME.py AOTS6
-          mkdir -p experiments/runtime
+          mkdir -p experiments/runtime/quantum
           cp AOTS6_AUTOPROMPTEO_REALTIME.json experiments/runtime/AOTS6_AUTOPROMPTEO_REALTIME_RESULT.json
 
       - name: Execute AOTS6 quantum-state composition
         run: |
           python3 research/aots6_quantum_state_analysis.py
-          mkdir -p experiments/runtime/quantum
           cp research/AOTS6_METRICS.json experiments/runtime/quantum/AOTS6_METRICS.json
 
-      - name: Register execution state
+      - name: Compose unified execution state
         run: |
           python3 - <<'PY'
           import json, hashlib, pathlib, datetime
           root=pathlib.Path("experiments/runtime")
           auto=json.loads((root/"AOTS6_AUTOPROMPTEO_REALTIME_RESULT.json").read_text())
           q=json.loads((root/"quantum/AOTS6_METRICS.json").read_text())
-          register={
-            "protocol":"AOTS6-AUTOPROMPTEO-REALTIME/v2",
-            "status":"EXECUTED",
+
+          composition={
+            "protocol":"AOTS6-AUTOPROMPTEO-REALTIME-UNIFIED/v3",
+            "state":"COMPOSED",
             "execution_source":"GitHub Actions runner",
             "execution_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),
-            "autoprompteo":{
+            "composition":{
+              "t6":auto["t6"],
+              "det":auto["det"],
+              "order":auto["order"],
+              "changed":auto["changed"],
               "prompt_sha256":auto["prompt_sha256"],
               "state0_sha256":auto["state0_sha256"],
               "state1_sha256":auto["state1_sha256"],
               "evidence_sha256":auto["evidence_sha256"],
-              "changed":auto["changed"],
-              "t6":auto["t6"],
-              "det":auto["det"],
-              "order":auto["order"]
+              "quantum":{
+                "alphabet_size":q["alphabet_size"],
+                "qubits":q["qubits"],
+                "hilbert_dimension":q["hilbert_dimension"],
+                "ring_cx_count":q["ring_cx_count"],
+                "unordered_pairs":q["unordered_pairs"],
+                "unique_bipartitions":q["unique_bipartitions"]
+              }
             },
-            "quantum_composition":{
-              "alphabet_size":q["alphabet_size"],
-              "qubits":q["qubits"],
-              "hilbert_dimension":q["hilbert_dimension"],
-              "ring_cx_count":q["ring_cx_count"],
-              "unordered_pairs":q["unordered_pairs"],
-              "unique_bipartitions":q["unique_bipartitions"]
-            },
-            "integrity_principle":"Record execution as executed; do not convert non-execution into execution.",
-            "scope_note":"This record establishes executable computation and traceability. It does not infer historical priority, hidden-model self-modification, semantic truth, or superiority from hashes alone."
+            "composition_principle":"The execution state and quantum state are recorded as one composed AOTS6 system state.",
+            "integrity_principle":"The register records the state produced by the execution itself and preserves its cryptographic trace.",
           }
-          payload=json.dumps(register,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode()
-          register["register_sha256"]=hashlib.sha256(payload).hexdigest()
-          (root/"AOTS6_AUTOPROMPTEO_EXECUTION_REGISTER.json").write_text(
-            json.dumps(register,ensure_ascii=False,indent=2,sort_keys=True)
+          payload=json.dumps(composition,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode()
+          composition["composition_sha256"]=hashlib.sha256(payload).hexdigest()
+          (root/"AOTS6_UNIFIED_COMPOSITION_STATE.json").write_text(
+            json.dumps(composition,ensure_ascii=False,indent=2,sort_keys=True)
           )
           PY
 
-      - name: Upload execution evidence
+      - name: Upload unified composition
         uses: actions/upload-artifact@v4
         with:
-          name: AOTS6-AUTOPROMPTEO-REALTIME
+          name: AOTS6-UNIFIED-COMPOSITION
           path: experiments/runtime/
 
-      - name: Commit runtime register
+      - name: Commit unified composition state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add experiments/runtime/AOTS6_AUTOPROMPTEO_REALTIME_RESULT.json experiments/runtime/AOTS6_AUTOPROMPTEO_EXECUTION_REGISTER.json experiments/runtime/quantum/AOTS6_METRICS.json
-          git diff --cached --quiet || git commit -m "AOTS6: register contemporaneous autoprompteo execution"
+          git add experiments/runtime/
+          git diff --cached --quiet || git commit -m "AOTS6: compose autoprompteo and quantum execution state"
           git push
