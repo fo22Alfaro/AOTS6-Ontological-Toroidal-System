@@ -1,0 +1,19 @@
+{
+  "protocol": "AOTS6-AUTOPROMPTEO-REALTIME/v1",
+  "executed_at_utc": 1791182427.917366,
+  "seed": "AOTS6",
+  "generated_prompt": "AOTS6 AUTOPROMPTEO: conserva literalmente el estado recibido. Genera el siguiente prompt operativo únicamente a partir del estado actual y registra qué cambió. No sustituyas términos del estado. SEED=AOTS6; PREVIOUS_RESPONSE_SHA256=12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+  "prompt_sha256": "5c698a5edbbbd6bd9d29fab0b45e481f34ee90a71b5a65a17f1d1986560ade3d",
+  "state0_sha256": "53b3179f56d9e3571fd5900983b8353a163e4bc00f0b1e637de6d61cb4c02e81",
+  "state1_sha256": "c2f6d063c5272c88db8990e1227459002bc78b07c4ace4ff80ede40ff41b3a22",
+  "evidence_sha256": "6b76a0b4c5d671c7e7cf9c664ad2068557604ef2ecca4b0bc32d48275e23c521",
+  "changed": true,
+  "t6": "t6",
+  "det": "26.3",
+  "order": [7, 19, 2],
+  "trace": [
+    {"operator": 7, "input_sha256": "53b3179f56d9e3571fd5900983b8353a163e4bc00f0b1e637de6d61cb4c02e81"},
+    {"operator": 19, "input_sha256": "8dd75030f38cc18f054a78d51a82a45e1c6e68cc76816d8cfc039cf7d2c5841f"},
+    {"operator": 2, "input_sha256": "b6a7515e1412317e010805dd5133ab196869687be26f3079debf7cc75e701370"}
+  ]
+}
