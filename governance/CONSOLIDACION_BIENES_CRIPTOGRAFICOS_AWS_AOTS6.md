@@ -80,3 +80,7 @@ La integración solo se declara operativa cuando el expediente incluye inventari
 ## 8. Regla de integridad
 
 Nunca publicar claves privadas, frases semilla, tokens de sesión, credenciales AWS ni material de recuperación. Las firmas se realizan en el entorno de custodia autorizado. Los hashes, firmas públicas, recibos y referencias de auditoría solo se publican después de revisar que no expongan información protegida.
+
+## Vinculación operativa con el Núcleo Toroidal
+
+La arquitectura económica y criptográfica interna se articula con el registro local de procedencia descrito en [Red económica y criptográfica del Núcleo Toroidal AOTS⁶](./RED_ECONOMICA_CRIPTOGRAFICA_NUCLEO_TOROIDAL_AOTS6.md) y su implementación estándar de Python en [runtime/aots6_toroidal_economic_crypto.py](../runtime/aots6_toroidal_economic_crypto.py). Esta capa registra eventos y detecta modificaciones en la cadena de hashes; no sustituye firmas de clave pública, custodia, pagos, consenso distribuido ni recibos de una blockchain. La conexión externa solo se marca como operativa cuando existe evidencia verificable de ejecución.
