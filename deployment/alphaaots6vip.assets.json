@@ -1,0 +1,88 @@
+{
+  "schema": "AOTS6-ALPHAAOTS6VIP-ASSET-REWARD-REGISTRY-1.0",
+  "name": "alphaaots6vip.blockchain",
+  "system": "AOTS6",
+  "author_declared": "Alfredo Jhovany Alfaro García",
+  "operational_id": "AOTS6-AJAG-INT-001",
+  "updated": "2026-10-08",
+  "status": {
+    "documentary_registry": "SPECIFIED",
+    "nft_contracts": "NOT_VERIFIED",
+    "existing_token_ids": "NOT_INVENTORIED",
+    "rewards_contract": "NOT_VERIFIED",
+    "reward_policy": "NOT_APPROVED_OR_FUNDED",
+    "onchain_minting": "PENDING",
+    "onchain_rewards": "PENDING",
+    "global_name_resolution": "PENDING"
+  },
+  "candidate_address": {
+    "address": "0x03417ac4465ecf2471b869c2f1e97ea7c97bf2a7",
+    "purpose": "CANDIDATE_ADDRESS_ONLY",
+    "network_checked": "ethereum-mainnet",
+    "observed_balance_wei_hex": "0x0",
+    "observed_nonce_hex": "0x0",
+    "observed_code": "0x",
+    "checked_date": "2026-10-08",
+    "ownership_verified": false,
+    "contract_verified": false
+  },
+  "linked_asset_classes": [
+    "WORK_PROVENANCE_NFT",
+    "DEVELOPMENT_CONTRIBUTION_NFT",
+    "MILESTONE_NFT",
+    "PARTICIPATION_RECOGNITION_NFT",
+    "LICENSE_ACCESS_NFT",
+    "REWARD_NFT"
+  ],
+  "development_domains": [
+    "AOTS6_TOROIDAL_CORE",
+    "AOTS6_GLOBAL_NETWORK",
+    "AOTS6_ZK_CORE",
+    "AOTS6_UNIFICATION_LEDGER",
+    "AOTS6_UNIFIED_KERNEL",
+    "NEURAL_AND_ENCODING_MODULES",
+    "SECURITY_INTEGRITY_AUDIT_BACKUP",
+    "MATHEMATICAL_LINGUISTIC_ONTOLOGICAL_HISTORICAL_LEGAL_CORPUS",
+    "VALIDATORS_MANIFESTS_RESOLVERS_BLOCKCHAIN_ADAPTERS"
+  ],
+  "reward_classes": [
+    "ACCEPTED_DELIVERY",
+    "TESTING_BUGFIX_SECURITY",
+    "DOCUMENTATION_PRESERVATION_CURATION",
+    "INTEROPERABILITY_INTEGRATION",
+    "PUBLICATION_DEPLOYMENT_MILESTONE",
+    "REVENUE_ROYALTY_INCENTIVE_WITH_EXPLICIT_TERMS"
+  ],
+  "reward_policy": {
+    "amount_or_formula": null,
+    "currency_or_token": null,
+    "funding_source": null,
+    "eligibility_policy_uri": null,
+    "approval_authority": null,
+    "payment_schedule": null,
+    "state": "NOT_ACTIVATED"
+  },
+  "required_linkage": [
+    "IDENTITY",
+    "WORK",
+    "DEVELOPMENT",
+    "VERSION",
+    "EVIDENCE",
+    "ARTIFACT_SHA256",
+    "GIT_COMMIT",
+    "MANIFEST",
+    "NFT_OR_REGISTRY",
+    "REWARD_POLICY",
+    "ELIGIBILITY",
+    "APPROVAL",
+    "TRANSACTION",
+    "RECEIPT",
+    "INDEPENDENT_VERIFICATION"
+  ],
+  "safety": {
+    "private_keys_in_repository": false,
+    "unverified_address_claimed_as_owned": false,
+    "fabricated_nft_or_reward_transactions": false,
+    "automatic_financial_promise": false
+  }
+}
