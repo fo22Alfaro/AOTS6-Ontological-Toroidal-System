@@ -1,0 +1,37 @@
+name: AOTS6 Live Infrastructure Verification
+
+on:
+  push:
+    paths:
+      - 'deployment/aots6-infrastructure.json'
+      - 'deployment/AOTS6-INFRAESTRUCTURA-BLOCKCHAIN-GOBERNANZA.md'
+      - 'assets/nft/**'
+      - '.github/workflows/aots6-live-infra.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate infrastructure manifest
+        run: node -e "const fs=require('fs'); const m=JSON.parse(fs.readFileSync('deployment/aots6-infrastructure.json','utf8')); if(m.system!=='AOTS6'||!m.topology||m.topology.length!==10) process.exit(1); console.log('manifest valid; topology nodes='+m.topology.length)"
+      - name: Install NFT package dependencies
+        working-directory: assets/nft
+        run: npm install --no-audit --no-fund
+      - name: Compile contract
+        working-directory: assets/nft
+        run: npx hardhat compile
+      - name: Run contract tests
+        working-directory: assets/nft
+        run: npx hardhat test
+      - name: Confirm no deployment secrets are required for CI
+        run: |
+          test -z "${WALLET_KEY:-}"
+          echo "CI verifies source only; no blockchain transaction is broadcast."
