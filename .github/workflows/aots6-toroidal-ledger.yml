@@ -1,0 +1,34 @@
+name: AOTS6 Toroidal Economic Crypto Ledger
+
+on:
+  push:
+    paths:
+      - "runtime/aots6_toroidal_economic_crypto.py"
+      - ".github/workflows/aots6-toroidal-ledger.yml"
+  pull_request:
+    paths:
+      - "runtime/aots6_toroidal_economic_crypto.py"
+      - ".github/workflows/aots6-toroidal-ledger.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify CLI and hash-chain operations
+        shell: bash
+        run: |
+          set -euo pipefail
+          python runtime/aots6_toroidal_economic_crypto.py --help
+          LEDGER="$(mktemp)"
+          python runtime/aots6_toroidal_economic_crypto.py init --ledger "$LEDGER"
+          python runtime/aots6_toroidal_economic_crypto.py append --ledger "$LEDGER" --actor "CI" --type "ASSET_REGISTERED" --asset-id "AOTS6-CI-001" --amount "1" --unit "record" --source-ref "github-actions" --evidence-ref "smoke-test"
+          python runtime/aots6_toroidal_economic_crypto.py verify --ledger "$LEDGER"
+          rm -f "$LEDGER"
