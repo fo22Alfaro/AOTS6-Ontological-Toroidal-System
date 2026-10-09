@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+<title id="title">AOTS⁶ — Unified Kernel</title><desc id="desc">Activo de procedencia documental para el dominio del núcleo unificado y run</desc>
+<defs>
+ <radialGradient id="bg"><stop offset="0%" stop-color="#15283f"/><stop offset="100%" stop-color="#05080f"/></radialGradient>
+ <linearGradient id="line" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#85e0ff"/><stop offset="100%" stop-color="#63e8a7"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1000" height="1000" rx="48" fill="url(#bg)"/>
+<g fill="none" stroke="url(#line)" stroke-width="5" opacity=".85" filter="url(#glow)">
+ <ellipse cx="500" cy="470" rx="315" ry="135" transform="rotate(-30 500 470)"/>
+ <ellipse cx="500" cy="470" rx="315" ry="135" transform="rotate(30 500 470)"/>
+ <ellipse cx="500" cy="470" rx="315" ry="135" transform="rotate(90 500 470)"/>
+ <circle cx="500" cy="470" r="88"/>
+ <path d="M500 220V720M250 470H750M323 293L677 647M677 293L323 647" opacity=".45"/>
+</g>
+<circle cx="500" cy="470" r="34" fill="#85e0ff" opacity=".9"/>
+<text x="500" y="130" text-anchor="middle" fill="#f4f7fb" font-family="monospace" font-size="38" letter-spacing="9">AOTS⁶</text>
+<text x="500" y="810" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="35" letter-spacing="3">AOTS⁶ — Unified Kernel</text>
+<text x="500" y="865" text-anchor="middle" fill="#aab8ca" font-family="monospace" font-size="20">Activo de procedencia documental para el dominio del núcleo unificado y run</text>
+<text x="500" y="930" text-anchor="middle" fill="#63e8a7" font-family="monospace" font-size="22" letter-spacing="6">KERNEL / 05</text>
+</svg>
