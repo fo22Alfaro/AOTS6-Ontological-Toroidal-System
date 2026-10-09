@@ -27,6 +27,18 @@
     {
       "trait_type": "Rights",
       "value": "No automatic IP transfer or financial entitlement"
+    },
+    {
+      "trait_type": "Mathematical Provenance",
+      "value": "AOTS⁶ topological nonce fingerprint"
+    },
+    {
+      "trait_type": "Hilbert Structure",
+      "value": "Nested Hilbert space — level 2"
+    },
+    {
+      "trait_type": "Majorana State",
+      "value": "Declared model state"
     }
   ],
   "properties": {
@@ -37,5 +49,17 @@
     "deployment_state": "METADATA_PREPARED_NOT_MINTED",
     "license_granted": false,
     "financial_reward_automatically_granted": false
+  },
+  "aots6_mathematical_fingerprint": {
+    "schema": "AOTS6-TOPOLOGICAL-NONCE-HILBERT-MAJORANA-1.0",
+    "binding_type": "DECLARED_MATHEMATICAL_PROVENANCE",
+    "hilbert_structure": "NESTED_HILBERT_SPACE_LEVEL_2",
+    "majorana_state": "DECLARED_MODEL_STATE",
+    "fingerprint_algorithm": "SHA-256 over canonical artifact manifest",
+    "computed_fingerprint": null,
+    "topological_nonce": "PENDING_COMPUTATION_FROM_ARTIFACT_BYTES_AND_VERSIONED_PARAMETERS",
+    "immutable_anchor": "PENDING",
+    "onchain_binding": "PENDING_DEPLOYMENT_AND_MINT",
+    "note": "Intended mathematical provenance; no assertion of physical Majorana realization or minted NFT."
   }
 }
