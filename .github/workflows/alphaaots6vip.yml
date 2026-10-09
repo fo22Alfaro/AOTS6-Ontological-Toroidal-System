@@ -1,0 +1,20 @@
+name: ALPHAAOTS6VIP blockchain manifest
+on:
+  push:
+    paths:
+      - 'deployment/**'
+  pull_request:
+    paths:
+      - 'deployment/**'
+  workflow_dispatch:
+jobs:
+  validate-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m py_compile deployment/validate_alphaaots6vip.py
+      - run: python deployment/validate_alphaaots6vip.py deployment/alphaaots6vip.manifest.json
+      - run: python -m unittest discover -s deployment -p 'test_*.py'
