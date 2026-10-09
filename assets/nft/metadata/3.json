@@ -29,12 +29,12 @@
       "value": "No automatic IP transfer or financial entitlement"
     },
     {
-      "trait_type": "Mathematical Provenance",
-      "value": "AOTS⁶ topological nonce fingerprint"
-    },
-    {
       "trait_type": "Topological Nonce",
       "value": "Per-artifact; compute before immutable anchoring"
+    },
+    {
+      "trait_type": "Mathematical Provenance",
+      "value": "AOTS⁶ topological nonce fingerprint"
     },
     {
       "trait_type": "Hilbert Structure",
@@ -42,7 +42,7 @@
     },
     {
       "trait_type": "Majorana State",
-      "value": "Declared model state; physical realization not asserted"
+      "value": "Declared model state"
     }
   ],
   "properties": {
@@ -56,17 +56,14 @@
   },
   "aots6_mathematical_fingerprint": {
     "schema": "AOTS6-TOPOLOGICAL-NONCE-HILBERT-MAJORANA-1.0",
-    "system": "AOTS⁶",
-    "author_declared": "Alfredo Jhovany Alfaro García",
     "binding_type": "DECLARED_MATHEMATICAL_PROVENANCE",
-    "implementation_reference": "AOTS6 nested Hilbert-space topology and topological nonce",
     "hilbert_structure": "NESTED_HILBERT_SPACE_LEVEL_2",
-    "majorana_state": "MAJORANA_STATE_DECLARED; physical realization not asserted by NFT metadata",
-    "nonce_policy": "Per-artifact nonce/fingerprint must be computed from canonical artifact bytes and versioned parameters before immutable anchoring",
-    "fingerprint_algorithm": "SHA-256 over canonical manifest; optional public-key signature is a separate operation",
-    "immutable_anchor": "PENDING",
+    "majorana_state": "DECLARED_MODEL_STATE",
+    "fingerprint_algorithm": "SHA-256 over canonical artifact manifest",
     "computed_fingerprint": null,
+    "topological_nonce": "PENDING_COMPUTATION_FROM_ARTIFACT_BYTES_AND_VERSIONED_PARAMETERS",
+    "immutable_anchor": "PENDING",
     "onchain_binding": "PENDING_DEPLOYMENT_AND_MINT",
-    "note": "This schema records the intended AOTS6 mathematical provenance linkage; it does not claim that a quantum Majorana mode has been physically instantiated or that any NFT is already minted."
+    "note": "Intended mathematical provenance; no assertion of physical Majorana realization or minted NFT."
   }
 }
