@@ -1,5 +1,5 @@
 {
-  "schema": "AOTS6-ALPHAAOTS6VIP-FEDERATION-1.0",
+  "schema": "AOTS6-ALPHAAOTS6VIP-FEDERATION-1.1",
   "name": "alphaaots6vip.blockchain",
   "system": "AOTS6",
   "author_declared": "Alfredo Jhovany Alfaro García",
@@ -12,24 +12,69 @@
   "transaction_hash": null,
   "block_number": null,
   "resolver_uri": null,
+  "candidate_address": {
+    "address": "0x03417ac4465ecf2471b869c2f1e97ea7c97bf2a7",
+    "purpose": "CANDIDATE_ADDRESS_ONLY",
+    "network_checked": "ethereum-mainnet",
+    "observed_balance_wei_hex": "0x0",
+    "observed_nonce_hex": "0x0",
+    "observed_code": "0x",
+    "checked_date": "2026-10-08",
+    "ownership_verified": false,
+    "contract_verified": false
+  },
+  "asset_and_reward_registry": {
+    "document": "governance/NFT_DESARROLLOS_RECOMPENSAS_AOTS6.md",
+    "machine_readable_registry": "deployment/alphaaots6vip.assets.json",
+    "nft_contracts": "NOT_VERIFIED",
+    "existing_token_ids": "NOT_INVENTORIED",
+    "rewards_contract": "NOT_VERIFIED",
+    "reward_policy": "NOT_APPROVED_OR_FUNDED",
+    "onchain_minting": "PENDING",
+    "onchain_rewards": "PENDING"
+  },
   "repositories": [
-    {"repository": "fo22Alfaro/AOTS6-Ontological-Toroidal-System", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "a211a618ca6f406e7abac840016c4f6c2229f82b"},
-    {"repository": "fo22Alfaro/AOTS6-Global-Network", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "364f952542f3f39ae1b9d1026f79ac48a18c687e"},
-    {"repository": "fo22Alfaro/AOTS6-ZK-Core", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "3e1dfd325481b63de23f090c88829c7a83f3fb93"},
-    {"repository": "fo22Alfaro/AOTS6-Unification-Ledger-Alfredo-Jhovany-Alfaro-Garcia", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "900e80a5cba1997f636996cf8895cf3d4d07c542"},
-    {"repository": "fo22Alfaro/AOTS6-Unified-Kernel-Full-Deployment", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "d438b1c7310a6e13226d6ef4da5b5f9959f52bc1"}
+    {
+      "repository": "fo22Alfaro/AOTS6-Ontological-Toroidal-System",
+      "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md",
+      "commit": "a211a618ca6f406e7abac840016c4f6c2229f82b"
+    },
+    {
+      "repository": "fo22Alfaro/AOTS6-Global-Network",
+      "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md",
+      "commit": "364f952542f3f39ae1b9d1026f79ac48a18c687e"
+    },
+    {
+      "repository": "fo22Alfaro/AOTS6-ZK-Core",
+      "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md",
+      "commit": "3e1dfd325481b63de23f090c88829c7a83f3fb93"
+    },
+    {
+      "repository": "fo22Alfaro/AOTS6-Unification-Ledger-Alfredo-Jhovany-Alfaro-Garcia",
+      "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md",
+      "commit": "900e80a5cba1997f636996cf8895cf3d4d07c542"
+    },
+    {
+      "repository": "fo22Alfaro/AOTS6-Unified-Kernel-Full-Deployment",
+      "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md",
+      "commit": "d438b1c7310a6e13226d6ef4da5b5f9959f52bc1"
+    }
   ],
   "security": {
     "private_keys_in_repository": false,
     "transactions_fabricated": false,
     "sha256_artifact_manifest": "NOT_GENERATED",
-    "external_timestamp": "NOT_CONFIGURED"
+    "external_timestamp": "NOT_CONFIGURED",
+    "nft_or_reward_transactions_fabricated": false
   },
   "acceptance_criteria": [
     "A verified network and chain ID are recorded",
     "A transaction receipt confirms success",
     "The contract or registry address is verified",
     "The manifest hash is recorded in the transaction event",
-    "The name resolver is verified from independent clients"
+    "The name resolver is verified from independent clients",
+    "NFT contract and metadata are verified before claiming minting",
+    "Reward policy, eligibility and funding are published before claiming a payment obligation",
+    "Each actual NFT/reward event is linked to artifact hash, commit and receipt"
   ]
 }
