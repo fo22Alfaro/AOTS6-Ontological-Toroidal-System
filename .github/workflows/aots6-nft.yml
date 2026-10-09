@@ -1,0 +1,33 @@
+name: AOTS6 NFT compile and tests
+
+on:
+  push:
+    paths:
+      - "assets/nft/**"
+      - ".github/workflows/aots6-nft.yml"
+  pull_request:
+    paths:
+      - "assets/nft/**"
+      - ".github/workflows/aots6-nft.yml"
+
+jobs:
+  compile-and-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: assets/nft
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: assets/nft/package-lock.json
+      - name: Install dependencies
+        run: npm install
+      - name: Compile contracts
+        run: npm run compile
+      - name: Run tests
+        run: npm test
