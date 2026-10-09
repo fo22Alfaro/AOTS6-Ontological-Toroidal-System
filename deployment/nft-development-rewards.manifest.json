@@ -1,0 +1,36 @@
+{
+  "schema": "AOTS6-NFT-DEVELOPMENT-REWARDS-1.0",
+  "system": "AOTS6",
+  "name": "alphaaots6vip.blockchain",
+  "operational_id": "AOTS6-AJAG-INT-001",
+  "audit_date": "2026-10-08",
+  "candidate_public_address": "0x03417ac4465ecf2471b869c2f1e97ea7c97bf2a7",
+  "address_role": "CANDIDATE_ONLY",
+  "ownership_verified": false,
+  "custody_or_signing_proof": null,
+  "discovery_state": "PARTIAL",
+  "network_checks": [
+    {"network":"ethereum-mainnet","nfts_detected":0,"contract_code_at_address":false,"status":"CHECKED"},
+    {"network":"base-mainnet","nfts_detected":0,"contract_code_at_address":null,"status":"NFT_QUERY_CHECKED"},
+    {"network":"polygon-mainnet","nfts_detected":0,"contract_code_at_address":null,"status":"NFT_QUERY_CHECKED"},
+    {"network":"arbitrum-mainnet","nfts_detected":null,"status":"QUERY_FAILED"},
+    {"network":"optimism-mainnet","nfts_detected":null,"status":"QUERY_FAILED"}
+  ],
+  "fungible_token_balances": {
+    "ethereum-mainnet": "NO_POSITIVE_ERC20_BALANCE_RETURNED",
+    "base-mainnet": "NO_POSITIVE_ERC20_BALANCE_RETURNED",
+    "polygon-mainnet": "NO_POSITIVE_ERC20_BALANCE_RETURNED"
+  },
+  "assets": [],
+  "developments": [],
+  "reward_programs": [],
+  "onchain_anchor": {"status":"PENDING","chain_id":null,"contract_address":null,"transaction_hash":null,"block_number":null},
+  "security": {"private_keys_stored":false,"transactions_executed":false},
+  "limitations": [
+    "No complete historical scan performed",
+    "Some network queries failed",
+    "No reward contracts identified yet",
+    "Address ownership not verified",
+    "Zero current NFT results do not prove absence of historical or off-chain rights"
+  ]
+}
