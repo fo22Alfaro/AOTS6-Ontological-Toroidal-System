@@ -1,17 +1,20 @@
 {
-  "schema": "AOTS6-ALPHAAOTS6VIP-ASSET-REWARD-REGISTRY-1.0",
+  "schema": "AOTS6-ALPHAAOTS6VIP-ASSET-REWARD-REGISTRY-1.1",
   "name": "alphaaots6vip.blockchain",
   "system": "AOTS6",
   "author_declared": "Alfredo Jhovany Alfaro García",
   "operational_id": "AOTS6-AJAG-INT-001",
   "updated": "2026-10-08",
   "status": {
-    "documentary_registry": "SPECIFIED",
+    "documentary_registry": "PUBLISHED",
+    "nft_metadata": "6_ITEMS_PREPARED",
+    "nft_artwork": "6_SVG_ASSETS_PUBLISHED",
+    "contract_source": "PUBLISHED_NOT_COMPILED_OR_DEPLOYED",
     "nft_contracts": "NOT_VERIFIED",
-    "existing_token_ids": "NOT_INVENTORIED",
+    "existing_token_ids": "NOT_MINTED",
+    "onchain_minting": "PENDING_WALLET_SIGNATURE_AND_DEPLOYMENT",
     "rewards_contract": "NOT_VERIFIED",
     "reward_policy": "NOT_APPROVED_OR_FUNDED",
-    "onchain_minting": "PENDING",
     "onchain_rewards": "PENDING",
     "global_name_resolution": "PENDING"
   },
@@ -25,6 +28,86 @@
     "checked_date": "2026-10-08",
     "ownership_verified": false,
     "contract_verified": false
+  },
+  "collection": {
+    "name": "AOTS6 Provenance Assets",
+    "symbol": "AOTS6",
+    "standard": "ERC-721",
+    "max_supply": 6,
+    "contract_source": "assets/nft/contracts/AOTS6AssetRegistry.sol",
+    "package": "assets/nft/package.json",
+    "deployment_script": "assets/nft/scripts/deploy.js",
+    "mint_script": "assets/nft/scripts/mint-six.js",
+    "tests": "assets/nft/test/AOTS6AssetRegistry.test.js",
+    "test_status": "NOT_RUN",
+    "compile_status": "NOT_RUN",
+    "network": null,
+    "chain_id": null,
+    "contract_address": null,
+    "deployment_tx": null,
+    "block_number": null,
+    "items": [
+      {
+        "proposed_token_id": 1,
+        "name": "Núcleo Toroidal",
+        "metadata_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/metadata/1.json",
+        "image_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/images/aots6-core.svg",
+        "state": "METADATA_PREPARED_NOT_MINTED",
+        "contract_address": null,
+        "transaction_hash": null,
+        "ipfs_cid": null
+      },
+      {
+        "proposed_token_id": 2,
+        "name": "Global Network",
+        "metadata_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/metadata/2.json",
+        "image_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/images/global-network.svg",
+        "state": "METADATA_PREPARED_NOT_MINTED",
+        "contract_address": null,
+        "transaction_hash": null,
+        "ipfs_cid": null
+      },
+      {
+        "proposed_token_id": 3,
+        "name": "ZK Core",
+        "metadata_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/metadata/3.json",
+        "image_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/images/zk-core.svg",
+        "state": "METADATA_PREPARED_NOT_MINTED",
+        "contract_address": null,
+        "transaction_hash": null,
+        "ipfs_cid": null
+      },
+      {
+        "proposed_token_id": 4,
+        "name": "Unification Ledger",
+        "metadata_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/metadata/4.json",
+        "image_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/images/unification-ledger.svg",
+        "state": "METADATA_PREPARED_NOT_MINTED",
+        "contract_address": null,
+        "transaction_hash": null,
+        "ipfs_cid": null
+      },
+      {
+        "proposed_token_id": 5,
+        "name": "Unified Kernel",
+        "metadata_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/metadata/5.json",
+        "image_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/images/unified-kernel.svg",
+        "state": "METADATA_PREPARED_NOT_MINTED",
+        "contract_address": null,
+        "transaction_hash": null,
+        "ipfs_cid": null
+      },
+      {
+        "proposed_token_id": 6,
+        "name": "Provenance & Rewards",
+        "metadata_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/metadata/6.json",
+        "image_uri": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/images/provenance-rewards.svg",
+        "state": "METADATA_PREPARED_NOT_MINTED",
+        "contract_address": null,
+        "transaction_hash": null,
+        "ipfs_cid": null
+      }
+    ]
   },
   "linked_asset_classes": [
     "WORK_PROVENANCE_NFT",
