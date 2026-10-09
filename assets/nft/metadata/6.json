@@ -1,0 +1,41 @@
+{
+  "name": "AOTS⁶ — Provenance & Rewards",
+  "description": "Activo de procedencia documental para vincular artefactos, hashes, commits, criterios de elegibilidad y políticas de recompensas. No crea promesa de pago ni derecho financiero automático.",
+  "image": "https://raw.githubusercontent.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System/main/assets/nft/images/provenance-rewards.svg",
+  "external_url": "https://github.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System",
+  "attributes": [
+    {
+      "trait_type": "System",
+      "value": "AOTS⁶"
+    },
+    {
+      "trait_type": "Asset Class",
+      "value": "Provenance NFT"
+    },
+    {
+      "trait_type": "Domain",
+      "value": "Provenance and Reward Linkage"
+    },
+    {
+      "trait_type": "Collection Item",
+      "value": 6
+    },
+    {
+      "trait_type": "Mint Status",
+      "value": "Prepared — Not Minted"
+    },
+    {
+      "trait_type": "Rights",
+      "value": "No automatic IP transfer or financial entitlement"
+    }
+  ],
+  "properties": {
+    "author_declared": "Alfredo Jhovany Alfaro García",
+    "operational_id": "AOTS6-AJAG-INT-001",
+    "registry": "alphaaots6vip.blockchain",
+    "token_id_proposed": 6,
+    "deployment_state": "METADATA_PREPARED_NOT_MINTED",
+    "license_granted": false,
+    "financial_reward_automatically_granted": false
+  }
+}
