@@ -1,0 +1,35 @@
+{
+  "schema": "AOTS6-ALPHAAOTS6VIP-FEDERATION-1.0",
+  "name": "alphaaots6vip.blockchain",
+  "system": "AOTS6",
+  "author_declared": "Alfredo Jhovany Alfaro García",
+  "operational_id": "AOTS6-AJAG-INT-001",
+  "date": "2026-10-08",
+  "deployment_state": "SPECIFIED_IN_REPOSITORIES",
+  "name_registration": "UNVERIFIED",
+  "blockchain_anchor": "PENDING",
+  "contract_address": null,
+  "transaction_hash": null,
+  "block_number": null,
+  "resolver_uri": null,
+  "repositories": [
+    {"repository": "fo22Alfaro/AOTS6-Ontological-Toroidal-System", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "a211a618ca6f406e7abac840016c4f6c2229f82b"},
+    {"repository": "fo22Alfaro/AOTS6-Global-Network", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "364f952542f3f39ae1b9d1026f79ac48a18c687e"},
+    {"repository": "fo22Alfaro/AOTS6-ZK-Core", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "3e1dfd325481b63de23f090c88829c7a83f3fb93"},
+    {"repository": "fo22Alfaro/AOTS6-Unification-Ledger-Alfredo-Jhovany-Alfaro-Garcia", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "900e80a5cba1997f636996cf8895cf3d4d07c542"},
+    {"repository": "fo22Alfaro/AOTS6-Unified-Kernel-Full-Deployment", "path": "deployment/ALPHAAOTS6VIP-BLOCKCHAIN.md", "commit": "d438b1c7310a6e13226d6ef4da5b5f9959f52bc1"}
+  ],
+  "security": {
+    "private_keys_in_repository": false,
+    "transactions_fabricated": false,
+    "sha256_artifact_manifest": "NOT_GENERATED",
+    "external_timestamp": "NOT_CONFIGURED"
+  },
+  "acceptance_criteria": [
+    "A verified network and chain ID are recorded",
+    "A transaction receipt confirms success",
+    "The contract or registry address is verified",
+    "The manifest hash is recorded in the transaction event",
+    "The name resolver is verified from independent clients"
+  ]
+}
