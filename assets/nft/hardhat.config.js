@@ -16,10 +16,10 @@ module.exports = {
     settings: { optimizer: { enabled: true, runs: 200 } }
   },
   paths: {
-    sources: "./assets/nft/contracts",
-    tests: "./assets/nft/test",
-    cache: "./assets/nft/cache",
-    artifacts: "./assets/nft/artifacts"
+    sources: "./contracts",
+    tests: "./test",
+    cache: "./cache",
+    artifacts: "./artifacts"
   },
   networks
 };
