@@ -1,0 +1,67 @@
+{
+  "system": "AOTS6",
+  "title": "Alfanumerical Ontological Toroidal System",
+  "author": "Alfredo Jhovany Alfaro García",
+  "operational_identity": "AOTS6-AJAG-INT-001",
+  "version": "1.0.0",
+  "updated_utc": "2026-10-09",
+  "topology": [
+    "provenance",
+    "manifest",
+    "launcher",
+    "rpc_network",
+    "contract",
+    "asset_rights_registry",
+    "algorithmic_rules",
+    "territorial_governance",
+    "audit",
+    "compliance_evidence"
+  ],
+  "canonical_repo": "https://github.com/fo22Alfaro/AOTS6-Ontological-Toroidal-System",
+  "nft_collection": {
+    "contract_source": "assets/nft/contracts/AOTS6AssetRegistry.sol",
+    "metadata_directory": "assets/nft/metadata/",
+    "artwork_directory": "assets/nft/images/",
+    "max_supply": 6,
+    "deployment_state": "SOURCE_PUBLISHED_NOT_DEPLOYED",
+    "minted_state": "NOT_VERIFIED",
+    "contract_address": null,
+    "deployment_tx": null,
+    "chain_id": null
+  },
+  "launcher": {
+    "deploy_script": "assets/nft/scripts/deploy.js",
+    "mint_script": "assets/nft/scripts/mint-six.js",
+    "signing": "REQUIRES_LOCAL_WALLET_SIGNATURE",
+    "secrets_policy": "ENVIRONMENT_ONLY_NEVER_COMMIT"
+  },
+  "rewards": {
+    "state": "INACTIVE",
+    "policy_approved": false,
+    "funding_verified": false,
+    "contract_address": null
+  },
+  "rights_and_territory": {
+    "physical_asset_title_transfer_by_nft_alone": false,
+    "legal_recognition_state": "REQUIRES_ASSET_SPECIFIC_DOCUMENTS_AND_COMPETENT_AUTHORITY",
+    "jurisdiction": "Mexico",
+    "compliance_state": "CLASSIFICATION_REQUIRED_PER_ACTIVITY_AND_TOKEN_RIGHTS"
+  },
+  "verification_states": [
+    "SOURCE_PUBLISHED",
+    "BUILD_VERIFIED",
+    "TESTS_PASSED",
+    "TESTNET_DEPLOYED",
+    "MAINNET_DEPLOYED",
+    "MINTED",
+    "RIGHTS_DOCUMENTED",
+    "REGULATORY_REVIEW_REQUIRED",
+    "REWARD_FUNDED"
+  ],
+  "regulatory_sources": [
+    "https://sidof.segob.gob.mx/notas/docFuente/5515623",
+    "https://sidof.segob.gob.mx/notas/docFuente/5552303",
+    "https://www.banxico.org.mx/sistemas-de-pago/sobre-activos-virtuales-rie.html",
+    "https://www.cnbv.gob.mx/SECTORES-SUPERVISADOS/Fintech/Paginas/NORMATIVIDAD-FINTECH.aspx"
+  ]
+}
