@@ -48,8 +48,8 @@ Se compararon los ocho Git blob SHA-1 incluidos en `research/AOTS6_ARTIFACT_ROOT
 
 ## 7. Material que requiere clasificación de seguridad
 
-- `entropy/quantum_seed.bin` está publicado en el repositorio público y el conector informa un archivo binario de aproximadamente 97 bytes. No se puede determinar solo por su nombre si es material de prueba o semilla sensible. **No debe reutilizarse para derivar claves, firmas, wallets o secretos** hasta verificar su origen y uso. Si alguna clave real se derivó de esos bytes, debe considerarse expuesta y rotarse; no se ha mostrado su contenido en este informe.
-- `AOTS6_SOVEREIGN_ANCHOR.sig` existe como 32 bytes y `AOTS6_AUTHORITY.sig` como un objeto binario. Sin algoritmo declarado, clave pública de verificación, mensaje firmado y resultado de verificación reproducible, no se aceptan como firmas válidas por mera presencia.
+- `entropy/quantum_seed.bin` está publicado en el repositorio público. La lectura UTF-8 del conector devolvió 32 caracteres; no se confirmó la longitud binaria exacta mediante descarga binaria independiente. No se puede determinar solo por su nombre si es material de prueba o semilla sensible. **No debe reutilizarse para derivar claves, firmas, wallets o secretos** hasta verificar su origen y uso. Si alguna clave real se derivó de esos bytes, debe considerarse expuesta y rotarse; no se ha mostrado su contenido en este informe.
+- `AOTS6_SOVEREIGN_ANCHOR.sig` y `AOTS6_AUTHORITY.sig` existen como objetos de contenido no validado; el conector no estableció un formato criptográfico inequívoco. Sin algoritmo declarado, clave pública de verificación, mensaje firmado y resultado de verificación reproducible, no se aceptan como firmas válidas por mera presencia.
 - La búsqueda indexada no devolvió una cadena literal `BEGIN PRIVATE KEY` ni una frase mnemónica, pero esto **no equivale a un análisis completo del historial Git ni a un escaneo exhaustivo de secretos**. Se requiere un escaneo de secretos en el historial completo antes de afirmar ausencia total de credenciales.
 
 ## 8. Acciones de control registradas
