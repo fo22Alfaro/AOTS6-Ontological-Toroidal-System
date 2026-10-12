@@ -18,5 +18,7 @@
     "ethereum_chain_nonce": "NOT_QUERIED",
     "bitcoin_block_nonce": "NOT_QUERIED",
     "onchain_anchor": "NOT_CONFIRMED"
-  }
+  },
+  "manifest_sha256": "1c0272047f83fe8c854f3a4096b87cf328d22fb83935764aaf58ed2f1937bcb4",
+  "manifest_hash_definition": "SHA-256 of canonical JSON before adding manifest_sha256; canonicalization sorts keys and uses compact separators."
 }
