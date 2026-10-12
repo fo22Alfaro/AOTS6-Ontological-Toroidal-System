@@ -1,0 +1,22 @@
+{
+  "schema": "AOTS6-LIVE-AUDIT-NONCE-1.0",
+  "created_utc": "2026-10-12T17:53:28Z",
+  "purpose": "single-run public audit challenge; not an Ethereum account nonce, Bitcoin block-header nonce, private key, or transaction authorization",
+  "nonce_hex": "9352726ba252415d6d53051f518b7e9d437f83d0b6c66c3328ea0fff7c5e430a",
+  "nonce_bytes": 32,
+  "source_refs": {
+    "repo": "fo22Alfaro/AOTS6-Ontological-Toroidal-System",
+    "topological_provenance_spec_blob_sha1": "69fabe2192d0fd7d50dc2d839441153aadc6e6e4",
+    "economic_ledger_blob_sha1": "107e318685eb04a59f93197b55cdbe5cc0fc25ef",
+    "ledger_runtime_blob_sha1": "d4175041c596c4d67f2cb114ade76bee12d53180",
+    "network_auth_signature_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  "findings": {
+    "network_auth_signature": "EMPTY_FILE",
+    "nft_metadata_item_1_duplicate_traits": "CORRECTED_IN_COMMIT_d64c8d6b43dde7f9c79d596515e63fea68e2e574",
+    "computed_topological_fingerprints": "NOT_COMPUTED",
+    "ethereum_chain_nonce": "NOT_QUERIED",
+    "bitcoin_block_nonce": "NOT_QUERIED",
+    "onchain_anchor": "NOT_CONFIRMED"
+  }
+}
