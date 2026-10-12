@@ -40,3 +40,21 @@ Cada transición debe incluir identificador, actor, alcance, evidencia de origen
 ## 5. Límites de ejecución
 
 La revisión no modifica balances, permisos, contratos, custodios ni transacciones de Ethereum o Bitcoin. El nonce publicado es una prueba de ejecución del generador de auditoría, no una prueba de titularidad ni un anclaje externo. La siguiente verificación on-chain requiere seleccionar explícitamente una de las dos aplicaciones Alchemy disponibles y confirmar qué red/dirección se debe consultar.
+
+
+## 6. Verificación adicional de la raíz de artefactos
+
+Se compararon los ocho Git blob SHA-1 incluidos en `research/AOTS6_ARTIFACT_ROOT.json` contra los ocho archivos actuales de `main`: **8/8 coinciden**. También se reconstruyó la cadena canónica definida por el propio manifiesto (`path<TAB>git_blob_sha<LF>`, orden lexicográfico) y el SHA-256 resultante coincide con `baebb33bd037b71a532c9ffd3a6b606952629da4f0f4253d088f01058c103475`. Esta comprobación valida la coherencia interna de ese conjunto acotado; no autentica por sí sola la identidad del autor ni prueba un anclaje externo.
+
+## 7. Material que requiere clasificación de seguridad
+
+- `entropy/quantum_seed.bin` está publicado en el repositorio público y el conector informa un archivo binario de aproximadamente 97 bytes. No se puede determinar solo por su nombre si es material de prueba o semilla sensible. **No debe reutilizarse para derivar claves, firmas, wallets o secretos** hasta verificar su origen y uso. Si alguna clave real se derivó de esos bytes, debe considerarse expuesta y rotarse; no se ha mostrado su contenido en este informe.
+- `AOTS6_SOVEREIGN_ANCHOR.sig` existe como 32 bytes y `AOTS6_AUTHORITY.sig` como un objeto binario. Sin algoritmo declarado, clave pública de verificación, mensaje firmado y resultado de verificación reproducible, no se aceptan como firmas válidas por mera presencia.
+- La búsqueda indexada no devolvió una cadena literal `BEGIN PRIVATE KEY` ni una frase mnemónica, pero esto **no equivale a un análisis completo del historial Git ni a un escaneo exhaustivo de secretos**. Se requiere un escaneo de secretos en el historial completo antes de afirmar ausencia total de credenciales.
+
+## 8. Acciones de control registradas
+
+- Corregida la duplicación de atributos en NFT #1.
+- Publicado un nonce CSPRNG de auditoría y un generador reproducible para manifiestos de artefactos.
+- Añadida una comprobación CI para el generador; su ejecución remota aún no está confirmada.
+- No se eliminó ni se rotó `entropy/quantum_seed.bin` porque su función no está determinada y retirarlo de la rama actual no borraría las versiones históricas. Se deja clasificado como **REQUIRES_SECURITY_CLASSIFICATION**.
