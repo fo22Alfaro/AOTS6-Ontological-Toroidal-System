@@ -43,18 +43,6 @@
     {
       "trait_type": "Majorana State",
       "value": "Declared model state; physical realization not asserted"
-    },
-    {
-      "trait_type": "Mathematical Provenance",
-      "value": "AOTS⁶ topological nonce fingerprint"
-    },
-    {
-      "trait_type": "Hilbert Structure",
-      "value": "Nested Hilbert space — level 2"
-    },
-    {
-      "trait_type": "Majorana State",
-      "value": "Declared model state"
     }
   ],
   "properties": {
