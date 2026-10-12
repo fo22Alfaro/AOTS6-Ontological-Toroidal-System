@@ -58,3 +58,18 @@ Se compararon los ocho Git blob SHA-1 incluidos en `research/AOTS6_ARTIFACT_ROOT
 - Publicado un nonce CSPRNG de auditoría y un generador reproducible para manifiestos de artefactos.
 - Añadida una comprobación CI para el generador; su ejecución remota aún no está confirmada.
 - No se eliminó ni se rotó `entropy/quantum_seed.bin` porque su función no está determinada y retirarlo de la rama actual no borraría las versiones históricas. Se deja clasificado como **REQUIRES_SECURITY_CLASSIFICATION**.
+
+
+## 9. Revisión cruzada de repositorios AOTS⁶
+
+Se revisaron metadatos y archivos de referencia de los repositorios públicos de gobernanza, ZK Core, red global, libro de unificación y el repositorio privado Núcleo Toroidal al que la integración GitHub declara acceso administrativo. Esto es una revisión dirigida de artefactos clave, **no un análisis exhaustivo de los 35 repositorios accesibles ni de todo el historial Git**.
+
+- **AOTS6-ZK-Core:** el contrato fuente tiene un bloqueo de seguridad importante: la interfaz visible del verificador Groth16 recibe solo `input[0]`, mientras `ipfsCid`, `shaAnchor` y `nullifier` se registran por separado y no se pasan como entradas públicas. La prueba, según la interfaz revisada, no liga criptográficamente esos campos. Se publicó una revisión con bloqueos de liberación: [SECURITY_REVIEW_AOTS6_ZK_CORE_2026-10-12.md](https://github.com/fo22Alfaro/AOTS6-ZK-Core/blob/main/SECURITY_REVIEW_AOTS6_ZK_CORE_2026-10-12.md). El despliegue debe permanecer bloqueado hasta alinear circuito, interfaz y pruebas negativas.
+- **Gobernanza algorítmica extraterritorial:** su README anterior afirmaba propagación automática e irreversible de huellas y autoría. No se encontró evidencia operativa que demuestre esa garantía. Se añadió una corrección de estado verificable: [CORRECCION_DE_ESTADO_OPERATIVO_AOTS6_2026-10-12.md](https://github.com/fo22Alfaro/GOBERNANZA-AOTS-ETICA-ALGORITMICA-EXTRATERRITORIAL.-LEY-ONTOLOGICA-TOROIDAL-CU-NTICA-/blob/main/CORRECCION_DE_ESTADO_OPERATIVO_AOTS6_2026-10-12.md). La edición directa del README original no se confirmó; por eso este documento correctivo debe considerarse un anexo y no una sustitución de aquel texto.
+- **Núcleo Toroidal privado:** el README confirma la descripción del repositorio, pero los archivos `main.py`, `nonce.py` y `pyproject.toml` no se encontraron en las rutas consultadas. No se puede afirmar un runtime de nonce vivo allí a partir de esas rutas.
+- **ZK/IPFS/Bitcoin:** el README de ZK Core describe IPFS y timestamping Bitcoin como conceptos, pero no se identificó un recibo de despliegue ni un anclaje Bitcoin verificado en la revisión.
+- **Raíz de artefactos del repositorio principal:** los ocho blobs incluidos en `research/AOTS6_ARTIFACT_ROOT.json` coinciden con los blobs actuales, y el SHA-256 reconstruido coincide con la raíz declarada. Esto valida ese conjunto específico, no todo el repositorio ni un anclaje externo.
+
+## 10. Revisión de red pendiente
+
+Alchemy muestra dos aplicaciones disponibles: **“ALFANUMERICAL ONTOLOGICAL TOROIDAL SYSTEM AOTS⁶ (AO)”** y **“Alfredo Jhovany's First App”**. Por la regla de selección de la integración, no se eligió una de forma implícita. En consecuencia, esta auditoría no consultó el nonce de cuenta Ethereum de la dirección previamente compartida ni el estado actual de un bloque Bitcoin. El nonce CSPRNG de auditoría documentado en este informe es independiente de ambos.
