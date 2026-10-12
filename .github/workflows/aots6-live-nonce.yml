@@ -1,0 +1,33 @@
+name: AOTS6 Live Nonce Provenance Check
+
+on:
+  push:
+    paths:
+      - "runtime/aots6_live_nonce.py"
+      - ".github/workflows/aots6-live-nonce.yml"
+  pull_request:
+    paths:
+      - "runtime/aots6_live_nonce.py"
+      - ".github/workflows/aots6-live-nonce.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  nonce-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate and validate artifact-bound audit nonce
+        shell: bash
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp -d)"
+          printf 'AOTS6 test artifact\n' > "$tmp/artifact.bin"
+          python runtime/aots6_live_nonce.py --artifact "$tmp/artifact.bin" --asset-id "AOTS6-CI-001" --version "test-1" --topological-parameters-json '{"parameter_set_id":"AOTS6-EXPLICIT-TEST-1","nonce_algorithm_version":"1.0"}' --output "$tmp/manifest.json"
+          python -c 'import json,sys; o=json.load(open(sys.argv[1])); assert o["nonce_scope"]=="AOTS6_AUDIT_CHALLENGE_NOT_CHAIN_TRANSACTION_NONCE"; assert len(o["nonce_hex"])==64; assert len(o["artifact_sha256"])==64; assert len(o["manifest_sha256"])==64; assert o["onchain_anchor"] is None; assert o["transaction_authorization"] is None; print("PASS: nonce manifest generated; no chain transaction claimed")' "$tmp/manifest.json"
+          rm -rf "$tmp"
