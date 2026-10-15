@@ -1,0 +1,52 @@
+{
+  "schema": "AOTS6_CRYPTO_MARKET_GOVERNANCE_INCIDENT_1.0",
+  "created_utc": "2026-10-15",
+  "network": "Polygon PoS",
+  "chain_id": 137,
+  "status": "INVESTIGATION_OPEN",
+  "actions_sent_by_assistant": false,
+  "scope": "Read-only review of supplied transaction list, screenshots, and queried receipts",
+  "addresses": {
+    "nft_event_contract_or_proxy": "0xa9a6a3626993d487d2dbda3173cf58ca1a9d9e9f",
+    "implementation_from_eip1967_slot": "0x11227e54f19934164a81d5add1ce5825d46b2271",
+    "repeated_nft_recipient": "0x7be83293BeeDc9Eba1bd76c66A65F10F3efaeC26",
+    "other_zero_origin_mint_recipient": "0x2e69cbb65ce5bdc3b17df908f1480922427917e9"
+  },
+  "transactions_checked": [
+    {
+      "hash": "0xc866a9dc36f67648ad4f0a710c5a40a28658071936e74ecabf8fd2613c35d281",
+      "status": "0x1",
+      "observed_event": "ERC-721 Transfer from 0xA5F0E2Cce420DD12D508EEAeE43CcC60D6fc76De to 0x7be83293BeeDc9Eba1bd76c66A65F10F3efaeC26",
+      "token_id_hex": "0x192e7815249c2c052f3bb0ce30c123f808672dc5a8833fe1ac25783ac8687051",
+      "block": 95414553
+    },
+    {
+      "hash": "0xfd0e06ec398f3af35782d085ff69dd9820045a40d1441693146c56f77ebc403d",
+      "status": "0x1",
+      "observed_event": "ERC-721 Transfer from 0xA5F0E2Cce420DD12D508EEAeE43CcC60D6fc76De to 0x7be83293BeeDc9Eba1bd76c66A65F10F3efaeC26",
+      "token_id_hex": "0x7c7ccd1c54414fe6099ff4c3562a4f41ab89619148bbd3ea584341b30ebc4779",
+      "block": 95414552
+    },
+    {
+      "hash": "0x3c290ad9409da577d238832d5ae8b0927006574d5021cdf6da229052c0c9fdd2",
+      "status": "0x1",
+      "observed_event": "ERC-721 Transfer from zero address to 0x2e69cbb65ce5bdc3b17df908f1480922427917e9; domain-registration metadata events also present",
+      "token_id_hex": "0xb21a3e702990e24353717a09051a93cbc695f6baa3f75d1cc301d5fc45c99495",
+      "block": 95414191
+    }
+  ],
+  "known_unknowns": [
+    "The complete transaction calldata and internal call trace have not yet been decoded for all listed transactions.",
+    "The relevant approval, operator, signed-meta-transaction, nonce, and relayer authorization path has not yet been established.",
+    "Current owner and full history for each token ID require per-token queries.",
+    "The supplied screenshots show the zero address balance display; they do not establish recoverable funds or ownership of that balance.",
+    "No recovery or revocation transaction has been submitted."
+  ],
+  "response_controls": [
+    "Preserve original exports and receipts",
+    "Do not sign unknown messages or transactions",
+    "Do not disclose seed phrases/private keys",
+    "Only use official verified interfaces for approval revocation",
+    "Require simulation and human approval before any on-chain write"
+  ]
+}
