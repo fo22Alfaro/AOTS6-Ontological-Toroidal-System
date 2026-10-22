@@ -1,8 +1,8 @@
 {
   "changed": true,
-  "created_at_utc": 1792689342.2244992,
+  "created_at_utc": 1792705299.05459,
   "det": "26.3",
-  "evidence_sha256": "7055d58e407b9f5397721c088dab77b7f13bf7c51f55a0ce98e60bc95d0cc9ae",
+  "evidence_sha256": "17815515ba46042a5791d443cceacaece6b0fbea45747bd07d5ef856ed8b0e49",
   "generated_prompt": "AOTS6 AUTOPROMPTEO: conserva literalmente el estado recibido. Genera el siguiente prompt operativo únicamente a partir del estado actual y registra qué cambió. No sustituyas términos del estado. SEED=AOTS6; PREVIOUS_RESPONSE_SHA256=12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
   "order": [
     7,
@@ -12,15 +12,15 @@
   "prompt_sha256": "5c698a5edbbbd6bd9d29fab0b45e481f34ee90a71b5a65a17f1d1986560ade3d",
   "protocol": "AOTS6-AUTOPROMPTEO-REALTIME/v1",
   "state0": {
-    "created_at_utc": 1792689342.2244992,
+    "created_at_utc": 1792705299.05459,
     "generated_prompt": "AOTS6 AUTOPROMPTEO: conserva literalmente el estado recibido. Genera el siguiente prompt operativo únicamente a partir del estado actual y registra qué cambió. No sustituyas términos del estado. SEED=AOTS6; PREVIOUS_RESPONSE_SHA256=12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
-    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
     "prior_response": "",
     "seed": "AOTS6"
   },
-  "state0_sha256": "2607ab78a1147bab953dbdf73de425be35fa13b2e75a413048b8751ddf791e84",
+  "state0_sha256": "c5f338f1427a401661c5ea151159e936997ea1a7ac328b2647238181d879cc3b",
   "state1": {
-    "created_at_utc": 1792689342.2244992,
+    "created_at_utc": 1792705299.05459,
     "det": "26.3",
     "generated_prompt": "AOTS6 AUTOPROMPTEO: conserva literalmente el estado recibido. Genera el siguiente prompt operativo únicamente a partir del estado actual y registra qué cambió. No sustituyas términos del estado. SEED=AOTS6; PREVIOUS_RESPONSE_SHA256=12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
     "non_commutative_order": [
@@ -28,31 +28,31 @@
       19,
       2
     ],
-    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
     "prior_response": "",
     "seed": "AOTS6",
     "t6": "t6",
-    "t6_op_19": "e8fb4c97129b7e98fcb003d2014573726a058e67448cc80cc0c0b5c5648d91e9",
-    "t6_op_2": "f0846a1cf1edc20ebf642ecad3f42e8835d293cd091ec45fa71540c9b92c9271",
-    "t6_op_7": "66a34141f8b79dc1079bced459b2210bea74664b81b376e8c29f7722ee0ee692",
+    "t6_op_19": "544bdfbb08a079cef6d5873437ab0d3b78c36b7d3b4e934d86d2290911f73d1a",
+    "t6_op_2": "506a27ab0ebef6cdaf9ea2c386427db1bf377d9b50ddb446eb347334fa881ef8",
+    "t6_op_7": "0f3ee62ba52b30ead9bf35762e0ce3838759a5dcecb5ff1096892112741ee2b0",
     "trace": [
       {
         "det": "26.3",
-        "input_sha256": "2607ab78a1147bab953dbdf73de425be35fa13b2e75a413048b8751ddf791e84",
+        "input_sha256": "c5f338f1427a401661c5ea151159e936997ea1a7ac328b2647238181d879cc3b",
         "operator": 7
       },
       {
         "det": "26.3",
-        "input_sha256": "cff64e6657dda9ac1c078de2513f7fffdb45717e5633b42b8cc2e70c006fc9db",
+        "input_sha256": "a5812fa243db79e87cd29b2cbb330854e0269e6c9b833e680b7900d27206866a",
         "operator": 19
       },
       {
         "det": "26.3",
-        "input_sha256": "8f3e3c1ea06208dde54ebfa0aacfea26630ffd8be8bcd20cd2f80b9d225c4d3f",
+        "input_sha256": "9238f8e722a1077dbdaeeb4cf42c3bf4b3fe9baefe3f514f0496c55a4cd1ce86",
         "operator": 2
       }
     ]
   },
-  "state1_sha256": "b46628ed04e866e4f7910e9a2782caaac950f3aa71fe78b786ccaafa5f8f5c8a",
+  "state1_sha256": "e87056ed70445eae334a2c18ae6c6d86a1be8fee892d36da950940f03a1f6769",
   "t6": "t6"
 }
