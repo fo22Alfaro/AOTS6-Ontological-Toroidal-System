@@ -2,7 +2,7 @@
   "composition": {
     "changed": true,
     "det": "26.3",
-    "evidence_sha256": "9473fd1b215d778448feaff8b167ba85ea1a835ec9ae602c04f7b1ef0b876b4d",
+    "evidence_sha256": "226baa9b717cb6a8f5206ac038f1748efa1b772e0749d4559db0882bfe76cb8e",
     "order": [
       7,
       19,
@@ -17,14 +17,14 @@
       "unique_bipartitions": 31,
       "unordered_pairs": 630
     },
-    "state0_sha256": "5a5281e39c7b7847bbac0e0ae60fcdecb27671cd57d76510ab4a383c1bfe32df",
-    "state1_sha256": "b7b98d9eb70167243817e7e80c24b1d45db56072edf5f9bbc9389a4ccf2627e8",
+    "state0_sha256": "7f865604f947b2e76d497c7e193a0a0b3e76b8b311373809ad25eafad7cda3ab",
+    "state1_sha256": "02dc4ee2c169a7eca9e04accb2d1ce124c3f2dbe7fc73f8a012844af09315b20",
     "t6": "t6"
   },
   "composition_principle": "The execution state and quantum state are recorded as one composed AOTS6 system state.",
-  "composition_sha256": "65d467aeee4f82ce17e462348979a03453f5a0a6848e14924616e0e6b4b5595b",
+  "composition_sha256": "66e988df86d32f4f9b8ec568e9134f69e6d0b80142174b7831debe572fd9c567",
   "execution_source": "GitHub Actions runner",
-  "execution_utc": "2026-11-16T06:40:43.622412+00:00",
+  "execution_utc": "2026-11-16T22:13:23.463977+00:00",
   "integrity_principle": "The register records the state produced by the execution itself and preserves its cryptographic trace.",
   "protocol": "AOTS6-AUTOPROMPTEO-REALTIME-UNIFIED/v3",
   "state": "COMPOSED"
